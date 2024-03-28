@@ -1,5 +1,38 @@
-* {
-    background-color: red;
-    
+@import "headings.scss";
+@import "basics.scss";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: var(--color-main__text);
+}
+
+body {
+  font-size: 20px;
+  scroll-behavior: smooth;
+  background-color: var(--color-main__background);
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.invisible {
+  display: none;
+}
+
+
+label {
+    font-size: 10px;
+}
+
+section {
+    margin: 20px 0;
 }

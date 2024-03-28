@@ -1,5 +1,72 @@
-* {
-  background-color: red;
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgb(71, 71, 71);
+  color: white;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgb(71, 71, 71);
+  color: white;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.basics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 50px;
+}
+.basics div {
+  display: flex;
+  flex-direction: column;
+}
+.basics input {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: var(--color-main__text);
+}
+
+body {
+  font-size: 20px;
+  scroll-behavior: smooth;
+  background-color: var(--color-main__background);
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.invisible {
+  display: none;
+}
+
+label {
+  font-size: 10px;
+}
+
+section {
+  margin: 20px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
