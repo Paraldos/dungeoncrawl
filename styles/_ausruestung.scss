@@ -38,13 +38,13 @@
 
     div {
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
     }
 
     input {
-        width: unset;
+        width: fit-content;
         min-height: 30px;
         aspect-ratio: 1;
-        margin: auto;
+        margin: auto 0;
     }
 }
