@@ -36,30 +36,23 @@ h2 {
 
 .fertigkeiten {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 80px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 70px;
 }
 .fertigkeiten div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  border-radius: 5px;
   height: 60px;
 }
 .fertigkeiten input {
   width: 100%;
   height: 100%;
-  outline: none;
-  border: none;
-  text-align: center;
+  border: 1px solid black;
   border-radius: 5px;
+  text-align: center;
 }
 .fertigkeiten label {
   width: 100%;
-  text-align: center;
-  border-bottom: 1px solid black;
 }
 
 *,
@@ -90,6 +83,8 @@ main {
 }
 
 label {
+  width: 100%;
+  text-align: center;
   font-size: 10px;
 }
 
