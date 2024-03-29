@@ -34,6 +34,34 @@ h2 {
   margin-bottom: 10px;
 }
 
+.fertigkeiten {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 80px;
+}
+.fertigkeiten div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 60px;
+}
+.fertigkeiten input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+}
+.fertigkeiten label {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
 *,
 *::before,
 *::after {
@@ -66,6 +94,7 @@ label {
 }
 
 section {
+  max-width: 100%;
   margin: 20px 0;
 }
 

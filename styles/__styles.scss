@@ -1,5 +1,6 @@
 @import "headings.scss";
 @import "basics.scss";
+@import "fertigkeiten.scss";
 
 *,
 *::before,
@@ -28,11 +29,11 @@ main {
   display: none;
 }
 
-
 label {
     font-size: 10px;
 }
 
 section {
+  max-width: 100%;
     margin: 20px 0;
 }
