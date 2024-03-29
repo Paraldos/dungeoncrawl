@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script defer type="module" src="main.js"></script>
 </head>
 <body>
     <main>
@@ -63,36 +64,69 @@
             <input type="text" class="text-center"/>
         </div>
     </section>
-    <h2>Gepäck</h2>
-    <section class="gepaeck">
-        <div class="gepaeck__items">
-            <div>
-                <label>Name</label>
-                <label>Bonus</label>
-            </div>
-            <div>
-                <label>Name</label>
-                <label>Bonus</label>
-            </div>
-            <div>
-                <input type="text" />
-                <input type="text" class="text-center" />
-            </div>
-            <div>
-                <input type="text" />
-                <input type="text" class="text-center"/>
-            </div>
-            <div>
-                <input type="text" />
-                <input type="text" class="text-center"/>
-            </div>
-            <div>
-                <input type="text" />
-                <input type="text" class="text-center"/>
-            </div>
-        </div>
 
+    <!-- ausruestung -->
+    <h2>Ausrüstung</h2>
+    <section class="load">
+        <p>Gepäck:</p>
+        <div>
+            <input type="radio" name="load">
+            <p>Leicht = 3</p>
+        </div>
+        <div>
+            <input type="radio" name="load">
+            <p>Mittel = 6</p>
+        </div>
+        <div>
+            <input type="radio" name="load">
+            <p>Schwer = 12</p>
+        </div>
     </section>
+    <section class="items">
+        <div>
+            <label>Name</label>
+            <label>Bonus</label>
+        </div>
+        <div>
+            <label>Name</label>
+            <label>Bonus</label>
+        </div>
+        <div>
+            <input type="text" />
+            <input type="text" class="text-center" />
+        </div>
+        <div>
+            <input type="text" />
+            <input type="text" class="text-center"/>
+        </div>
+        <div>
+            <input type="text" />
+            <input type="text" class="text-center"/>
+        </div>
+        <div>
+            <input type="text" />
+            <input type="text" class="text-center"/>
+        </div>
+    </section>
+    <section class="vorratspunkte">
+        <p>Vorratspunkte (VP):</p>
+        <div class="vorratspunkte__checkboxes">
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+        </div>
+    </section>
+    
+    <!-- zustand -->
     <h2>Zustand</h2>
     <h2>Notizen</h2>
     </main>

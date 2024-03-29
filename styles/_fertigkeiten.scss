@@ -1,7 +1,6 @@
 .fertigkeiten {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 70px;
+    display: flex;
+    gap: 50px;
 
     div {
         display: flex;

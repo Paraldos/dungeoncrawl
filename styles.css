@@ -27,6 +27,17 @@ input {
   padding: 5px 10px;
 }
 
+label {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+
+section {
+  max-width: 100%;
+  margin: 20px 0;
+}
+
 .basics {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -38,9 +49,8 @@ input {
 }
 
 .fertigkeiten {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 70px;
+  display: flex;
+  gap: 50px;
 }
 .fertigkeiten div {
   display: flex;
@@ -48,15 +58,49 @@ input {
   height: 60px;
 }
 
-.gepaeck__items {
+.load {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.load div {
+  display: flex;
+  gap: 10px;
+}
+.load input {
+  width: unset;
+  min-height: 15px;
+  aspect-ratio: 1;
+  margin: auto;
+}
+
+.items {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 50px;
 }
-.gepaeck__items div {
+.items div {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 10px;
+}
+
+.vorratspunkte {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.vorratspunkte p {
+  align-content: center;
+}
+.vorratspunkte div {
+  display: flex;
+  gap: 10px;
+}
+.vorratspunkte input {
+  width: unset;
+  min-height: 30px;
+  aspect-ratio: 1;
+  margin: auto;
 }
 
 *,
@@ -88,17 +132,6 @@ main {
 
 .text-center {
   text-align: center;
-}
-
-label {
-  width: 100%;
-  text-align: center;
-  font-size: 10px;
-}
-
-section {
-  max-width: 100%;
-  margin: 20px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
