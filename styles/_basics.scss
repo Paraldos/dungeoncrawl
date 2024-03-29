@@ -1,17 +1,10 @@
 .basics {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px 50px;
+    gap: 0 50px;
 
     div {
         display: flex;
         flex-direction: column;
-    }
-
-    input {
-        height: 40px;
-        border: 1px solid black;
-        border-radius: 5px;
-        margin-bottom: 10px;
     }
 }

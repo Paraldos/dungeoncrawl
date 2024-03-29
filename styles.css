@@ -18,20 +18,23 @@ h2 {
   padding: 5px;
 }
 
+input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid black;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
 .basics {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 50px;
+  gap: 0 50px;
 }
 .basics div {
   display: flex;
   flex-direction: column;
-}
-.basics input {
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 .fertigkeiten {
@@ -44,15 +47,16 @@ h2 {
   flex-direction: column;
   height: 60px;
 }
-.fertigkeiten input {
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
-  border-radius: 5px;
-  text-align: center;
+
+.gepaeck__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 50px;
 }
-.fertigkeiten label {
-  width: 100%;
+.gepaeck__items div {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
 }
 
 *,
@@ -80,6 +84,10 @@ main {
 
 .invisible {
   display: none;
+}
+
+.text-center {
+  text-align: center;
 }
 
 label {

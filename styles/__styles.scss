@@ -1,6 +1,8 @@
 @import "headings.scss";
+@import "input.scss";
 @import "basics.scss";
 @import "fertigkeiten.scss";
+@import "gepaeck.scss";
 
 *,
 *::before,
@@ -27,6 +29,10 @@ main {
 
 .invisible {
   display: none;
+}
+
+.text-center {
+  text-align: center;
 }
 
 label {
