@@ -1,21 +1,19 @@
-h1 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  text-align: center;
-  background-color: rgb(71, 71, 71);
+h1,
+h2 {
   color: white;
+  background-color: rgb(71, 71, 71);
+  text-align: center;
   text-transform: uppercase;
   padding: 5px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 25px;
-  margin-bottom: 20px;
-  text-align: center;
-  background-color: rgb(71, 71, 71);
-  color: white;
-  text-transform: uppercase;
-  padding: 5px;
+  font-size: 1.5rem;
 }
 
 input {
@@ -35,7 +33,7 @@ label {
 
 section {
   max-width: 100%;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .basics {
@@ -50,8 +48,9 @@ section {
 }
 
 .fertigkeiten {
-  display: flex;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0 50px;
 }
 .fertigkeiten div {
   display: flex;
@@ -104,27 +103,33 @@ section {
   margin: auto 0;
 }
 
+* {
+  --color__text: rgb(0, 0, 0);
+  --color__background: white;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  color: var(--color-main__text);
 }
 
 body {
-  font-size: 20px;
+  font-size: 15px;
+  color: var(--color__text);
   scroll-behavior: smooth;
-  background-color: var(--color-main__background);
   font-family: "Roboto", sans-serif;
+  background-color: grey;
 }
 
 main {
-  max-width: 1000px;
+  height: 1189px;
+  width: 841px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
+  background-color: var(--color__background);
 }
 
 .invisible {
@@ -133,6 +138,12 @@ main {
 
 .text-center {
   text-align: center;
+}
+
+.talente {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

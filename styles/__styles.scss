@@ -6,27 +6,33 @@
 @import "fertigkeiten.scss";
 @import "ausruestung.scss";
 
+* {
+  --color__text: rgb(0, 0, 0);
+  --color__background: white;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  color: var(--color-main__text);
 }
 
 body {
-  font-size: 20px;
+  font-size: 15px;
+  color: var(--color__text);
   scroll-behavior: smooth;
-  background-color: var(--color-main__background);
   font-family: "Roboto", sans-serif;
+  background-color: grey;
 }
 
 main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+  height: 1189px;
+  width: 841px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: var(--color__background);
 }
 
 .invisible {
@@ -35,4 +41,10 @@ main {
 
 .text-center {
   text-align: center;
+}
+
+.talente {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 50px;
 }

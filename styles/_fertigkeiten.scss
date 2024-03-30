@@ -1,10 +1,11 @@
 .fertigkeiten {
-    display: flex;
-    gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0 50px;
 
-    div {
-        display: flex;
-        flex-direction: column;
-        height: 60px;
-    }
+  div {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+  }
 }
