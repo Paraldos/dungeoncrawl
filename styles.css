@@ -145,5 +145,10 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 0 50px;
 }
+.talente div {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0 10px;
+}
 
 /*# sourceMappingURL=styles.css.map */
