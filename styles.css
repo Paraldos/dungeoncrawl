@@ -49,13 +49,17 @@ section {
 
 .fertigkeiten {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 0 50px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 70px;
 }
 .fertigkeiten div {
-  display: flex;
-  flex-direction: column;
-  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  align-items: center;
+}
+.fertigkeiten input {
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .load {
