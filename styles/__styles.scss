@@ -4,6 +4,7 @@
 @import "section.scss";
 @import "basics.scss";
 @import "fertigkeiten.scss";
+@import "talente.scss";
 @import "ausruestung.scss";
 @import "notizen.scss";
 
@@ -42,16 +43,4 @@ main {
 
 .text-center {
   text-align: center;
-}
-
-.talente {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0 50px;
-
-  div {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 0 10px;
-  }
 }
