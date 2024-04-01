@@ -1,10 +1,6 @@
 export default class Attribute {
   constructor() {
     this.left = document.querySelector(".left");
-    this.initAttribute();
-  }
-
-  initAttribute() {
     this.attribute = document.createElement("section");
     this.attribute.classList.add("attribute");
     this.attribute.innerHTML = `

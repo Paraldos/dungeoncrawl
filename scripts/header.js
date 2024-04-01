@@ -1,16 +1,10 @@
 export default class Header {
-  constructor(name, left = true, type = "h1") {
-    this.name = name;
-    this.type = type;
-    this.main = document.querySelector(left ? ".left" : ".right");
-    this.initHeader();
-  }
-
-  initHeader() {
-    this.header = document.createElement(this.type);
+  constructor(name, side = ".left", type = "h1") {
+    this.main = document.querySelector(side);
+    this.header = document.createElement(type);
     this.header.innerHTML = `
         <i class="fa-solid fa-diamond"></i>
-        ${this.name}
+        ${name}
         <i class="fa-solid fa-diamond"></i>`;
     this.main.appendChild(this.header);
   }
