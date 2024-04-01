@@ -61,7 +61,7 @@ section {
 .basics div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 50px;
+  gap: 0 var(--gap__main);
   flex-direction: column;
 }
 
@@ -83,18 +83,18 @@ section {
 .talente {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0 50px;
+  gap: 0 var(--gap__main);
 }
 .talente div {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr 1fr;
   gap: 0 10px;
 }
 
 .load {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px 50px;
+  gap: 5px var(--gap__main);
 }
 .load label {
   text-align: center;
@@ -116,7 +116,7 @@ section {
 .items {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 50px;
+  gap: 0 var(--gap__main);
 }
 .items div {
   display: grid;
@@ -132,6 +132,7 @@ section {
 * {
   --color__text: rgb(0, 0, 0);
   --color__background: white;
+  --gap__main: 30px;
 }
 
 *,

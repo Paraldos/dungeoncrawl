@@ -1,7 +1,7 @@
 .load {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px 50px;
+  gap: 5px var(--gap__main);
 
   label {
     text-align: center;
@@ -27,7 +27,7 @@
 .items {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 50px;
+  gap: 0 var(--gap__main);
 
   div {
     display: grid;
