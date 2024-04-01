@@ -31,7 +31,7 @@
 
   div {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr var(--size__value-box);
     gap: 0 10px;
   }
 }

@@ -43,6 +43,13 @@ input {
   padding: 5px 10px;
 }
 
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+  padding: 0;
+}
+
 label {
   width: 100%;
   font-size: 10px;
@@ -72,7 +79,7 @@ section {
 }
 .fertigkeiten div {
   display: grid;
-  grid-template-columns: 1fr 80px;
+  grid-template-columns: 1fr var(--size__value-box);
   align-items: center;
 }
 .fertigkeiten input {
@@ -82,13 +89,13 @@ section {
 
 .talente {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr var(--size__value-box) auto;
   gap: 0 var(--gap__main);
 }
-.talente div {
-  display: grid;
-  grid-template-columns: 4fr 1fr 1fr;
-  gap: 0 10px;
+.talente__checkboxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .load {
@@ -120,7 +127,7 @@ section {
 }
 .items div {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr var(--size__value-box);
   gap: 0 10px;
 }
 
@@ -132,6 +139,7 @@ section {
 * {
   --color__text: rgb(0, 0, 0);
   --color__background: white;
+  --size__value-box: 80px;
   --gap__main: 30px;
 }
 

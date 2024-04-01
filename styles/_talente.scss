@@ -1,11 +1,11 @@
 .talente {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr var(--size__value-box) auto;
   gap: 0 var(--gap__main);
 
-  div {
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
-    gap: 0 10px;
+  &__checkboxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

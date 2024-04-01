@@ -5,7 +5,7 @@
 
   div {
     display: grid;
-    grid-template-columns: 1fr 80px;
+    grid-template-columns: 1fr var(--size__value-box);
     align-items: center;
   }
 
