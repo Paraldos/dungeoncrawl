@@ -8,13 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script
+      defer
+      src="https://kit.fontawesome.com/12bc7dd6b9.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer type="module" src="main.js"></script>
 </head>
 <body>
     <main>
 
     <!-- basics -->
-    <h1>Charakterbogen</h1>
+    <h1>
+        <i class="fa-solid fa-diamond"></i>
+        Charakterbogen
+        <i class="fa-solid fa-diamond"></i>
+    </h1>
     <section class="basics">
         <label>Name</label>
         <input type="text"></input>
@@ -28,7 +37,11 @@
     </section>
  
     <!-- fertigkeiten -->
-    <h2>Fertigkeiten</h2>
+    <h2>
+        <i class="fa-solid fa-diamond"></i>
+        Fertigkeiten
+        <i class="fa-solid fa-diamond"></i>
+    </h2>
     <section class="fertigkeiten">
         <div>
             <p>Klugheit</p>
@@ -58,51 +71,82 @@
     </section>
 
     <!-- talente -->
-    <h2>Talente</h2>
+    <h2>
+        <i class="fa-solid fa-diamond"></i>
+        Talente
+        <i class="fa-solid fa-diamond"></i>
+    </h2>
     <section class="talente">
         <div>
             <label>Name</label>
-            <label class="text-center">Bonus</label>
+            <label class="text-center">Wert</label>
+            <label class="text-center">Verbrauch</label>
+            <input type="text"/>
             <input type="text"/>
             <input type="text"/>
         </div>
         <div>
             <label>Name</label>
-            <label class="text-center">Bonus</label>
+            <label class="text-center">Wert</label>
+            <label class="text-center">Verbrauch</label>
+            <input type="text"/>
+            <input type="text"/>
+            <input type="text"/>
+        </div>
+        <div>
+            <input type="text"/>
             <input type="text"/>
             <input type="text"/>
         </div>
         <div>
             <input type="text"/>
-            <input type="text"/>
-        </div>
-        <div>
             <input type="text"/>
             <input type="text"/>
         </div>
     </section>
 
     <!-- ausruestung -->
-    <h2>Ausrüstung</h2>
+    <h2>
+        <i class="fa-solid fa-diamond"></i>
+        Ausrüstung
+        <i class="fa-solid fa-diamond"></i>
+    </h2>
     <section class="load">
-        <p>Gepäck:</p>
-        <div>
-            <input type="radio" name="load">
-            <p>Leicht = 3</p>
+        <label>Gepäck</label>
+        <label>Vorratspunkte (VP)</label>
+        <div class="load__gepaeck">
+            <div>
+                <input type="radio" name="load">
+                <p>Leicht (3)</p>
+            </div>
+            <div>
+                <input type="radio" name="load">
+                <p>Mittel (6)</p>
+            </div>
+            <div>
+                <input type="radio" name="load">
+                <p>Schwer (12)</p>
+            </div>
         </div>
-        <div>
-            <input type="radio" name="load">
-            <p>Mittel = 6</p>
-        </div>
-        <div>
-            <input type="radio" name="load">
-            <p>Schwer = 12</p>
+        <div class="load__vorratspunkte">
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
         </div>
     </section>
     <section class="items">
         <div>
             <label>Name</label>
-            <label >Bonus</label>
+            <label class="text-center">Bonus</label>
             <input type="text"/>
             <input type="text"/>
         </div>
@@ -121,30 +165,23 @@
             <input type="text" />
         </div>
     </section>
-
-    <section class="vorratspunkte">
-        <p>Vorratspunkte (VP):</p>
-        <div class="vorratspunkte__checkboxes">
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-        </div>
-    </section>
     
     <!-- zustand -->
-    <h2>Zustand</h2>
+    <h2>
+        <i class="fa-solid fa-diamond"></i>
+        Zustand
+        <i class="fa-solid fa-diamond"></i>
+    </h2>
+    <section>
+        <label>Wunden</label>
+    </section>
 
     <!-- zustand -->
-    <h2>Notizen</h2>
+    <h2>
+        <i class="fa-solid fa-diamond"></i>
+        Notizen
+        <i class="fa-solid fa-diamond"></i>
+    </h2>
     <section class="notizen">
         <textarea></textarea>
     </main>

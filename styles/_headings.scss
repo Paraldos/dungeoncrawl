@@ -6,6 +6,16 @@ h2 {
   text-transform: uppercase;
   padding: 5px;
   margin-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    padding: 0 20px;
+    font-size: 12px;
+  }
 }
 
 h1 {
@@ -14,4 +24,12 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
 }
