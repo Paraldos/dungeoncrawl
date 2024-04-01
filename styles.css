@@ -5,7 +5,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   padding: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -21,7 +21,7 @@ input {
   min-height: 40px;
   border: 1px solid black;
   border-radius: 7px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 5px 10px;
 }
 
@@ -33,7 +33,7 @@ label {
 
 section {
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .basics {
@@ -50,7 +50,7 @@ section {
 .fertigkeiten {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px 70px;
+  gap: 5px 70px;
 }
 .fertigkeiten div {
   display: grid;
