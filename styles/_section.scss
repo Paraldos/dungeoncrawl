@@ -1,4 +1,8 @@
 section {
   max-width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: var(--gap__medium);
+}
+
+.description {
+  margin-bottom: var(--gap__small);
 }

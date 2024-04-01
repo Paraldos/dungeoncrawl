@@ -1,7 +1,7 @@
 .talente {
   display: grid;
   grid-template-columns: 1fr var(--size__value-box) auto;
-  gap: 0 var(--gap__main);
+  gap: 0 var(--gap__big);
 
   &__checkboxes {
     display: flex;

@@ -1,11 +1,12 @@
 .basics {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--gap__small) var(--gap__big);
+  align-items: center;
 
-  div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 var(--gap__main);
-    flex-direction: column;
+  input {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
   }
 }

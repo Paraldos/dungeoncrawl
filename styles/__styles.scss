@@ -3,16 +3,18 @@
 @import "label.scss";
 @import "section.scss";
 @import "basics.scss";
-@import "fertigkeiten.scss";
+@import "attribute.scss";
 @import "talente.scss";
 @import "ausruestung.scss";
-@import "notizen.scss";
+@import "zustand.scss";
 
 * {
   --color__text: rgb(0, 0, 0);
   --color__background: white;
-  --size__value-box: 80px;
-  --gap__main: 30px;
+  --size__value-box: 60px;
+  --gap__small: 5px;
+  --gap__medium: 15px;
+  --gap__big: 30px;
 }
 
 *,
@@ -32,11 +34,15 @@ body {
 }
 
 main {
-  height: 1189px;
-  width: 841px;
+  width: 1189px;
+  height: 841px;
   margin: 0 auto;
   padding: 50px;
   background-color: var(--color__background);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap__big);
 }
 
 .invisible {

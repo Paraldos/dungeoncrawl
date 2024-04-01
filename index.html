@@ -1,226 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DUNGEONCRAWL</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dungeoncrawl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script
       defer
       src="https://kit.fontawesome.com/12bc7dd6b9.js"
       crossorigin="anonymous"
     ></script>
     <script defer type="module" src="main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-
-    <!-- basics -->
-    <h1>
-        <i class="fa-solid fa-diamond"></i>
-        Charakterbogen
-        <i class="fa-solid fa-diamond"></i>
-    </h1>
-    <section class="basics">
-        <label>Name</label>
-        <input type="text"></input>
-        <label>Herkunft</label>
-        <div>
-            <input type="text"></input>
-            <input type="text"></input>
-            <input type="text"></input>
-            <input type="text"></input>
-        </div>
-    </section>
- 
-    <!-- fertigkeiten -->
-    <h2>
-        <i class="fa-solid fa-diamond"></i>
-        Fertigkeiten
-        <i class="fa-solid fa-diamond"></i>
-    </h2>
-    <section class="fertigkeiten">
-        <div>
-            <p>Klugheit</p>
-            <input type="text" />
-        </div>
-        <div>
-            <p>Stärke</p>
-            <input type="text" />
-        </div>
-        <div>
-            <p>Charisma</p>
-            <input type="text"  />
-        </div>
-
-        <div>
-           <p>Intuition</p>
-            <input type="text" />
-        </div>
-        <div>
-            <p>Geschick</p>
-            <input type="text" />
-        </div>
-        <div>
-            <p>Fassung</p>
-            <input type="text" />
-        </div>
-    </section>
-
-    <!-- talente -->
-    <h2>
-        <i class="fa-solid fa-diamond"></i>
-        Talente
-        <i class="fa-solid fa-diamond"></i>
-    </h2>
-    <section class="talente">
-        <label>Name</label>
-        <label class="text-center">Wert</label>
-        <label class="text-center">Verbrauch</label>
-
-        <input type="text"/>
-        <input type="text"/>
-        <div class="talente__checkboxes">
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-        </div>
-
-        <input type="text"/>
-        <input type="text"/>
-        <div class="talente__checkboxes">
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-        </div>
-
-        <input type="text"/>
-        <input type="text"/>
-        <div class="talente__checkboxes">
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-        </div>
-
-        <input type="text"/>
-        <input type="text"/>
-        <div class="talente__checkboxes">
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-        </div>
-    </section>
-
-    <!-- ausruestung -->
-    <h2>
-        <i class="fa-solid fa-diamond"></i>
-        Ausrüstung
-        <i class="fa-solid fa-diamond"></i>
-    </h2>
-    <section class="load">
-        <label>Gepäck</label>
-        <label>Vorratspunkte (VP)</label>
-        <div class="load__gepaeck">
-            <div>
-                <input type="radio" name="load">
-                <p>Leicht (3)</p>
-            </div>
-            <div>
-                <input type="radio" name="load">
-                <p>Mittel (6)</p>
-            </div>
-            <div>
-                <input type="radio" name="load">
-                <p>Schwer (12)</p>
-            </div>
-        </div>
-        <div class="load__vorratspunkte">
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-        </div>
-    </section>
-    <section class="items">
-        <div>
-            <label>Name</label>
-            <label class="text-center">Bonus</label>
-            <input type="text"/>
-            <input type="text"/>
-        </div>
-        <div>
-            <label>Name</label>
-            <label class="text-center">Bonus</label>
-            <input type="text"/>
-            <input type="text"/>
-        </div>
-        <div>
-            <input type="text"/>
-            <input type="text"/>
-        </div>
-        <div>
-            <input type="text" />
-            <input type="text" />
-        </div>
-    </section>
-    
-    <!-- zustand -->
-    <h2>
-        <i class="fa-solid fa-diamond"></i>
-        Zustand
-        <i class="fa-solid fa-diamond"></i>
-    </h2>
-    <section>
-        <label>Wunden</label>
-    </section>
-
-    <!-- zustand -->
-    <h2>
-        <i class="fa-solid fa-diamond"></i>
-        Notizen
-        <i class="fa-solid fa-diamond"></i>
-    </h2>
-    <section class="notizen">
-        <textarea></textarea>
+      <div class="left"></div>
+      <div class="right"></div>
     </main>
-</body>
+  </body>
 </html>
