@@ -1,6 +1,6 @@
 export default class Header {
-  constructor(name, side = ".left", type = "h1") {
-    this.main = document.querySelector(side);
+  constructor(name, type = "h1") {
+    this.main = document.querySelector("main");
     this.header = document.createElement(type);
     this.header.innerHTML = `
         <i class="fa-solid fa-diamond"></i>

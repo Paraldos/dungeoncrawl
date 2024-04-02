@@ -20,7 +20,7 @@ export default class Ausruestung {
         <input type="radio" name="load" />
         <p>Mittel (6)</p>
         <input type="radio" name="load" />
-        <p>Schwer (12)</p>
+        <p>Schwer (9)</p>
       </div>
     `;
     this.ausruestung.appendChild(gepaeck);
