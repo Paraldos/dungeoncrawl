@@ -19,6 +19,12 @@ h1 i {
   font-size: 12px;
 }
 
+label {
+  width: 100%;
+  font-size: 10px;
+  padding: 0 5px;
+}
+
 input {
   width: 100%;
   min-height: 30px;
@@ -38,21 +44,6 @@ input[type=radio] {
   min-height: unset;
   margin: 0 2px;
   padding: 0;
-}
-
-label {
-  width: 100%;
-  font-size: 10px;
-  padding: 0 5px;
-}
-
-section {
-  max-width: 100%;
-  margin-bottom: var(--gap__medium);
-}
-
-.description {
-  margin-bottom: var(--gap__small);
 }
 
 .basics {
@@ -102,7 +93,7 @@ section {
 }
 .items div {
   display: grid;
-  grid-template-columns: 1fr var(--size__value-box);
+  grid-template-columns: 1fr var(--size__value);
   gap: 0 10px;
 }
 
@@ -126,7 +117,7 @@ section {
 
 .zustand {
   display: grid;
-  grid-template-columns: auto var(--size__value-box) 1fr;
+  grid-template-columns: auto var(--size__value) 1fr;
   gap: var(--gap__small) var(--gap__big);
   align-items: center;
 }
@@ -173,12 +164,21 @@ main {
   gap: var(--gap__big);
 }
 
+section {
+  max-width: 100%;
+  margin-bottom: var(--gap__medium);
+}
+
 .invisible {
   display: none;
 }
 
 .text-center {
   text-align: center;
+}
+
+.description {
+  margin-bottom: var(--gap__small);
 }
 
 /*# sourceMappingURL=styles.css.map */

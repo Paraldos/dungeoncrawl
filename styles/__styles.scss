@@ -1,7 +1,4 @@
-@import "headings.scss";
-@import "input.scss";
-@import "label.scss";
-@import "section.scss";
+@import "htmlElements.scss";
 @import "basics.scss";
 @import "attribute.scss";
 @import "talente.scss";
@@ -49,10 +46,19 @@ main {
   gap: var(--gap__big);
 }
 
+section {
+  max-width: 100%;
+  margin-bottom: var(--gap__medium);
+}
+
 .invisible {
   display: none;
 }
 
 .text-center {
   text-align: center;
+}
+
+.description {
+  margin-bottom: var(--gap__small);
 }

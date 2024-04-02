@@ -11,7 +11,7 @@
 
   div {
     display: grid;
-    grid-template-columns: 1fr var(--size__value-box);
+    grid-template-columns: 1fr var(--size__value);
     gap: 0 10px;
   }
 }

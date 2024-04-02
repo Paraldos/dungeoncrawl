@@ -1,6 +1,6 @@
 .zustand {
   display: grid;
-  grid-template-columns: auto var(--size__value-box) 1fr;
+  grid-template-columns: auto var(--size__value) 1fr;
   gap: var(--gap__small) var(--gap__big);
   align-items: center;
 

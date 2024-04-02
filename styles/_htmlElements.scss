@@ -23,3 +23,30 @@ h1 {
     font-size: 12px;
   }
 }
+
+label {
+  width: 100%;
+  font-size: 10px;
+  padding: 0 5px;
+}
+
+input {
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+input[type="text"] {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  min-height: unset;
+  margin: 0 2px;
+  padding: 0;
+}
