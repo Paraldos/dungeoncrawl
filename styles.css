@@ -43,9 +43,10 @@ input[type=radio] {
 
 .attribute {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: var(--gap__small) 20px;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto;
+  gap: var(--gap__small) var(--gap__big);
   align-items: center;
+  justify-content: space-between;
 }
 .attribute label {
   text-align: center;
@@ -53,6 +54,7 @@ input[type=radio] {
 .attribute input {
   margin: auto;
   text-align: center;
+  justify-self: end;
   width: var(--size__value-box);
 }
 

@@ -12,10 +12,10 @@ new Header("Charaterkbogen", "h1");
 new Basics();
 new Header("Attribute");
 new Attribute();
-// new Header("Ausrüstung");
-// new Ausruestung();
-// new Header("Zustand");
-// new Zustand();
+new Header("Ausrüstung");
+new Ausruestung();
+new Header("Zustand");
+new Zustand();
 
 // new Header("Talente", ".right");
 // new Talente(playbook.startTalente, true);

@@ -1,6 +1,6 @@
 export default class Zustand {
   constructor() {
-    this.left = document.querySelector(".left");
+    this.main = document.querySelector("main");
     this.zustand = document.createElement("section");
     this.zustand.classList.add("zustand");
     this.zustand.innerHTML = `
@@ -13,6 +13,6 @@ export default class Zustand {
         <p>Erschöpfung</p>
         <input type="text" />
         <input type="text" />`;
-    this.left.appendChild(this.zustand);
+    this.main.appendChild(this.zustand);
   }
 }

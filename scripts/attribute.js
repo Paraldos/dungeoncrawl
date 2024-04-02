@@ -1,6 +1,6 @@
 export default class Attribute {
   constructor() {
-    this.left = document.querySelector(".left");
+    this.main = document.querySelector("main");
     this.attribute = document.createElement("section");
     this.attribute.classList.add("attribute");
     this.attribute.innerHTML = `
@@ -16,6 +16,6 @@ export default class Attribute {
         <input type="text" />
         <p>Weisheit</p>
         <input type="text" />`;
-    this.left.appendChild(this.attribute);
+    this.main.appendChild(this.attribute);
   }
 }

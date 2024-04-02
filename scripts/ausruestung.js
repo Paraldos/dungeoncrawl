@@ -1,9 +1,9 @@
 export default class Ausruestung {
   constructor() {
-    this.left = document.querySelector(".left");
+    this.main = document.querySelector("main");
     this.ausruestung = document.createElement("section");
     this.ausruestung.classList.add("ausruestung");
-    this.left.appendChild(this.ausruestung);
+    this.main.appendChild(this.ausruestung);
     this.createGepaeck();
     this.createItems();
     this.createVorraete();
