@@ -44,9 +44,10 @@ input[type="text"] {
 
 input[type="checkbox"],
 input[type="radio"] {
+  min-height: unset;
   width: 20px;
   height: 20px;
-  min-height: unset;
+  aspect-ratio: 1;
   margin: 0 2px;
   padding: 0;
 }

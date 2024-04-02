@@ -39,9 +39,10 @@ input[type=text] {
 
 input[type=checkbox],
 input[type=radio] {
+  min-height: unset;
   width: 20px;
   height: 20px;
-  min-height: unset;
+  aspect-ratio: 1;
   margin: 0 2px;
   padding: 0;
 }
@@ -70,14 +71,13 @@ input[type=radio] {
 }
 
 .talente {
-  display: grid;
-  grid-template-columns: 1fr var(--size__value-box) auto;
-  gap: 0 var(--gap__big);
-}
-.talente__checkboxes {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: var(--gap__medium);
+}
+.talente__talent {
+  display: flex;
+  gap: 10px var(--gap__medium);
 }
 
 .ausruestung {
