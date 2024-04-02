@@ -69,17 +69,13 @@ section {
 
 .attribute {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap__small) 20px;
+}
+.attribute div {
+  display: grid;
+  grid-template-columns: 1fr var(--size__value);
   align-items: center;
-}
-.attribute label {
-  text-align: center;
-}
-.attribute input {
-  margin: auto;
-  text-align: center;
-  width: var(--size__value-box);
 }
 
 .talente {
@@ -141,7 +137,7 @@ section {
 * {
   --color__text: rgb(0, 0, 0);
   --color__background: white;
-  --size__value-box: 60px;
+  --size__value: 60px;
   --gap__small: 5px;
   --gap__medium: 15px;
   --gap__big: 30px;

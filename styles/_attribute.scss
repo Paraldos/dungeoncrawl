@@ -1,16 +1,11 @@
 .attribute {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap__small) 20px;
-  align-items: center;
 
-  label {
-    text-align: center;
-  }
-
-  input {
-    margin: auto;
-    text-align: center;
-    width: var(--size__value-box);
+  div {
+    display: grid;
+    grid-template-columns: 1fr var(--size__value);
+    align-items: center;
   }
 }
