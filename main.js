@@ -5,6 +5,7 @@ import Basics from "./scripts/basics.js";
 import Attribute from "./scripts/attribute.js";
 import Zustand from "./scripts/zustand.js";
 import Ausruestung from "./scripts/ausruestung.js";
+import Talente from "./scripts/talente.js";
 
 new Header(playbook.name);
 new Description(playbook.description);
@@ -15,3 +16,4 @@ new Header("Ausrüstung");
 new Ausruestung();
 new Header("Zustand");
 new Zustand();
+new Talente();

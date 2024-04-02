@@ -2,36 +2,36 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap__medium);
-}
 
-.items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap__small) var(--gap__big);
-
-  div {
-    display: grid;
-    grid-template-columns: 1fr var(--size__value);
-    gap: 0 10px;
-  }
-}
-
-.gepaeck {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-
-  div {
+  &__gepaeck {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-.vorraete {
-  display: flex;
-  justify-content: space-between;
-
-  div {
-    display: flex;
     align-items: center;
+
+    input {
+      margin-left: 50px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap__small) var(--gap__big);
+
+    div {
+      display: grid;
+      grid-template-columns: 1fr var(--size__value);
+      gap: var(--gap__small);
+    }
+  }
+
+  &__vorraete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+    }
   }
 }

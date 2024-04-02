@@ -1,6 +1,6 @@
 export default class Attribute {
   constructor() {
-    this.left = document.querySelector(".left");
+    this.container = document.querySelector(".left");
     this.attribute = document.createElement("section");
     this.attribute.classList.add("attribute");
     this.attribute.innerHTML = `
@@ -11,7 +11,7 @@ export default class Attribute {
       ${this.getAttribut("Klugheit")}
       ${this.getAttribut("Weisheit")}
     `;
-    this.left.appendChild(this.attribute);
+    this.container.appendChild(this.attribute);
   }
 
   getAttribut(title) {
