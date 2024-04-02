@@ -1,12 +1,22 @@
 .basics {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: var(--gap__small) var(--gap__big);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap__medium);
   align-items: center;
 
-  input {
-    border: none;
-    border-bottom: 1px solid black;
-    border-radius: 0;
+  &__top {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--gap__small) var(--gap__big);
+    align-items: center;
+  }
+
+  &__bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap__small) var(--gap__big);
+    align-items: center;
   }
 }

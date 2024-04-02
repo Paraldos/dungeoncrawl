@@ -7,11 +7,11 @@ import Zustand from "./scripts/zustand.js";
 import Ausruestung from "./scripts/ausruestung.js";
 import Talente from "./scripts/talente.js";
 
-new Header(playbook.title);
-new Description(playbook.description);
-// new Basics();
-// new Header("Attribute");
-// new Attribute();
+new Header("Charaterkbogen", "h1");
+// new Description(playbook.description);
+new Basics();
+new Header("Attribute");
+new Attribute();
 // new Header("Ausrüstung");
 // new Ausruestung();
 // new Header("Zustand");

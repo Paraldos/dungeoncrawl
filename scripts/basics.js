@@ -1,19 +1,24 @@
 export default class Basics {
   constructor() {
-    this.left = document.querySelector(".left");
+    this.main = document.querySelector("main");
     this.basics = document.createElement("section");
     this.basics.classList.add("basics");
     this.basics.innerHTML = `
-        <p>Name</p>
-        <input type="text"></input>
-        <p>Aspekte</p>
-        <input type="text"></input>
-        <div></div>
-        <input type="text"></input>
-        <div></div>
-        <input type="text"></input>
-        <div></div>
-        <input type="text"></input>`;
-    this.left.appendChild(this.basics);
+        <div class="basics__top">
+          <label>Name</label>
+          <label>Level</label>
+          <input type="text"></input>
+          <input type="text"></input>
+        </div>
+        <div class="basics__bottom">
+          <label>Aspekte</label>
+          <label></label>
+          <input type="text"></input>
+          <input type="text"></input>
+          <input type="text"></input>
+          <input type="text"></input>
+        </div>
+      `;
+    this.main.appendChild(this.basics);
   }
 }
