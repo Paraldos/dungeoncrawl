@@ -9,10 +9,23 @@ export default class Zustand {
         <label>Verbrauch</label>
         <p>Treffer</p>
         <input type="text" />
-        <input type="text" />
+        <div>
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+        </div>
         <p>Erschöpfung</p>
         <input type="text" />
-        <input type="text" />`;
+        <div>
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+        </div>
+      `;
     this.container.appendChild(this.zustand);
   }
 }

@@ -1,10 +1,15 @@
 .zustand {
   display: grid;
-  grid-template-columns: auto var(--size__value) 1fr;
+  grid-template-columns: 20% var(--size__value) auto;
   gap: var(--gap__small) var(--gap__big);
   align-items: center;
 
   label {
     margin-bottom: -5px;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
   }
 }

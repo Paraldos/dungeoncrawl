@@ -114,12 +114,16 @@ input[type=radio] {
 
 .zustand {
   display: grid;
-  grid-template-columns: auto var(--size__value) 1fr;
+  grid-template-columns: 20% var(--size__value) auto;
   gap: var(--gap__small) var(--gap__big);
   align-items: center;
 }
 .zustand label {
   margin-bottom: -5px;
+}
+.zustand div {
+  display: flex;
+  justify-content: center;
 }
 
 * {
