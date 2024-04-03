@@ -8,7 +8,6 @@ export default class Basics {
           <p>Name</p>
           <input type="text"></input>
         </div>
-
         <div class="basics__bottom">
           <p>Aspekte</p>
           <input type="text"></input>

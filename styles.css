@@ -51,6 +51,10 @@ input[type=radio] {
   padding: 0;
 }
 
+.description {
+  margin-bottom: var(--gap__medium);
+}
+
 .basics {
   display: flex;
   flex-direction: column;
@@ -189,10 +193,6 @@ section {
 
 .text-center {
   text-align: center;
-}
-
-.description {
-  margin-bottom: var(--gap__small);
 }
 
 /*# sourceMappingURL=styles.css.map */
