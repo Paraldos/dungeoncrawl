@@ -1,5 +1,7 @@
+@import "./elemente/header";
 @import "htmlElements.scss";
-@import "nodetypes/description";
+
+@import "./nodetypes/description";
 @import "./nodetypes/basics.scss";
 @import "./nodetypes/attribute.scss";
 @import "./nodetypes/talente.scss";
