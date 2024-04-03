@@ -36,7 +36,7 @@ input {
   padding: 5px 10px;
 }
 
-input[type=text] {
+input[type="text"] {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -49,6 +49,7 @@ input[type=radio] {
   min-height: unset;
   width: 20px;
   height: 20px;
+  aspect-ratio: 1;
   aspect-ratio: 1;
   margin: 0 2px;
   padding: 0;
@@ -97,9 +98,14 @@ input[type=radio] {
   display: flex;
   flex-direction: column;
   gap: var(--gap__medium);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap__medium);
 }
 .talente__talent {
+.talente__talent {
   display: flex;
+  gap: 10px var(--gap__medium);
   gap: 10px var(--gap__medium);
 }
 

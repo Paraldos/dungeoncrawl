@@ -37,8 +37,8 @@ body {
 }
 
 main {
-  width: 1189px;
-  height: 841px;
+  height: 1189px;
+  width: 841px;
   margin: 0 auto;
   padding: 50px;
   background-color: var(--color__background);
@@ -59,4 +59,8 @@ section {
 
 .text-center {
   text-align: center;
+}
+
+.description {
+  margin-bottom: var(--gap__small);
 }
