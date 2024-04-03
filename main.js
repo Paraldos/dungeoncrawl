@@ -6,9 +6,8 @@ import Attribute from "./scripts/attribute.js";
 import Zustand from "./scripts/zustand.js";
 import Ausruestung from "./scripts/ausruestung.js";
 import Talente from "./scripts/talente.js";
-import Talente from "./scripts/talente.js";
 
-new Header(playbook.title);
+new Header(playbook.title, ".left", "h1");
 new Description(playbook.description);
 new Basics();
 new Header("Zustand", ".left", "h2");

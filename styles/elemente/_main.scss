@@ -1,0 +1,15 @@
+main {
+  width: 1189px;
+  height: 841px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: var(--color__background);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap__big);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap__big);
+}

@@ -1,5 +1,8 @@
-@import "htmlElements.scss";
 @import "./elemente/headings.scss";
+@import "./elemente/label";
+@import "./elemente/input.scss";
+@import "./elemente/section.scss";
+@import "./elemente/main.scss";
 
 @import "nodetypes/description";
 @import "./nodetypes/basics.scss";
@@ -36,35 +39,10 @@ body {
   font-style: normal;
 }
 
-main {
-  width: 1189px;
-  height: 841px;
-  margin: 0 auto;
-  padding: 50px;
-  background-color: var(--color__background);
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap__big);
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap__big);
-}
-
-section {
-  max-width: 100%;
-  margin-bottom: var(--gap__big);
-}
-
 .invisible {
   display: none;
 }
 
 .text-center {
   text-align: center;
-}
-
-.description {
-  margin-bottom: var(--gap__small);
 }
