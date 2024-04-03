@@ -1,79 +1,74 @@
 export default class Ausruestung {
   constructor() {
-    this.main = document.querySelector("main");
+    this.container = document.querySelector(".left");
     this.ausruestung = document.createElement("section");
     this.ausruestung.classList.add("ausruestung");
-    this.main.appendChild(this.ausruestung);
-    this.createGepaeck();
-    this.createItems();
-    this.createVorraete();
+    this.ausruestung.innerHTML = `
+        ${this.getGepaeck()}
+        ${this.getItems()}
+        ${this.getVorraete()}
+      `;
+    this.container.appendChild(this.ausruestung);
   }
 
-  createGepaeck() {
-    const gepaeck = document.createElement("div");
-    gepaeck.classList.add("gepaeck");
-    gepaeck.innerHTML = `
-      <p>Gepäck</p>
-      <div>
-        <input type="radio" name="load" />
+  getGepaeck() {
+    return `
+      <div class="ausruestung__gepaeck">
+        <p>Gepäck:</p>
+        <input type="checkbox" name="load" />
         <p>Leicht (3)</p>
-        <input type="radio" name="load" />
+        <input type="checkbox" name="load" />
         <p>Mittel (6)</p>
-        <input type="radio" name="load" />
+        <input type="checkbox" name="load" />
         <p>Schwer (9)</p>
-      </div>
-    `;
-    this.ausruestung.appendChild(gepaeck);
+      </div>`;
   }
 
-  createItems() {
-    const items = document.createElement("div");
-    items.classList.add("items");
-    items.innerHTML = `
-      <div>
-        <label>Werkzeug</label>
-        <label class="text-center">Bonus</label>
-        <input type="text" />
-        <input type="text" />
-      </div>
-      <div>
-        <label>Werkzeug</label>
-        <label class="text-center">Bonus</label>
-        <input type="text" />
-        <input type="text" />
-      </div>
-      <div>
-        <input type="text" />
-        <input type="text" />
-      </div>
-      <div>
-        <input type="text" />
-        <input type="text" />
-      </div>
-    `;
-    this.ausruestung.appendChild(items);
+  getItems() {
+    return `
+      <div class="ausruestung__items">
+        <div>
+          <label for="items">Werkzeug</label>
+          <label for="items">Bonus</label>
+        </div>
+        <div>
+          <label for="items">Werkzeug</label>
+          <label for="items">Bonus</label>
+        </div>
+        <div>
+          <input type="text"/>
+          <input type="text"/>
+        </div>
+        <div>
+          <input type="text"/>
+          <input type="text"/>
+        </div>
+        <div>
+          <input type="text"/>
+          <input type="text"/>
+        </div>
+        <div>
+          <input type="text"/>
+          <input type="text"/>
+        </div>
+      </div>`;
   }
 
-  createVorraete() {
-    const vorraete = document.createElement("div");
-    vorraete.classList.add("vorraete");
-    vorraete.innerHTML = `
-      <p>Verbrauchte Vorräte</p>
-      <div class="load__vorratspunkte">
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-      </div>
-    `;
-    this.ausruestung.appendChild(vorraete);
+  getVorraete() {
+    return `
+      <div class="ausruestung__vorraete">
+        <p>Verbrauchte Vorräte</p>
+        <div>
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+        </div>
+      </div>`;
   }
 }

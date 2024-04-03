@@ -1,0 +1,14 @@
+.zustand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  label {
+    margin-bottom: -5px;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+  }
+}
