@@ -26,8 +26,9 @@
   }
 
   &__vorraete {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap__big);
     align-items: center;
 
     div {

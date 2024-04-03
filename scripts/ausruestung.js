@@ -20,7 +20,7 @@ export default class Ausruestung {
         <input type="checkbox" name="load" />
         <p>Mittel (6)</p>
         <input type="checkbox" name="load" />
-        <p>Schwer (12)</p>
+        <p>Schwer (9)</p>
       </div>`;
   }
 
@@ -59,9 +59,6 @@ export default class Ausruestung {
       <div class="ausruestung__vorraete">
         <p>Verbrauchte Vorräte</p>
         <div>
-          <input type="checkbox" />
-          <input type="checkbox" />
-          <input type="checkbox" />
           <input type="checkbox" />
           <input type="checkbox" />
           <input type="checkbox" />

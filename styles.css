@@ -56,18 +56,19 @@ input[type=radio] {
 }
 
 .basics {
+  --label-size: 15%;
   display: flex;
   flex-direction: column;
   gap: var(--gap__small);
 }
 .basics__name {
   display: grid;
-  grid-template-columns: 12% 1fr;
+  grid-template-columns: var(--label-size) 1fr;
   gap: var(--gap__small) var(--gap__big);
 }
 .basics__bottom {
   display: grid;
-  grid-template-columns: 12% 1fr 1fr;
+  grid-template-columns: var(--label-size) 1fr 1fr;
   gap: var(--gap__small) var(--gap__big);
   align-items: center;
 }
@@ -75,6 +76,7 @@ input[type=radio] {
   border: none;
   border-bottom: 1px solid black;
   border-radius: 0;
+  box-shadow: none;
 }
 
 .attribute {
@@ -122,8 +124,9 @@ input[type=radio] {
   gap: var(--gap__small);
 }
 .ausruestung__vorraete {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap__big);
   align-items: center;
 }
 .ausruestung__vorraete div {
@@ -165,8 +168,7 @@ body {
   scroll-behavior: smooth;
   background-color: grey;
   font-size: 15px;
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -184,7 +186,7 @@ main {
 
 section {
   max-width: 100%;
-  margin-bottom: var(--gap__medium);
+  margin-bottom: var(--gap__big);
 }
 
 .invisible {
