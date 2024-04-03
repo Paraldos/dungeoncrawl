@@ -4,16 +4,20 @@ export default class Basics {
     this.basics = document.createElement("section");
     this.basics.classList.add("basics");
     this.basics.innerHTML = `
-        <p>Name</p>
-        <input type="text"></input>
-        <p>Aspekte</p>
-        <input type="text"></input>
-        <div></div>
-        <input type="text"></input>
-        <div></div>
-        <input type="text"></input>
-        <div></div>
-        <input type="text"></input>`;
+        <div class="basics__name">
+          <p>Name</p>
+          <input type="text"></input>
+        </div>
+
+        <div class="basics__bottom">
+          <p>Aspekte</p>
+          <input type="text"></input>
+          <input type="text"></input>
+          <p>Nachteil</p>
+          <input type="text"></input>
+          <input type="text"></input>
+        </div>
+        `;
     this.container.appendChild(this.basics);
   }
 }

@@ -1,8 +1,7 @@
 .zustand {
-  display: grid;
-  grid-template-columns: 20% var(--size__value) auto;
-  gap: var(--gap__small) var(--gap__big);
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 
   label {
     margin-bottom: -5px;

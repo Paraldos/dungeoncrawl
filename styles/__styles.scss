@@ -1,9 +1,9 @@
 @import "htmlElements.scss";
-@import "basics.scss";
-@import "attribute.scss";
-@import "talente.scss";
-@import "ausruestung.scss";
-@import "zustand.scss";
+@import "./nodetypes/basics.scss";
+@import "./nodetypes/attribute.scss";
+@import "./nodetypes/talente.scss";
+@import "./nodetypes/ausruestung.scss";
+@import "./nodetypes/zustand.scss";
 
 * {
   --color__text: rgb(0, 0, 0);

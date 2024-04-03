@@ -10,15 +10,13 @@ import Talente from "./scripts/talente.js";
 new Header(playbook.title);
 new Description(playbook.description);
 new Basics();
+new Header("Zustand");
+new Zustand();
 new Header("Attribute");
 new Attribute();
 new Header("Ausrüstung");
 new Ausruestung();
-new Header("Zustand");
-new Zustand();
 
 new Header("Talente", ".right");
 new Talente(playbook.startTalente, true);
 new Talente(playbook.erweiterteTalente);
-
-// // new Header("Erweiterte Talente", ".right");
