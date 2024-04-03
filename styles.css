@@ -33,7 +33,7 @@ input {
   padding: 5px 10px;
 }
 
-input[type=text] {
+input[type="text"] {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -41,8 +41,8 @@ input[type=text] {
   width: var(--size__value);
 }
 
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   min-height: unset;
   width: 20px;
   height: 20px;
@@ -217,9 +217,3 @@ section {
 .text-center {
   text-align: center;
 }
-
-.description {
-  margin-bottom: var(--gap__small);
-}
-
-/*# sourceMappingURL=styles.css.map */

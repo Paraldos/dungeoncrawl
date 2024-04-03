@@ -46,6 +46,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--gap__big);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap__big);
 }
 
 section {
