@@ -1,14 +1,17 @@
-@import "input.scss";
-@import "basics.scss";
-@import "attribute.scss";
-@import "talente.scss";
-@import "ausruestung.scss";
-@import "zustand.scss";
+@import "./elemente/header";
+@import "htmlElements.scss";
+
+@import "./nodetypes/description";
+@import "./nodetypes/basics.scss";
+@import "./nodetypes/attribute.scss";
+@import "./nodetypes/talente.scss";
+@import "./nodetypes/ausruestung.scss";
+@import "./nodetypes/zustand.scss";
 
 * {
   --color__text: rgb(0, 0, 0);
   --color__background: white;
-  --size__value-box: 60px;
+  --size__value: 60px;
   --gap__small: 5px;
   --gap__medium: 15px;
   --gap__big: 30px;
@@ -28,8 +31,7 @@ body {
   background-color: grey;
 
   font-size: 15px;
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -40,48 +42,15 @@ main {
   margin: 0 auto;
   padding: 50px;
   background-color: var(--color__background);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap__big);
 }
 
 section {
   max-width: 100%;
   margin-bottom: var(--gap__big);
-}
-
-h1,
-h2 {
-  color: white;
-  background-color: rgb(71, 71, 71);
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
-  padding: 5px;
-  padding-bottom: 3px;
-
-  margin-bottom: 10px;
-
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  i {
-    padding: 0 20px;
-    font-size: 12px;
-  }
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-label {
-  width: 100%;
-  font-size: 10px;
-  padding: 0 5px;
 }
 
 .invisible {
