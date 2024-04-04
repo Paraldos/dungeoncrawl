@@ -30,6 +30,7 @@
     grid-template-columns: 1fr 1fr;
     gap: var(--gap__big);
     align-items: center;
+    justify-content: center;
 
     div {
       display: flex;
