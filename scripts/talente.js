@@ -1,23 +1,25 @@
 export default class Talente {
-  constructor(arrayOfTalente, checked = false) {
+  constructor(arrayOfTalente) {
     this.container = document.querySelector(".right");
     this.talente = document.createElement("section");
     this.talente.classList.add("talente");
     this.container.appendChild(this.talente);
     arrayOfTalente.forEach((talent) => {
-      this.createTalent(talent.title, talent.cost, talent.description, checked);
+      this.createTalent(talent);
     });
   }
 
-  createTalent(title, cost, description, checked) {
-    const talent = document.createElement("div");
-    talent.classList.add("talente__talent");
-    talent.innerHTML = `
+  createTalent(talent) {
+    const element = document.createElement("div");
+    element.classList.add("talente__talent");
+    element.innerHTML = `
         <input type="checkbox" name="talente__checkbox" ${
-          checked ? "checked" : ""
+          talent.starttalent ? "checked" : ""
         }/>
-        <p><b>${title} ${cost ? "(" + cost + ")" : ""}</b>: ${description}</p>
+        <p><b>${talent.title} ${
+      talent.cost ? "(" + talent.cost + ")" : ""
+    }</b>: ${talent.description}</p>
     `;
-    this.talente.appendChild(talent);
+    this.talente.appendChild(element);
   }
 }

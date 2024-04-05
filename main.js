@@ -18,5 +18,4 @@ new Header("Ausrüstung", ".left", "h2");
 new Ausruestung();
 
 new Header("Talente", ".right", "h2");
-new Talente(playbook.startTalente, true);
-new Talente(playbook.erweiterteTalente);
+new Talente(playbook.talente);

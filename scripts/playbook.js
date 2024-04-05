@@ -3,15 +3,7 @@ class Krieger {
     this.title = "Krieger";
     this.description =
       "Du bist schnell, stark und militant. Kampf ist deine Spezialität, und du kannst mehr Schaden austeilen und wegstecken als andere.";
-    this.startTalente = [
-      {
-        title: "Fitness",
-        cost: "Sofort, 1 Ausdauer",
-        description:
-          "Du erhältst +1 Würfel auf eine körperliche Probe die nichts mit Kampf zu tun hat.",
-      },
-    ];
-    this.erweiterteTalente = [
+    this.talente = [
       {
         title: "Anführer",
         cost: "Sofort, 1 Ausdauer",
@@ -38,6 +30,13 @@ class Krieger {
         title: "Finte",
         cost: "Sofort, 1 Ausdauer",
         description: "Du erhältst +1 Würfel auf eine Nahkampf Attacke.",
+      },
+      {
+        title: "Fitness",
+        cost: "Sofort, 1 Ausdauer",
+        starttalent: true,
+        description:
+          "Du erhältst +1 Würfel auf eine körperliche Probe die nichts mit Kampf zu tun hat.",
       },
       {
         title: "Gegenschlag",
