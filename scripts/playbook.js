@@ -39,16 +39,16 @@ class Krieger {
           "Du erhältst +1 Würfel auf eine körperliche Probe die nichts mit Kampf zu tun hat.",
       },
       {
-        title: "Gegenschlag",
-        cost: "Parade, 1 Ausdauer",
-        description:
-          "Kündige Gegenschlag an, bevor du dich verteidigst. Der Angreifer erleidet einen Treffer, wen deine Probe gelingt.",
-      },
-      {
         title: "Kampfrausch",
         cost: "Aktion, 1 Ausdauer",
         description:
-          "Du nutzt deine Aktion um zwei Attacken ausführen. Nicht kompatible mit langsamen Waffen.",
+          "Nutzt deine Aktion um zwei Attacken auszuführen. Nicht kompatible mit langsamen Waffen.",
+      },
+      {
+        title: "Konter",
+        cost: "Parade, 1 Ausdauer",
+        description:
+          "Kündige Konter an, bevor du dich verteidigst. Der Angreifer erleidet einen Treffer, wen deine Probe gelingt.",
       },
       {
         title: "Kommandos",
