@@ -14,7 +14,7 @@ export default class Zustand {
           <input type="checkbox" />
         </div>
 
-        <p>Erschöpfung</p>
+        <p>Stress</p>
         <div>
           <input type="checkbox" />
           <input type="checkbox" />

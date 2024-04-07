@@ -6,18 +6,18 @@ class Krieger {
     this.talente = [
       {
         title: "Anführer",
-        cost: "Sofort, 1 Ausdauer",
+        cost: "Sofort, 1 Stress",
         description:
           "Du erhältst +1 Würfel auf eine Probe die mit Taktik, Strategie oder Logistik zu tun hat.",
       },
       {
         title: "Ausweichen",
-        cost: "Sofort, 1 Ausdauer",
+        cost: "Sofort, 1 Stress",
         description: "Du erhältst +1 Würfel auf eine Parade.",
       },
       {
         title: "Bedrohliche Aura",
-        cost: "Sofort, 1 Ausdauer",
+        cost: "Sofort, 1 Stress",
         description:
           "Du erhältst +1 Würfel auf eine Probe die mit Einschüchtern oder Provozieren zu tun hat.",
       },
@@ -28,31 +28,31 @@ class Krieger {
       },
       {
         title: "Finte",
-        cost: "Sofort, 1 Ausdauer",
+        cost: "Sofort, 1 Stress",
         description: "Du erhältst +1 Würfel auf eine Nahkampf Attacke.",
       },
       {
         title: "Fitness",
-        cost: "Sofort, 1 Ausdauer",
+        cost: "Sofort, 1 Stress",
         starttalent: true,
         description:
           "Du erhältst +1 Würfel auf eine körperliche Probe die nichts mit Kampf zu tun hat.",
       },
       {
         title: "Kampfrausch",
-        cost: "Aktion, 1 Ausdauer",
+        cost: "Aktion, 1 Stress",
         description:
           "Nutzt deine Aktion um zwei Attacken auszuführen. Nicht kompatible mit langsamen Waffen.",
       },
       {
         title: "Konter",
-        cost: "Parade, 1 Ausdauer",
+        cost: "Parade, 1 Stress",
         description:
           "Kündige Konter an, bevor du dich verteidigst. Der Angreifer erleidet einen Treffer, wen deine Probe gelingt.",
       },
       {
         title: "Kommandos",
-        cost: "Aktion, 1 Ausdauer",
+        cost: "Aktion, 1 Stress",
         description:
           "Deine Verbündeten erhalten +1 Würfel auf ihre nächste Probe. Verfällt nach einer Runde.",
       },
@@ -64,7 +64,7 @@ class Krieger {
       },
       {
         title: "Zielen",
-        cost: "Sofort, 1 Ausdauer",
+        cost: "Sofort, 1 Stress",
         description: "Du erhältst +1 Würfel auf eine Fernkampf Attacke.",
       },
     ];
