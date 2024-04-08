@@ -13,7 +13,7 @@
 
   &__bottom {
     display: grid;
-    grid-template-columns: var(--label-size) 1fr 1fr;
+    grid-template-columns: var(--label-size) 1fr;
     gap: var(--gap__small) var(--gap__big);
     align-items: center;
   }

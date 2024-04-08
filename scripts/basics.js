@@ -9,14 +9,11 @@ export default class Basics {
           <input type="text"></input>
         </div>
         <div class="basics__bottom">
-          <p>Hintergründe</p>
-          <input type="text"></input>
-          <input type="text"></input>
-          <div></div>
-          <input type="text"></input>
+          <p>Eigenheiten</p>
           <input type="text"></input>
           <div></div>
           <input type="text"></input>
+          <div></div>
           <input type="text"></input>
         </div>
         `;
