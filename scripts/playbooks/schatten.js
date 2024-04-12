@@ -7,6 +7,7 @@ export default class Schatten {
       {
         title: "Assassine",
         cost: "Sofort, 1 Stress",
+        starttalent: true,
         description:
           "Du erhältst +2, wen du jemanden aus dem Hinterhalt attackierst.",
       },
