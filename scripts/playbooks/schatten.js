@@ -14,6 +14,7 @@ export default class Schatten {
       {
         title: "Ausweichen ",
         cost: "Sofort, 1 Stress",
+        starttalent: true,
         description: "Du erhältst +1 auf eine Parade.",
       },
       {
