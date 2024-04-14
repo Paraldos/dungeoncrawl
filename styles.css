@@ -157,6 +157,7 @@ main {
 }
 .ausruestung__vorraete div {
   display: flex;
+  justify-self: end;
 }
 
 .zustand {
