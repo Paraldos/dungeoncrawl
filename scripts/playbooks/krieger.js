@@ -7,6 +7,7 @@ export default class Krieger {
       {
         title: "Anführer",
         cost: "Sofort, 1 Stress",
+        starttalent: true,
         description:
           "Du erhältst +1 Würfel auf eine Probe die mit Taktik, Strategie oder Logistik zu tun hat.",
       },
