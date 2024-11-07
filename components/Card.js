@@ -2,7 +2,7 @@ export default class Card {
     constructor(parent, config = {}) {
         this.parent = parent;
         this.headline = config.headline || 'Headline';
-        this.txt = config.txt || ['Text 1', 'Text 2'];
+        this.txt = config.txt || ['Lorem ipsum dolor sit amet, consetetur sadipscing elitr.', 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'];
         this.card = this.createCard();
         this.addHeadline();
         this.addText();

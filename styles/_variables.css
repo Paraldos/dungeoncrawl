@@ -1,3 +1,6 @@
 * {
     --color__black: red;
+
+    --color__body-background: gray;
+    --color__page-background: white;
 }
