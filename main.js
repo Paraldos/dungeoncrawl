@@ -8,10 +8,14 @@ class main {
         this.body.cleanUp();
         this.page = new Page();
 
+        new Card(this.page.page, {headline: 'Test', txt: ['Test Text 1', 'Test Text 2']});
         new Card(this.page.page);
         new Card(this.page.page);
         new Card(this.page.page);
         new Card(this.page.page);
-   }
+        new Card(this.page.page);
+        new Card(this.page.page);
+
+    }
 }
 new main();
