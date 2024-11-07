@@ -19,7 +19,8 @@ export default class Card {
 
   addHeadline() {
     if (!this.headline) return;
-    this.card.innerHTML = `<h2 class="card__headline" >${this.headline}</h2>`;
+    this.card.innerHTML += `<h2 class="card__headline" >${this.headline}</h2>`;
+    this.card.innerHTML += `<p">✦ ✦ ✦ ✦ ✦</p>`;
   }
 
   addType() {

@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  font-family: "OldPersian";
-  src: url("/assets/fonts/NotoSansOldPersian-Regular.ttf") format("truetype");
+  font-family: "Runes";
+  src: url("/assets/fonts/NotoSansRunic-Regular.ttf") format("truetype");
 }
 
 @font-face {
