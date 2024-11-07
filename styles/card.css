@@ -1,0 +1,23 @@
+
+.card {
+    width: 57mm;
+    height: 88.9mm;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    .card__headline {
+        background-color: transparent;
+        text-align: center;
+    }
+
+    .card__txt {
+        background-color: transparent;
+        text-align: center;
+    }
+}
