@@ -1,29 +1,18 @@
+@import "./styles/_fonts.css";
 @import "./styles/_variables.css";
+@import "./styles/headlines.css";
 @import "./styles/card.css";
+@import "./styles/section.css";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
 }
 
 body {
-    background-color: var(--color__body-background);
-    min-height: 100%;
-    min-width: 100%;
-}
-
-section {
-    width: 210mm;
-    height: 297mm;
-    background-color: var(--color__page-background);
-    margin: 10px auto;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    padding: 30px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: top;
+  background-color: var(--color__body-background);
+  min-height: 100%;
+  min-width: 100%;
 }
