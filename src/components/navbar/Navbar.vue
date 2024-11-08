@@ -30,6 +30,7 @@ const handleUpdateSelected = (index) => {
             :key="page.title"
             :title="page.title"
             :selected="page.selected"
+            :index="index"
             @update:selected="handleUpdateSelected(index)"
           />
         </div>

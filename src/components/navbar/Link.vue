@@ -11,9 +11,7 @@ const props = defineProps({
     default: false,
   },
 });
-
 const emits = defineEmits(["update:selected"]);
-
 const classes = {
   default:
     "btn rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white",
@@ -23,7 +21,7 @@ const classes = {
 
 const handleClick = () => {
   if (props.selected) return;
-  emits("update:selected", true);
+  emits("update:selected", props.index);
 };
 </script>
 
