@@ -1,6 +1,20 @@
 <script setup>
+import { defineProps, defineEmits } from "vue";
 import Logo from "@/components/navbar/Logo.vue";
 import Link from "@/components/navbar/Link.vue";
+
+const props = defineProps({
+  pages: {
+    type: Array,
+    required: true,
+  },
+});
+
+const emits = defineEmits(["update:selected"]);
+
+const handleUpdateSelected = (index) => {
+  emits("update:selected", index);
+};
 </script>
 
 <template>
@@ -11,9 +25,13 @@ import Link from "@/components/navbar/Link.vue";
       <Logo />
       <div class="hidden sm:ml-6 sm:block">
         <div class="flex space-x-4">
-          <Link title="Regeln" selected="true" />
-          <Link title="Charakterbogen" />
-          <Link title="Karten" />
+          <Link
+            v-for="(page, index) in props.pages"
+            :key="page.title"
+            :title="page.title"
+            :selected="page.selected"
+            @update:selected="handleUpdateSelected(index)"
+          />
         </div>
       </div>
     </div>

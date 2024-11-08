@@ -1,7 +1,7 @@
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, defineEmits } from "vue";
 
-defineProps({
+const props = defineProps({
   title: {
     type: String,
     default: "NavElement",
@@ -12,15 +12,32 @@ defineProps({
   },
 });
 
-const bert = {
+const emits = defineEmits(["update:selected"]);
+
+const classes = {
   default:
-    "rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white",
-  selected: "rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white",
+    "btn rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white",
+  selected:
+    "btn rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white",
+};
+
+const handleClick = () => {
+  if (props.selected) return;
+  emits("update:selected", true);
 };
 </script>
 
 <template>
-  <a href="#" :class="selected ? bert.selected : bert.default">{{ title }}</a>
+  <div
+    :class="props.selected ? classes.selected : classes.default"
+    @click="handleClick"
+  >
+    {{ props.title }}
+  </div>
 </template>
 
-<style></style>
+<style>
+.btn {
+  cursor: pointer;
+}
+</style>
