@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <p>Karten</p>
+  <div class="">Test</div>
 </template>
 
 <style></style>
