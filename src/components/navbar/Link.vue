@@ -13,8 +13,8 @@ const props = defineProps({
 });
 const emits = defineEmits(["update:selected"]);
 const classes = {
-  default: "",
-  selected: "",
+  default: "btn",
+  selected: "btn btn-selected",
 };
 
 const handleClick = () => {
@@ -24,16 +24,47 @@ const handleClick = () => {
 </script>
 
 <template>
-  <div
+  <button
     :class="props.selected ? classes.selected : classes.default"
     @click="handleClick"
   >
     {{ props.title }}
-  </div>
+  </button>
 </template>
 
 <style>
 .btn {
+  margin: 10px;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s;
+  background-size: 200% auto;
+  color: var(--c11);
+  border-radius: 4px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  border: 1px solid var(--c8);
+  background-image: linear-gradient(
+    45deg,
+    var(--c5) 0%,
+    var(--c9) 50%,
+    var(--c5) 100%
+  );
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
 </style>

@@ -1,3 +1,22 @@
 * {
-  --background-color: red;
+  --c1: #06080a;
+  --c2: #080e12;
+  --c3: #09151b;
+  --c4: #081e26;
+  --c5: #052a32;
+  --c6: #184042;
+  --c7: #204c48;
+  --c8: #365c51;
+  --c9: #4e715f;
+  --c10: #809a80;
+  --c11: #9eaf99;
+
+  --size__navbar-height: 60px;
+
+  --color__navbar-background: var(--c1);
+  --color__navbar-button-border: var(--c6);
+  --color__navbar-button-background: var(--c4);
+  --color__navbar-button-background--hover: var(--c6);
+  --color__navbar-button-background--selected: var(--c6);
+  --color__navbar-text: var(--c11);
 }

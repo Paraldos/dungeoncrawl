@@ -13,7 +13,7 @@
 
 <style>
 .logo {
-  fill: white;
+  fill: var(--color__navbar-text);
   height: 100%;
   aspect-ratio: 1;
 }

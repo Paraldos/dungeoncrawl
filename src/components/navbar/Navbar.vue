@@ -18,11 +18,11 @@ const handleUpdateSelected = (index) => {
 </script>
 
 <template>
-  <nav class="bg-gray-800 p-4">
-    <div class="navbar">
+  <nav>
+    <div class="navbar__content">
       <Logo />
       <div class="hidden sm:ml-6 sm:block">
-        <div class="flex space-x-4">
+        <div class="navbar__links">
           <Link
             v-for="(page, index) in props.pages"
             :key="page.title"
@@ -38,9 +38,23 @@ const handleUpdateSelected = (index) => {
 </template>
 
 <style>
-.navbar {
-  height: 50px;
-  background-color: red;
-  padding: 10px;
+nav {
+  height: var(--size__navbar-height);
+  background-color: var(--color__navbar-background);
+}
+
+.navbar__content {
+  height: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 30px;
+  margin: auto;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 10px;
 }
 </style>
