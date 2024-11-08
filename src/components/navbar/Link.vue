@@ -39,12 +39,12 @@ const handleClick = () => {
   text-transform: uppercase;
   transition: 0.3s;
   background-size: 200% auto;
-  color: var(--c11);
+  color: var(--color__navbar-text);
   border-radius: 4px;
   display: block;
   border: 0px;
   font-weight: 700;
-  border: 1px solid var(--c8);
+  border: 1px solid var(--color__navbar-button-border);
   background-image: linear-gradient(
     45deg,
     var(--color__navbar-button-1) 0%,
