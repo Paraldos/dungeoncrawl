@@ -11,12 +11,17 @@
   --c10: #809a80;
   --c11: #9eaf99;
 
-  --size__navbar-height: 60px;
+  --size__navbar-height: 70px;
 
   --color__navbar-background: var(--c1);
+  --color__navbar-text: var(--c11);
+  --color__navbar-text--hover: white;
+
+  --color__navbar-button-1: var(--c5);
+  --color__navbar-button-2: var(--c9);
+
   --color__navbar-button-border: var(--c6);
   --color__navbar-button-background: var(--c4);
   --color__navbar-button-background--hover: var(--c6);
   --color__navbar-button-background--selected: var(--c6);
-  --color__navbar-text: var(--c11);
 }

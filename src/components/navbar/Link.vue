@@ -34,7 +34,6 @@ const handleClick = () => {
 
 <style>
 .btn {
-  margin: 10px;
   padding: 10px 30px;
   text-align: center;
   text-transform: uppercase;
@@ -48,9 +47,9 @@ const handleClick = () => {
   border: 1px solid var(--c8);
   background-image: linear-gradient(
     45deg,
-    var(--c5) 0%,
-    var(--c9) 50%,
-    var(--c5) 100%
+    var(--color__navbar-button-1) 0%,
+    var(--color__navbar-button-2) 50%,
+    var(--color__navbar-button-1) 100%
   );
   cursor: pointer;
   user-select: none;
@@ -58,13 +57,14 @@ const handleClick = () => {
   touch-action: manipulation;
 }
 
+.btn-selected,
 .btn:hover {
   background-position: right center;
-  color: #fff;
+  color: var(--color__navbar-text--hover);
   text-decoration: none;
 }
 
 .btn:active {
-  transform: scale(0.95);
+  transform: scale(0.93);
 }
 </style>

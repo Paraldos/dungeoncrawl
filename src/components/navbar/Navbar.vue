@@ -48,13 +48,13 @@ nav {
   max-width: 1200px;
   display: flex;
   align-items: center;
-  gap: 30px;
-  padding: 10px 30px;
+  gap: 50px;
+  padding: 15px 30px;
   margin: auto;
 }
 
 .navbar__links {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 </style>
