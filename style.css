@@ -4,12 +4,12 @@
 @import "./styles/headlines.css";
 @import "./styles/button.css";
 @import "./styles/navbar.css";
+@import "./styles/karten.css";
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: red;
 }
 
 body {
