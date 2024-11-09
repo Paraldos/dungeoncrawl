@@ -1,18 +1,21 @@
 import page from "../Page.js";
-import karten from "../../data/Karten.js";
+import listOfCards from "../../data/Karten.js";
+import Karte from "./Karte.js";
+import KartenSelector from "./KartenSelector.js";
 
 export default class Karten extends page {
   constructor() {
     super(".karten");
-    this.addKarten(karten);
+    this.showAll();
+    new KartenSelector(this);
   }
 
-  getGroupsOfCards(arrayOfCards) {
-    const groups = [];
-    for (let i = 0; i < arrayOfCards.length; i += 8) {
-      groups.push(arrayOfCards.slice(i, i + 8));
-    }
-    return groups;
+  showAll() {
+    this.addKarten(listOfCards);
+  }
+
+  showFavorites() {
+    this.addKarten(listOfCards.filter((card) => card.favorite));
   }
 
   addKarten(arrayOfCards) {
@@ -21,30 +24,16 @@ export default class Karten extends page {
     groupsOfCards.forEach((group) => {
       const section = this.addSection();
       group.forEach((card) => {
-        this.addCard(section, card);
+        new Karte(section, card);
       });
     });
   }
 
-  addCard(section, cardData) {
-    const cardDiv = document.createElement("div");
-    cardDiv.classList.add("karte");
-    cardDiv.innerHTML = `
-		<h2>${cardData.title}</h2>
-		<p>${cardData.type}</p>
-		<ul>
-			${cardData.description.map((desc) => `<li>${desc}</li>`).join("")}
-		</ul>
-	`;
-    cardDiv.addEventListener("click", () =>
-      this.onCardclick(cardDiv, cardData)
-    );
-    section.appendChild(cardDiv);
-  }
-
-  onCardclick(card, cardData) {
-    card.classList.toggle("karte__selected");
-    karten.find((karte) => karte.title === cardData.title).selected =
-      card.classList.contains("karte__selected");
+  getGroupsOfCards(arrayOfCards) {
+    const groups = [];
+    for (let i = 0; i < arrayOfCards.length; i += 8) {
+      groups.push(arrayOfCards.slice(i, i + 8));
+    }
+    return groups;
   }
 }

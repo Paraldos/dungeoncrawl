@@ -43,7 +43,7 @@
     cursor: pointer;
   }
 
-  .karten__selector {
+  .karten-selector {
     background-color: var(--color__selector-background);
     padding: 20px;
     border-radius: 4px;

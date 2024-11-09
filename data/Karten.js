@@ -1,4 +1,4 @@
-const karten = [
+const listOfCards = [
   {
     id: 1,
     title: "Schwert",
@@ -46,4 +46,4 @@ const karten = [
     description: ["+2 auf eine Nahkampf Attacke"],
   },
 ];
-export default karten;
+export default listOfCards;
