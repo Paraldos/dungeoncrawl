@@ -1,6 +1,15 @@
 export default class KartenSelector {
   constructor(parent) {
     this.parent = parent;
+    this.parent.container.innerHTML = `
+      <div class="karten-selector">
+        <button class="karten-selector__btn btn-selected">Alle</button>
+        <button class="karten-selector__btn">Werkzeuge</button>
+        <button class="karten-selector__btn">Konsumgüter</button>
+        <button class="karten-selector__btn">Runen</button>
+        <button class="karten-selector__btn">Favoriten</button>
+      </div>
+    `;
     this.btns = document.querySelectorAll(".karten-selector__btn");
     this.selector = document.querySelector(".karten-selector");
 

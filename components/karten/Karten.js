@@ -5,9 +5,9 @@ import KartenSelector from "./KartenSelector.js";
 
 export default class Karten extends page {
   constructor() {
-    super(".karten");
-    this.showAll();
+    super(".Karten");
     new KartenSelector(this);
+    this.showAll();
   }
 
   showTools() {
