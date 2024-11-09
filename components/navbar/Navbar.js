@@ -21,30 +21,28 @@ export default class Navbar {
     `;
     this.navLinks = document.querySelectorAll(".navbar__link");
     this.pages = document.querySelectorAll(".page");
-    this.navLinks.forEach((btn, index) => {
-      btn.addEventListener("click", () => this.onClickNavLink(btn, index));
+    this.navLinks.forEach((btn) => {
+      btn.addEventListener("click", () => this.onClickNavLink(btn));
     });
   }
 
-  onClickNavLink(selectedBtn, index) {
+  onClickNavLink(selectedBtn) {
     this.navLinks.forEach((btn) => {
-      btn.classList.remove("btn-selected");
+      btn == selectedBtn
+        ? btn.classList.add("btn-selected")
+        : btn.classList.remove("btn-selected");
     });
-    selectedBtn.classList.add("btn-selected");
 
     const selectedPage = document.querySelector(`.${selectedBtn.innerHTML}`);
 
-    console.log(selectedPage);
-
     if (selectedPage) {
       this.pages.forEach((page) => {
-        page.classList.add("hidden");
+        page == selectedPage
+          ? page.classList.remove("hidden")
+          : page.classList.add("hidden");
       });
-      selectedPage.classList.remove("hidden");
     } else {
-      this.pages.forEach((page) => {
-        page.classList.remove("hidden");
-      });
+      this.pages.forEach((page) => page.classList.remove("hidden"));
     }
   }
 }
