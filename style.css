@@ -3,6 +3,8 @@
 @import "./styles/section.css";
 @import "./styles/headlines.css";
 @import "./styles/button.css";
+@import "./styles/navbar.css";
+@import "./styles/karten.css";
 
 * {
   box-sizing: border-box;
@@ -14,4 +16,8 @@ body {
   background-color: var(--color__background);
   color: var(--color__text);
   font-family: "Roboto", sans-serif;
+}
+
+.hidden {
+  display: none;
 }
