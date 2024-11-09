@@ -1,76 +1,56 @@
 <script setup>
 import Karte from "./Karte.vue";
 
-const carten = [
+const karten = [
   {
     id: 1,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
+    title: "Schwert",
+    type: "Werkzeug",
+    description: ["+W6 auf Nahkampf Attacken"],
   },
   {
     id: 2,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
+    title: "Bogen",
+    type: "Werkzeug",
+    description: ["+W6 auf Fernkampf Attacken"],
   },
   {
     id: 3,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
+    title: "Axt",
+    type: "Werkzeug",
+    description: ["+W6 auf Nahkampf Attacken"],
   },
   {
     id: 4,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
+    title: "Kettenhemd",
+    type: "Werkzeug",
+    description: ["+W6 auf Verteidigung"],
   },
   {
     id: 5,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
+    title: "Heiltrank",
+    type: "Konsumgut",
+    description: ["Heilt 1 TP"],
   },
   {
     id: 6,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
+    title: "Wuchtiger Schlag",
+    type: "Rune",
+    description: ["+2 auf eine Nahkampf Attacke"],
   },
   {
     id: 7,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
-  },
-  {
-    id: 8,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
-  },
-  {
-    id: 9,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
-  },
-  {
-    id: 10,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
-  },
-  {
-    id: 11,
-    title: "Title",
-    type: "type",
-    description: ["Beschreibung 1", "Beschreibung 2"],
+    title: "Vorräte",
+    type: "Konsumgut",
+    description: [
+      "Klassische Abenteurer Ausrüstung wie z.B. Fackeln, Seile, oder Vorräte",
+      "Hat 3 Ladungen und jede Benutzung verbraucht eine Ladung",
+      "◯ ◯ ◯",
+    ],
   },
 ];
 
-const groupCards = (cards, groupSize) => {
+const getGroupsOfCards = (cards, groupSize) => {
   const groups = [];
   for (let i = 0; i < cards.length; i += groupSize) {
     groups.push(cards.slice(i, i + groupSize));
@@ -78,12 +58,16 @@ const groupCards = (cards, groupSize) => {
   return groups;
 };
 
-const groupedCards = groupCards(carten, 8);
+const groupsOfCards = getGroupsOfCards(karten, 8);
 </script>
 
 <template>
   <div>
-    <section v-for="(group, index) in groupedCards" :key="index" class="karten">
+    <section
+      v-for="(group, index) in groupsOfCards"
+      :key="index"
+      class="karten"
+    >
       <Karte
         v-for="karte in group"
         :key="karte.id"

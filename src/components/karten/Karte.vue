@@ -20,7 +20,7 @@ const props = defineProps({
 <template>
   <div class="karte">
     <h2>{{ props.title }}</h2>
-    <h3>{{ props.type }}</h3>
+    <p>{{ props.type }}</p>
     <ul>
       <li v-for="desc in props.description" :key="desc">{{ desc }}</li>
     </ul>
@@ -40,7 +40,16 @@ const props = defineProps({
   justify-content: center;
 }
 
+p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
 ul {
   list-style-type: none;
+
+  li {
+    margin-bottom: 5px;
+  }
 }
 </style>
