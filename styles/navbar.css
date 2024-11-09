@@ -1,0 +1,24 @@
+nav {
+  height: var(--size__navbar-height);
+
+  .logo {
+    fill: var(--color__navbar-text);
+    height: 100%;
+    aspect-ratio: 1;
+  }
+}
+
+.navbar__content {
+  height: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 15px 30px;
+  margin: auto;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 20px;
+}
