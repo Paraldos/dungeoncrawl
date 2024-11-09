@@ -27,20 +27,24 @@ export default class Karten extends page {
   }
 
   addCard(section, cardData) {
-    const card = document.createElement("div");
-    card.classList.add("karte");
-    card.innerHTML = `
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("karte");
+    cardDiv.innerHTML = `
 		<h2>${cardData.title}</h2>
 		<p>${cardData.type}</p>
 		<ul>
 			${cardData.description.map((desc) => `<li>${desc}</li>`).join("")}
 		</ul>
 	`;
-    card.addEventListener("click", () => this.onCardclick(card));
-    section.appendChild(card);
+    cardDiv.addEventListener("click", () =>
+      this.onCardclick(cardDiv, cardData)
+    );
+    section.appendChild(cardDiv);
   }
 
-  onCardclick(card) {
+  onCardclick(card, cardData) {
     card.classList.toggle("karte__selected");
+    karten.find((karte) => karte.title === cardData.title).selected =
+      card.classList.contains("karte__selected");
   }
 }

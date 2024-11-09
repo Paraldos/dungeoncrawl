@@ -42,4 +42,15 @@
     transform: scale(1.05);
     cursor: pointer;
   }
+
+  .karten__selector {
+    background-color: var(--color__selector-background);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px auto;
+    width: 29.7cm;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+  }
 }

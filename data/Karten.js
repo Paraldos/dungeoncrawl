@@ -31,12 +31,6 @@ const karten = [
   },
   {
     id: 6,
-    title: "Wuchtiger Schlag",
-    type: "Rune",
-    description: ["+2 auf eine Nahkampf Attacke"],
-  },
-  {
-    id: 7,
     title: "Vorräte",
     type: "Konsumgut",
     description: [
@@ -44,6 +38,12 @@ const karten = [
       "Hat 3 Ladungen und jede Benutzung verbraucht eine Ladung",
       "◯ ◯ ◯",
     ],
+  },
+  {
+    id: 7,
+    title: "Wuchtiger Schlag",
+    type: "Rune",
+    description: ["+2 auf eine Nahkampf Attacke"],
   },
 ];
 export default karten;
