@@ -1,3 +1,4 @@
+@import "./styles/_fonts.css";
 @import "./styles/_variables.css";
 @import "./styles/section.css";
 
@@ -10,4 +11,5 @@
 body {
   background-color: var(--color__background);
   color: var(--color__text);
+  font-family: "Roboto", sans-serif;
 }
