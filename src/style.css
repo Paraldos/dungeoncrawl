@@ -1,6 +1,7 @@
 @import "./styles/_fonts.css";
 @import "./styles/_variables.css";
 @import "./styles/section.css";
+@import "./styles/headlines.css";
 
 * {
   box-sizing: border-box;

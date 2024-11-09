@@ -35,16 +35,9 @@ const props = defineProps({
   width: 5.9cm;
   height: 9.1cm;
   text-align: center;
-}
-
-h2 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-h3 {
-  margin-bottom: 10px;
-  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ul {
