@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <p>Charakterbogen</p>
+  <section>Charakterbogen</section>
 </template>
 
 <style></style>

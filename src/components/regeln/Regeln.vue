@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <p>Regeln</p>
+  <section>Regeln</section>
 </template>
 
 <style></style>
