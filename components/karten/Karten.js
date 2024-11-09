@@ -10,12 +10,29 @@ export default class Karten extends page {
     new KartenSelector(this);
   }
 
+  showTools() {
+    this.addKarten(listOfCards.filter((card) => card.type === "Werkzeug"));
+  }
+
+  showConsumables() {
+    this.addKarten(listOfCards.filter((card) => card.type === "Konsumgut"));
+  }
+
+  showRunes() {
+    this.addKarten(listOfCards.filter((card) => card.type === "Rune"));
+  }
+
   showAll() {
     this.addKarten(listOfCards);
   }
 
   showFavorites() {
-    this.addKarten(listOfCards.filter((card) => card.favorite));
+    const array = listOfCards.filter((card) => card.favorite);
+    if (array.length === 0) {
+      this.showAll();
+    } else {
+      this.addKarten(array);
+    }
   }
 
   addKarten(arrayOfCards) {
