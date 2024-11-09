@@ -1,5 +1,7 @@
 <script setup>
+import { defineEmits } from "vue";
 import Karte from "./Karte.vue";
+import Selector from "./Selector.vue";
 
 const karten = [
   {
@@ -50,6 +52,12 @@ const karten = [
   },
 ];
 
+const emits = defineEmits(["update:selected"]);
+
+const handleUpdateSelected = (index) => {
+  karten[index].selected = !karten[index].selected || true;
+};
+
 const getGroupsOfCards = (cards, groupSize) => {
   const groups = [];
   for (let i = 0; i < cards.length; i += groupSize) {
@@ -62,21 +70,18 @@ const groupsOfCards = getGroupsOfCards(karten, 8);
 </script>
 
 <template>
-  <div>
-    <section
-      v-for="(group, index) in groupsOfCards"
-      :key="index"
-      class="karten"
-    >
-      <Karte
-        v-for="karte in group"
-        :key="karte.id"
-        :title="karte.title"
-        :type="karte.type"
-        :description="karte.description"
-      />
-    </section>
-  </div>
+  <Selector />
+  <section v-for="(group, index) in groupsOfCards" :key="index" class="karten">
+    <Karte
+      v-for="karte in group"
+      :key="karte.id"
+      :title="karte.title"
+      :type="karte.type"
+      :description="karte.description"
+      :index="karte.id"
+      @update:selected="handleUpdateSelected(index)"
+    />
+  </section>
 </template>
 
 <style>

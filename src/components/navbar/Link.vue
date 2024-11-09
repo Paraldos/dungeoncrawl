@@ -11,7 +11,9 @@ const props = defineProps({
     default: false,
   },
 });
+
 const emits = defineEmits(["update:selected"]);
+
 const classes = {
   default: "btn",
   selected: "btn btn-selected",
@@ -32,39 +34,4 @@ const handleClick = () => {
   </button>
 </template>
 
-<style>
-.btn {
-  padding: 10px 30px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.3s;
-  background-size: 200% auto;
-  color: var(--color__navbar-text);
-  border-radius: 4px;
-  display: block;
-  border: 0px;
-  font-weight: 700;
-  border: 1px solid var(--color__navbar-button-border);
-  background-image: linear-gradient(
-    45deg,
-    var(--color__navbar-button-1) 0%,
-    var(--color__navbar-button-2) 50%,
-    var(--color__navbar-button-1) 100%
-  );
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.btn-selected,
-.btn:hover {
-  background-position: right center;
-  color: var(--color__navbar-text--hover);
-  text-decoration: none;
-}
-
-.btn:active {
-  transform: scale(0.93);
-}
-</style>
+<style></style>

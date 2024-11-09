@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, defineEmits, ref } from "vue";
 
 const props = defineProps({
   title: {
@@ -14,11 +14,27 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  index: {
+    type: Number,
+    required: true,
+  },
 });
+
+const isSelected = ref(false);
+const emits = defineEmits(["update:selected"]);
+
+const clickHandler = () => {
+  isSelected.value = !isSelected.value;
+  emits("update:selected", props.index);
+};
 </script>
 
 <template>
-  <div class="karte">
+  <div
+    class="karte"
+    :class="{ selected: isSelected }"
+    v-on:click="clickHandler"
+  >
     <h2>{{ props.title }}</h2>
     <p>{{ props.type }}</p>
     <ul>
@@ -38,6 +54,17 @@ const props = defineProps({
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.1s ease;
+  border: 2px solid black;
+}
+
+.selected {
+  border: 2px solid gold;
+}
+
+.karte:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 p {
