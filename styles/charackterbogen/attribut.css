@@ -1,34 +1,37 @@
 .Charakterbogen__attribut {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 3px;
   width: fit-content;
-  border-radius: 7px;
-  width: 50%;
+  border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: black;
+  border: 3px solid black;
 
   select {
     -moz-appearance: none; /* Firefox */
     -webkit-appearance: none; /* Safari and Chrome */
     appearance: none;
 
-    border: 2px solid black;
-    height: 50px;
+    border: none;
+    height: 100%;
     aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 6px;
-    background-color: transparent;
+    border-radius: 5px;
+    background-color: white;
     font-size: 18px;
   }
 
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  h3 {
+  label {
+    display: block;
+    font-size: 12px;
     margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
   }
 }

@@ -5,17 +5,21 @@ export default class Charakterbogen extends page {
     super(".Charakterbogen");
     this.section = this.addSection();
     this.section.innerHTML = `
-		<div class="Charakterbogen__name">
-			<input></input>
-			<label>Charaktername</label>
+		<div class="Charakterbogen__left">
+			<div class="Charakterbogen__name">
+				<input></input>
+				<label>Charaktername</label>
+			</div>
+			<div class="Charakterbogen__attribute">
+				${this.getAttribut("KRA", "Heben, Schieben, Nahkampf")}
+				${this.getAttribut("GES", "Schleichen, Turnen, Klettern, Nahkampf")}
+				${this.getAttribut("ZÄH", "Ausdauer, Luft Anhalten, Verteidigung")}
+				${this.getAttribut("CHA", "Überzeugen, Einschüchtern, Handel")}
+				${this.getAttribut("KLU", "Wissen, Logik, Magie")}
+				${this.getAttribut("WEI", "Intuition, Überleben, Warhnehmung, Magie")}
+			</div>
 		</div>
-		<div class="Charakterbogen__attribute">
-			${this.getAttribut("Kraft", "Heben, Schieben, Nahkampf")}
-			${this.getAttribut("Geschick", "Schleichen, Turnen, Klettern, Nahkampf")}
-			${this.getAttribut("Zähigkeit", "Ausdauer, Luft Anhalten, Verteidigung")}
-			${this.getAttribut("Charisma", "Überzeugen, Einschüchtern, Handel")}
-			${this.getAttribut("Klugheit", "Wissen, Logik, Magie")}
-			${this.getAttribut("Weisheit", "Intuition, Überleben, Warhnehmung, Magie")}
+		<div class="Charakterbogen__right">
 		</div>
 	`;
   }
@@ -31,10 +35,7 @@ export default class Charakterbogen extends page {
 				<option>W10</option>
 				<option>W12</option>
 			</select>
-			<div>
-				<h3>${titel}</h3>
-				<p>${description}</p>
-			</div>
+			<label>${titel}</label>
 		</div>
 	`;
   }

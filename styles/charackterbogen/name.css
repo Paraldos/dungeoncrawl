@@ -1,0 +1,18 @@
+.Charakterbogen__name {
+  input {
+    border: none;
+    border-bottom: 2px solid black;
+
+    background-color: transparent;
+
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  label {
+    font-size: 10px;
+  }
+
+  margin-bottom: 10px;
+}

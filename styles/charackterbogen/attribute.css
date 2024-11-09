@@ -1,9 +1,5 @@
-.Charakterbogen {
-  .Charakterbogen__attribute {
-    display: flex;
-    gap: 5px;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-direction: column;
-  }
+.Charakterbogen__attribute {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
 }

@@ -1,2 +1,10 @@
 @import "./attribute.css";
 @import "./attribut.css";
+@import "./name.css";
+
+.Charakterbogen {
+  section {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+  }
+}
