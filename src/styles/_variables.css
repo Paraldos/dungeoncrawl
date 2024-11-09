@@ -13,6 +13,10 @@
 
   --size__navbar-height: 70px;
 
+  --color__background: var(--c1);
+  --color__text: var(--c1);
+  --color__section: white;
+
   --color__navbar-background: var(--c1);
   --color__navbar-text: var(--c11);
   --color__navbar-text--hover: white;

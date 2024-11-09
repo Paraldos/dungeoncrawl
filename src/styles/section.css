@@ -1,0 +1,7 @@
+section {
+  background-color: var(--color__section);
+  width: 29.7cm;
+  height: 21cm;
+  margin: 10px auto;
+  padding: 30px;
+}

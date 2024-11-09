@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="">Test</div>
+  <section class="">Test</section>
 </template>
 
 <style></style>

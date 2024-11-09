@@ -45,7 +45,7 @@ nav {
 
 .navbar__content {
   height: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   display: flex;
   align-items: center;
   gap: 50px;
