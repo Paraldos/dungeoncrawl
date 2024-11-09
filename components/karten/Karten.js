@@ -37,9 +37,12 @@ export default class Karten extends page {
 
   addKarten(arrayOfCards) {
     this.deleteSections();
+
     const groupsOfCards = this.getGroupsOfCards(arrayOfCards);
+
     groupsOfCards.forEach((group) => {
       const section = this.addSection();
+
       group.forEach((card) => {
         new Karte(section, card);
       });
@@ -48,9 +51,11 @@ export default class Karten extends page {
 
   getGroupsOfCards(arrayOfCards) {
     const groups = [];
+
     for (let i = 0; i < arrayOfCards.length; i += 8) {
       groups.push(arrayOfCards.slice(i, i + 8));
     }
+
     return groups;
   }
 }

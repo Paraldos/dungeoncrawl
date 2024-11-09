@@ -41,7 +41,7 @@ const listOfCards = [
   },
   {
     id: 7,
-    title: "Wuchtiger Schlag",
+    title: "Wuchtschlag",
     type: "Rune",
     description: ["+2 auf eine Nahkampf Attacke"],
   },

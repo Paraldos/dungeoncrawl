@@ -13,7 +13,7 @@ export default class Karte {
       cardDiv.classList.add("karte__selected");
     }
     cardDiv.innerHTML = `
-		<h2>${cardData.title}</h2>
+		<h3>${cardData.title}</h3>
 		<p>${cardData.type}</p>
 		<ul>
 			${cardData.description.map((desc) => `<li>${desc}</li>`).join("")}
