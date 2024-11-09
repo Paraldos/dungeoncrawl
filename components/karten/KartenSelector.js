@@ -14,6 +14,12 @@ export default class KartenSelector {
     btn.classList.add("btn-selected");
     if (btn.innerHTML === "Favoriten") {
       this.parent.showFavorites();
+    } else if (btn.innerHTML === "Werkzeuge") {
+      this.parent.showTools();
+    } else if (btn.innerHTML === "Konsumgüter") {
+      this.parent.showConsumables();
+    } else if (btn.innerHTML === "Runen") {
+      this.parent.showRunes();
     } else {
       this.parent.showAll();
     }
