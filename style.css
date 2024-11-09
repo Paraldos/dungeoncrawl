@@ -5,6 +5,7 @@
 @import "./styles/button.css";
 @import "./styles/navbar.css";
 @import "./styles/karten.css";
+@import "./styles/charackterbogen/charakterbogen.css";
 
 * {
   box-sizing: border-box;

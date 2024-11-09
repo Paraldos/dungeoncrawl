@@ -1,0 +1,9 @@
+.Charakterbogen {
+  .Charakterbogen__attribute {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
