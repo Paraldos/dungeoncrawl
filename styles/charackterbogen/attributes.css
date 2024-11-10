@@ -1,4 +1,4 @@
-.playbook__attribute {
+.playbook__attributes {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   gap: 5px;
 }
 
-.playbook__attribut {
+.playbook__attribute {
   display: flex;
   flex-direction: column;
   gap: 3px;

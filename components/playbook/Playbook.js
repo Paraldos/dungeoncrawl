@@ -1,5 +1,5 @@
 import page from "../Page.js";
-import Attribute from "./Attribute.js";
+import Attributes from "./Attributes.js";
 import Inventory from "./Inventory.js";
 import Merkmal from "./Merkmal.js";
 import Startwerte from "./Startwerte.js";
@@ -15,7 +15,7 @@ export default class playbook extends page {
 				<input></input>
 				<label>Charakter</label>
 			</div>
-			${new Attribute().getAttribute()}
+			${new Attributes().getAttributes()}
 			${new Inventory().getInventory()}
 			${new Merkmal().getMerkmal("Gold")}
 			${new Merkmal().getMerkmal("Gesundheit")}
