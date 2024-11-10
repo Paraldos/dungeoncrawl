@@ -7,6 +7,7 @@
 @import "./styles/karten.css";
 @import "./styles/charackterbogen/charakterbogen.css";
 @import "./styles/label.css";
+@import "./styles/input.css";
 
 * {
   box-sizing: border-box;
