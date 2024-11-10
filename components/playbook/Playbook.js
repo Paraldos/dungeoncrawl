@@ -24,6 +24,7 @@ export default class playbook extends page {
 		</div>
 		<div class="playbook__right">
 			${new PlaybookTitle().getPlaybookTitle("Barbar")}
+			<p>Stark, wild und tödlich. In dir schlummert ein ungezähmter Zorn, den du entfesseln kannst, um deine Gegner mit brutaler Gewalt zu vernichten.</p>
 		</div>
 	`;
   }
