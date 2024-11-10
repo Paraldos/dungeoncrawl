@@ -1,6 +1,7 @@
 @import "./attribute.css";
 @import "./name.css";
 @import "./inventory.css";
+@import "./merkmal.css";
 
 .Charakterbogen {
   section {

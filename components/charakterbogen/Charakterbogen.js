@@ -1,6 +1,7 @@
 import page from "../Page.js";
 import Attribute from "./Attribute.js";
 import Inventory from "./Inventory.js";
+import Merkmal from "./Merkmal.js";
 
 export default class Charakterbogen extends page {
   constructor() {
@@ -14,9 +15,11 @@ export default class Charakterbogen extends page {
 			</div>
 			${new Attribute().getAttribute()}
 			${new Inventory().getInventory()}
+			${new Merkmal().getMerkmal("Gesundheit")}
+			${new Merkmal().getMerkmal("Ausdauer")}
+			${new Merkmal().getMerkmal("Gold")}
 		</div>
-		<div class="Charakterbogen__right">
-		</div>
+		<div class="Charakterbogen__right"></div>
 	`;
   }
 }
