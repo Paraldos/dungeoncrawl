@@ -1,7 +1,7 @@
-@import "./attributes.css";
 @import "./name.css";
+@import "./attributes.css";
+@import "./condition.css";
 @import "./inventory.css";
-@import "./merkmal.css";
 @import "./playbookTitle.css";
 
 .playbook {

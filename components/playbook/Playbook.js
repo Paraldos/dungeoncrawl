@@ -1,7 +1,7 @@
 import page from "../Page.js";
 import Attributes from "./Attributes.js";
 import Inventory from "./Inventory.js";
-import Merkmal from "./Merkmal.js";
+import Condition from "./Condition.js";
 import Startwerte from "./Startwerte.js";
 import PlaybookTitle from "./PlaybookTitle.js";
 
@@ -17,9 +17,9 @@ export default class playbook extends page {
 			</div>
 			${new Attributes().getAttributes()}
 			${new Inventory().getInventory()}
-			${new Merkmal().getMerkmal("Gold")}
-			${new Merkmal().getMerkmal("Gesundheit")}
-			${new Merkmal().getMerkmal("Ausdauer")}
+			${new Condition().getCondition("Gold")}
+			${new Condition().getCondition("Gesundheit")}
+			${new Condition().getCondition("Ausdauer")}
 			${new Startwerte().getStartwerte()}
 		</div>
 		<div class="playbook__right">

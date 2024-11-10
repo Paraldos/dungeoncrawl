@@ -1,9 +1,9 @@
-export default class Merkmal {
+export default class Condition {
   constructor() {}
 
-  getMerkmal(titel) {
+  getCondition(titel) {
     return `
-        <div class="playbook__merkmal">
+        <div class="playbook__condition">
             <div>
                 <input></input>
                 <input></input>
