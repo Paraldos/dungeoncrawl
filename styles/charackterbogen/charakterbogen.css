@@ -1,10 +1,19 @@
 @import "./attribute.css";
 @import "./attribut.css";
 @import "./name.css";
+@import "./inventory.css";
 
 .Charakterbogen {
   section {
     display: grid;
     grid-template-columns: 3fr 5fr;
+  }
+
+  .Charakterbogen__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
   }
 }
