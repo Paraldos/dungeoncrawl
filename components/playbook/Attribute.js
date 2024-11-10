@@ -1,7 +1,7 @@
 export default class Attribute {
   getAttribute() {
     return `
-		<div class="Charakterbogen__attribute">
+		<div class="playbook__attribute">
 			${this.getAttribut("KRA", "Heben, Schieben, Nahkampf")}
 			${this.getAttribut("GES", "Schleichen, Turnen, Klettern, Nahkampf")}
 			${this.getAttribut("ZÄH", "Ausdauer, Luft Anhalten, Verteidigung")}
@@ -14,7 +14,7 @@ export default class Attribute {
 
   getAttribut(titel) {
     return `
-			<div class="Charakterbogen__attribut">
+			<div class="playbook__attribut">
 				<select>
 					<option></option>
 					<option>W4</option>

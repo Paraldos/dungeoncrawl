@@ -14,7 +14,7 @@ export default class Navbar {
         <div class="navbar__links">
           <button class="navbar__link btn-selected">Alles</button>
           <button class="navbar__link">Regeln</button>
-          <button class="navbar__link">Charakterbogen</button>
+          <button class="navbar__link">playbook</button>
           <button class="navbar__link">Karten</button>
         </div>
       </div>

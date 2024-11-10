@@ -3,14 +3,15 @@ import Attribute from "./Attribute.js";
 import Inventory from "./Inventory.js";
 import Merkmal from "./Merkmal.js";
 import Startwerte from "./Startwerte.js";
+import PlaybookTitle from "./PlaybookTitle.js";
 
-export default class Charakterbogen extends page {
+export default class playbook extends page {
   constructor() {
-    super(".Charakterbogen");
+    super(".playbook");
     this.section = this.addSection();
     this.section.innerHTML = `
-		<div class="Charakterbogen__left">
-			<div class="Charakterbogen__name">
+		<div class="playbook__left">
+			<div class="playbook__name">
 				<input></input>
 				<label>Charakter</label>
 			</div>
@@ -21,7 +22,9 @@ export default class Charakterbogen extends page {
 			${new Merkmal().getMerkmal("Ausdauer")}
 			${new Startwerte().getStartwerte()}
 		</div>
-		<div class="Charakterbogen__right"></div>
+		<div class="playbook__right">
+			${new PlaybookTitle().getPlaybookTitle("Barbar")}
+		</div>
 	`;
   }
 }

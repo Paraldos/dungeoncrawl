@@ -1,0 +1,22 @@
+.playbook__playbook-title {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  border: 3px solid black;
+  border-radius: 5px 8px 8px 5px;
+  padding-left: 5px;
+
+  h2 {
+    color: white;
+    margin: 0;
+    height: fit-content;
+  }
+
+  input {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+}

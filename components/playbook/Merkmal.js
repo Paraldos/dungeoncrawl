@@ -3,7 +3,7 @@ export default class Merkmal {
 
   getMerkmal(titel) {
     return `
-        <div class="Charakterbogen__merkmal">
+        <div class="playbook__merkmal">
             <div>
                 <input></input>
                 <input></input>

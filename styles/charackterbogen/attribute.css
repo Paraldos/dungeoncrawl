@@ -1,4 +1,4 @@
-.Charakterbogen__attribute {
+.playbook__attribute {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   gap: 5px;
 }
 
-.Charakterbogen__attribut {
+.playbook__attribut {
   display: flex;
   flex-direction: column;
   gap: 3px;
