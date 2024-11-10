@@ -17,7 +17,7 @@ export default class Inventory {
     return `
 		<div class="inventory__labels">
 			<p>Item</p>
-			<p class="text-align-center">Bonus</p>
+			<p>Bonus</p>
 		</div>
 	`;
   }

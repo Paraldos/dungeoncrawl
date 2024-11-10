@@ -12,7 +12,13 @@
   }
 
   .inventory__labels {
-    font-weight: bold;
+    p {
+      font-weight: bold;
+    }
+
+    p:nth-child(2) {
+      text-align: center;
+    }
   }
 
   .inventory__item {
@@ -30,18 +36,7 @@
     }
 
     select {
-      -moz-appearance: none; /* Firefox */
-      -webkit-appearance: none; /* Safari and Chrome */
-      appearance: none;
-
-      border: none;
       border-bottom: 2px solid black;
-      padding: 5px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-color: transparent;
     }
   }
 }

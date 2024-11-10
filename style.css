@@ -8,6 +8,7 @@
 @import "./styles/charackterbogen/charakterbogen.css";
 @import "./styles/label.css";
 @import "./styles/input.css";
+@import "./styles/select.css";
 
 * {
   box-sizing: border-box;

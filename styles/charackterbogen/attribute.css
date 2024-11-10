@@ -17,19 +17,9 @@
   border: 3px solid black;
 
   select {
-    -moz-appearance: none; /* Firefox */
-    -webkit-appearance: none; /* Safari and Chrome */
-    appearance: none;
-
-    border: none;
     height: 100%;
     aspect-ratio: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     border-radius: 5px;
-    background-color: white;
     font-size: 18px;
   }
 
