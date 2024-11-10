@@ -25,6 +25,14 @@ export default class playbook extends page {
 		<div class="playbook__right">
 			${new PlaybookTitle().getPlaybookTitle("Barbar")}
 			<p>Stark, wild und tödlich. In dir schlummert ein ungezähmter Zorn, den du entfesseln kannst, um deine Gegner mit brutaler Gewalt zu vernichten.</p>
+			<div class="talents__header">
+				<h3>Feats</h3>
+				<p>Feats sind permanente Vorteile, von denen du jederzeit profitierst.</p>
+			</div>
+			<div class="talents__header">
+				<h3>Stunts</h3>
+				<p>Stunts sind aktive Fähigkeiten, die du mit 1 Punkt Ausdauer aktivieren musst.</p>
+			</div>
 		</div>
 	`;
   }

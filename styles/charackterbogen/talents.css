@@ -1,0 +1,9 @@
+.talents__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  h3 {
+    margin: 0;
+  }
+}

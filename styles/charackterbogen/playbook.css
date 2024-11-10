@@ -3,6 +3,7 @@
 @import "./condition.css";
 @import "./inventory.css";
 @import "./playbookTitle.css";
+@import "./talents.css";
 
 .playbook {
   section {
