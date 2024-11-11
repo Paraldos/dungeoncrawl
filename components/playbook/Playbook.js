@@ -13,6 +13,12 @@ export default class playbook extends page {
     listOfPlaybooks.forEach((playbook) => {
       this.addPlaybook(playbook);
     });
+
+    document.querySelectorAll(".checkbox").forEach((checkbox) => {
+      checkbox.addEventListener("click", () => {
+        checkbox.classList.toggle("checkbox--checked");
+      });
+    });
   }
 
   addPlaybook(playbook) {

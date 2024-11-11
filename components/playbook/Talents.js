@@ -14,13 +14,10 @@ export default class Talents {
 
   getCheckbox(level) {
     const checkbox = document.createElement("div");
-    checkbox.classList.add("talents__checkbox");
+    checkbox.classList.add("checkbox");
     if (level) {
-      checkbox.classList.add("talents__checkbox--checked");
+      checkbox.classList.add("checkbox--checked");
     }
-    checkbox.addEventListener("click", () => {
-      checkbox.classList.toggle("talents__checkbox--checked");
-    });
     return checkbox.outerHTML;
   }
 }
