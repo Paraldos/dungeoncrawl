@@ -3,17 +3,19 @@
   flex-direction: column;
   width: 100%;
   background-color: black;
-  border: 2px solid black;
-  border-radius: 5px;
+  border: 3px solid black;
+  border-radius: 8px;
+  gap: 3px;
 
   div {
     width: 100%;
     display: grid;
+    gap: 3px;
     grid-template-columns: 90px 1fr;
   }
 
   input {
-    border: 2px solid black;
+    border: none;
     border-radius: 5px;
     padding: 10px;
   }

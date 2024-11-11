@@ -4,15 +4,17 @@
   border: 2px solid var(--color__text);
   cursor: pointer;
   position: relative;
-}
-
-.checkbox--checked::after {
-  content: "\2716";
-  position: absolute;
-  inset: 0;
-  font-size: 19px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(0, -1px);
+
+  svg {
+    display: none;
+  }
+}
+
+.checkbox--checked {
+  svg {
+    display: block;
+  }
 }
