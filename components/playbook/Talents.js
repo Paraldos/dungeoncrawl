@@ -8,9 +8,20 @@ export default class Talents {
   }
 
   getTalent(talent) {
+    console.log(talent.title);
+
     return `<li>
-		${talent.level.map((level) => new Checkbox().getCheckbox(level)).join("")}
-		<p><strong>${talent.title}</strong>: ${talent.description}</p>
-	</li>`;
+      ${talent.level.map((level) => new Checkbox().getCheckbox(level)).join("")}
+      <p><strong>${talent.title}</strong>: ${talent.description}</p>
+      ${talent.title == "Multiclass" ? this.getMulticlassInput(talent) : ""}
+    </li>`;
+  }
+
+  getMulticlassInput(talent) {
+    let txt = "";
+    talent.level.forEach((level) => {
+      txt += `<input type="text"></input>`;
+    });
+    return txt;
   }
 }

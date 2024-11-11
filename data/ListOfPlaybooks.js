@@ -6,18 +6,13 @@ class Playbook {
     this.stunts = stunts;
 
     this.feats.push({
-      title: "Muliclass",
+      title: "Multiclass",
       level: [false],
       description: "Wähle einen Feat einer anderen Klasse.",
     });
     this.stunts.push({
-      title: "Muliclass",
-      level: [false],
-      description: "Wähle einen Stunt einer anderen Klasse.",
-    });
-    this.stunts.push({
-      title: "Muliclass",
-      level: [false],
+      title: "Multiclass",
+      level: [false, false],
       description: "Wähle einen Stunt einer anderen Klasse.",
     });
   }
@@ -36,12 +31,12 @@ const listOfPlaybooks = [
       {
         title: "Jäger",
         level: [true],
-        description: "Vorteil auf Proben mit Wildnisleben.",
+        description: "+1 auf Proben mit Wildnisleben.",
       },
       {
         title: "Tyrann",
         level: [false],
-        description: "Vorteil auf Proben mit Einschüchtern und Drohen.",
+        description: "+1 auf Proben mit Einschüchtern und Drohen.",
       },
     ],
     [
@@ -60,12 +55,12 @@ const listOfPlaybooks = [
       {
         title: "Rage",
         level: [false],
-        description: "Vorteil auf STÄ-Proben (einschließlich Angriffe).",
+        description: "+2 auf STÄ-Proben (einschließlich Angriffe).",
       },
       {
         title: "Wut",
         level: [false],
-        description: "Vorteil auf ZÄH-Proben (einschließlich Paraden).",
+        description: "+2 auf ZÄH-Proben (einschließlich Paraden).",
       },
     ]
   ),
