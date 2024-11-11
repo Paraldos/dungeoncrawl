@@ -4,3 +4,7 @@ input {
   padding: 8px;
   font-size: 1.2em;
 }
+
+input:focus {
+  outline: none;
+}
