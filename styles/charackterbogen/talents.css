@@ -7,3 +7,36 @@
     margin: 0;
   }
 }
+
+.talents__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    align-items: center;
+  }
+}
+
+.talents__checkbox {
+  height: 90%;
+  aspect-ratio: 1;
+  border: 2px solid var(--color__text);
+  cursor: pointer;
+  position: relative;
+}
+
+.talents__checkbox--checked::after {
+  content: "\2716";
+  position: absolute;
+  inset: 0;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -1px);
+}

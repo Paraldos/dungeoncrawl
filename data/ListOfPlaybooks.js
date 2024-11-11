@@ -7,12 +7,12 @@ class Playbook {
 
     this.feats.push({
       title: "Muliclass",
-      level: 1,
+      level: [false],
       description: "Wähle einen Feat einer anderen Klasse.",
     });
     this.stunts.push({
       title: "Muliclass",
-      level: 1,
+      level: [false],
       description: "Wähle einen Stunt einer anderen Klasse.",
     });
   }
@@ -25,17 +25,17 @@ const listOfPlaybooks = [
     [
       {
         title: "Eisern",
-        level: 2,
+        level: [false, false],
         description: "Deine Gesundheit steigt um 1 Punkt.",
       },
       {
         title: "Jäger",
-        level: 1,
+        level: [true],
         description: "Vorteil auf Proben mit Wildnisleben.",
       },
       {
         title: "Tyrann",
-        level: 1,
+        level: [false],
         description: "Vorteil auf Proben mit Einschüchtern und Drohen.",
       },
     ]
@@ -46,7 +46,7 @@ const listOfPlaybooks = [
     [
       {
         title: "Eisern",
-        level: 2,
+        level: [false],
         description: "Deine Gesundheit steigt um 1 Punkt.",
       },
     ]
