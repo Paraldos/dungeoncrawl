@@ -1,16 +1,16 @@
-import ListOfPlaybooks from "../../data/ListOfPlaybooks.js";
+import listOfPlaybooks from "../../data/ListOfPlaybooks.js";
 import page from "../Page.js";
 import Attributes from "./Attributes.js";
 import Inventory from "./Inventory.js";
 import Condition from "./Condition.js";
 import Startwerte from "./Startwerte.js";
 import PlaybookTitle from "./PlaybookTitle.js";
+import Talents from "./Talents.js";
 
 export default class playbook extends page {
   constructor() {
     super(".playbook");
-    this.listOfPlaybooks = new ListOfPlaybooks();
-    this.listOfPlaybooks.list.forEach((playbook) => {
+    listOfPlaybooks.forEach((playbook) => {
       this.addPlaybook(playbook);
     });
   }
@@ -37,10 +37,12 @@ export default class playbook extends page {
 				<h3>Feats</h3>
 				<p>Feats sind permanente Vorteile, von denen du jederzeit profitierst.</p>
 			</div>
+			${new Talents().getTalents(playbook.feats)}
 			<div class="talents__header">
 				<h3>Stunts</h3>
 				<p>Stunts sind aktive Fähigkeiten, die du mit 1 Punkt Ausdauer aktivieren musst.</p>
 			</div>
+			${new Talents().getTalents(playbook.stunts)}
 		</div>
 	`;
   }
