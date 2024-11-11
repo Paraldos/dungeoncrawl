@@ -15,6 +15,11 @@ class Playbook {
       level: [false],
       description: "Wähle einen Stunt einer anderen Klasse.",
     });
+    this.stunts.push({
+      title: "Muliclass",
+      level: [false],
+      description: "Wähle einen Stunt einer anderen Klasse.",
+    });
   }
 }
 
@@ -37,6 +42,30 @@ const listOfPlaybooks = [
         title: "Tyrann",
         level: [false],
         description: "Vorteil auf Proben mit Einschüchtern und Drohen.",
+      },
+    ],
+    [
+      {
+        title: "Blutrausch",
+        level: [false],
+        description:
+          "Du nimmst mehrere Gegner im Nahkampf aufs Korn (Attacke verursacht 2 Schaden).",
+      },
+      {
+        title: "Kraftakt",
+        level: [false],
+        description:
+          "Du vollbringst eine übernatürliche Krafttat, wie z. B. Metallgitter mit bloßen Händen verbiegen.",
+      },
+      {
+        title: "Rage",
+        level: [false],
+        description: "Vorteil auf STÄ-Proben (einschließlich Angriffe).",
+      },
+      {
+        title: "Wut",
+        level: [false],
+        description: "Vorteil auf ZÄH-Proben (einschließlich Paraden).",
       },
     ]
   ),
