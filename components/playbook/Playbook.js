@@ -1,3 +1,4 @@
+import ListOfPlaybooks from "../../data/ListOfPlaybooks.js";
 import page from "../Page.js";
 import Attributes from "./Attributes.js";
 import Inventory from "./Inventory.js";
@@ -8,6 +9,13 @@ import PlaybookTitle from "./PlaybookTitle.js";
 export default class playbook extends page {
   constructor() {
     super(".playbook");
+    this.listOfPlaybooks = new ListOfPlaybooks();
+    this.listOfPlaybooks.list.forEach((playbook) => {
+      this.addPlaybook(playbook);
+    });
+  }
+
+  addPlaybook(playbook) {
     this.section = this.addSection();
     this.section.innerHTML = `
 		<div class="playbook__left">
@@ -23,8 +31,8 @@ export default class playbook extends page {
 			${new Startwerte().getStartwerte()}
 		</div>
 		<div class="playbook__right">
-			${new PlaybookTitle().getPlaybookTitle("Barbar")}
-			<p>Stark, wild und tödlich. In dir schlummert ein ungezähmter Zorn, den du entfesseln kannst, um deine Gegner mit brutaler Gewalt zu vernichten.</p>
+			${new PlaybookTitle().getPlaybookTitle(playbook.title)}
+			<p>${playbook.description}</p>
 			<div class="talents__header">
 				<h3>Feats</h3>
 				<p>Feats sind permanente Vorteile, von denen du jederzeit profitierst.</p>
