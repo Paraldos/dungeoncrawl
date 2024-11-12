@@ -51,7 +51,7 @@ export default class playbook extends page {
 
   getPlaybookTitle(title) {
     return `
-        <div class="playbook__playbook-title blackbox">
+        <div class="playbook__title blackbox">
             <h2>${title}</h2>
             <p>Level</p>
             <input></input>
