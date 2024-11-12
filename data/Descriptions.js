@@ -70,7 +70,7 @@ const descriptions = {
   },
 
   multiattack(type_of_attack = "im Nahkampf") {
-    return `Du nimmst mehrere Gegner ${type_of_attack} aufs Korn (gelunge Probe zählt als 2 Erfolge).`;
+    return `Du nimmst mehrere Gegner ${type_of_attack} aufs Korn. Gelingt die Attacke, zählt das wie 2 Erfolge.`;
   },
 
   skill(skills = []) {
@@ -78,7 +78,6 @@ const descriptions = {
       skills.length > 1
         ? skills.slice(0, -1).join(", ") + " und " + skills[skills.length - 1]
         : skills.join("");
-
     return `Vorteil auf Proben mit ${string_of_skills}.`;
   },
 };
