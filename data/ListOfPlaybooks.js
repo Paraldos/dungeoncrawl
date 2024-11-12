@@ -47,7 +47,10 @@ const listOfPlaybooks = [
     ],
     [
       new Talent("Brandstifter", descriptions.arsonist),
-      new Talent("Feuersturm", descriptions.multiattack("mit Magie")),
+      new Talent(
+        "Feuersturm",
+        descriptions.multiattack("mit einer explosion aus Feuer")
+      ),
       new Talent("Flammenschild", descriptions.shield_of_flames),
       new Talent("Kontrolle", descriptions.fire_control),
     ]
@@ -77,7 +80,7 @@ const listOfPlaybooks = [
   ),
   new Playbook(
     "Kämpfer",
-    "Standhaft, diszipliniert und gefährlich. Als Kämp-fer liegen dir Gewalt im Blut. Kommt es darauf an, bist du derjenige der die Waffe zieht und sich dem Feind stellt.",
+    "Standhaft, diszipliniert und gefährlich. Als Kämpfer liegen dir Gewalt im Blut. Wird es brenzlig, zückst du deine Waffe und machst dich berreit für den Kampf.",
     [
       new Talent("Athlet", descriptions.skill(["Athletik", "Ausdauer"])),
       new Talent("Eisern", descriptions.iron_skin, [false]),
@@ -160,7 +163,10 @@ const listOfPlaybooks = [
       new Talent("Bannen", descriptions.banish),
       new Talent("Barriere", descriptions.barrier),
       new Talent("Botschaft", descriptions.message),
-      new Talent("Explosion", descriptions.multiattack("mit Magie")),
+      new Talent(
+        "Explosion",
+        descriptions.multiattack("mit einer magischen Implosion")
+      ),
       new Talent("Hellsehen", descriptions.clairvoyance),
       new Talent("Levitation", descriptions.levitation),
       new Talent("Telekinese", descriptions.telekinesis),

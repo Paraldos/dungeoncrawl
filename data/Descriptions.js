@@ -11,7 +11,7 @@ const descriptions = {
     "Der Erzähler beantwortet 3 Ja/Nein-Fragen zu einem Objekt, das du berührst.",
   levitation: "Du schwebst in Schrittgeschwindigkeit.",
   telekinesis:
-    "Bewege einen Gegenstand mit mentaler Kraft (verwende INT als mentale STÄ und GES).",
+    "Bewege einen Gegenstand mit mentaler Kraft (verwende INT als mentale KRA und GES).",
   teleport:
     "Du teleportierst dich an einen Ort, den du in den letzten 24 Stunden gesehen hast.",
   iron_skin: "Deine Gesundheit steigt um 1 Punkt.",
@@ -24,7 +24,7 @@ const descriptions = {
   healing: "Eine Person, die du berührst, heilt eine Wunde.",
   blessing: "Deine Verbündeten erhalten einen Vorteil auf ihre nächste Probe.",
   plant_friend:
-    "Du kannst das Wachstum kleiner Pflanzen beeinflussen und erhältst Vorteil beim Umgang mit Pflanzen.",
+    "Du kannst kleine Pflanzen nach belieben wachsen lassen und erhältst Vorteil beim Umgang mit Pflanzen.",
   animal_friend:
     "Du kannst mit Tieren sprechen und erhältst Vorteil beim Umgang mit Tieren.",
   animal_control: "Du gibst einem Tier oder Schwarm einen magischen Befehl.",
@@ -57,20 +57,20 @@ const descriptions = {
     "Dein Angriff trifft eine Schwachstelle des Gegners (gelunge Probe zählt als 2 Erfolge).",
   multitalent: "Du erhältst Vorteil auf eine beliebige Nicht-Kampf-Probe.",
   vanish: "Andere ignorieren dich, als wärst du unsichtbar.",
-  oath: "Du akzeptierst den Schwur einer anderen Person. Bei Bruch erleidest das Opfer eine Wunde und eine deutlich sichtbare Narbe.",
+  oath: "Du akzeptierst den Schwur einer anderen Person. Bei Bruch erleidest das Opfer eine Wunde und eine deutlich sichtbares Mal.",
   multiclass_feats: "Wähle einen Feat einer anderen Klasse.",
   multiclass_stunts: "Wähle einen Stunt einer anderen Klasse.",
   regeneration: "Du erholst dich von einer Wunde.",
   bloodsense: "Stell drei Ja/Nein Fragen zu Blut das du gerade kostest.",
 
   magic_missile(damagetype, advantage = false) {
-    return `
-		Magischer Fernkampfangriff mit 
-		${damagetype}${advantage ? " und Vorteil" : ""}.`;
+    return `Du schleuderst ein magisches Geschoss aus ${damagetype}${
+      advantage ? " mit Vorteil" : ""
+    }.`;
   },
 
   multiattack(type_of_attack = "im Nahkampf") {
-    return `Du nimmst mehrere Gegner ${type_of_attack} aufs Korn. Gelingt die Attacke, zählt das wie 2 Erfolge.`;
+    return `Du attackierst mehrere Gegner ${type_of_attack} (Gelunge Probe zählt als 2 Erfolge).`;
   },
 
   skill(skills = []) {
