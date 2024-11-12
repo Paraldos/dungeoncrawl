@@ -2,8 +2,6 @@ import listOfPlaybooks from "../../data/ListOfPlaybooks.js";
 import page from "../Page.js";
 import Attributes from "./Attributes.js";
 import Inventory from "./Inventory.js";
-import Condition from "./Condition.js";
-import Startwerte from "./Startwerte.js";
 import Talents from "./Talents.js";
 
 export default class playbook extends page {
@@ -28,10 +26,10 @@ export default class playbook extends page {
 		</div>
 		${new Attributes().getAttributes()}
 		${new Inventory().getInventory()}
-		${new Condition().getCondition("Gold")}
-		${new Condition().getCondition("Gesundheit")}
-		${new Condition().getCondition("Ausdauer")}
-		${new Startwerte().getStartwerte()}
+		${this.getCondition("Gold")}
+		${this.getCondition("Gesundheit")}
+		${this.getCondition("Ausdauer")}
+		${this.getStartwerte()}
 	`;
     this.right.innerHTML = `
 		${this.getPlaybookTitle(playbook.title)}
@@ -57,5 +55,24 @@ export default class playbook extends page {
             <input></input>
         </div>
     `;
+  }
+
+  getCondition(titel) {
+    return `
+        <div class="playbook__condition blackbox">
+            <div>
+                <input></input>
+                <input></input>
+            </div>
+            <div>
+                <label>${titel}</label>
+                <label>Verbrauch</label>
+            </div>
+        </div>
+    `;
+  }
+
+  getStartwerte() {
+    return `<p><strong>Startwerte: </strong>Attribute: 2xW4, 4xW6 / 3 Standard Gegenstände / W6 Gold / 3 Gesundheit / 6 Ausdauer / 1 Feat / 1 Stunt</p>`;
   }
 }
