@@ -8,8 +8,6 @@ export default class Talents {
   }
 
   getTalent(talent) {
-    console.log(talent.title);
-
     return `<li>
       ${talent.level.map((level) => new Checkbox().getCheckbox(level)).join("")}
       <p><strong>${talent.title}</strong>: ${talent.description}</p>
