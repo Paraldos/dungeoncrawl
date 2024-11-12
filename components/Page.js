@@ -15,4 +15,11 @@ export default class Page {
       this.container.removeChild(section);
     });
   }
+
+  addDiv(className, parent) {
+    const div = document.createElement("div");
+    div.classList.add(className);
+    parent.appendChild(div);
+    return div;
+  }
 }
