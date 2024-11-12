@@ -4,14 +4,9 @@
   padding: 3px;
   color: white;
 
-  input {
+  input,
+  select {
     border-radius: 5px;
     font-size: 20px;
-  }
-
-  h2,
-  label,
-  p {
-    color: white;
   }
 }

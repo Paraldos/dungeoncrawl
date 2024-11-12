@@ -14,17 +14,17 @@ export default class Attributes {
 
   getAttribute(titel) {
     return `
-			<div class="playbook__attribute">
-				<select>
-					<option></option>
-					<option>W4</option>
-					<option>W6</option>
-					<option>W8</option>
-					<option>W10</option>
-					<option>W12</option>
-				</select>
-				<label>${titel}</label>
-			</div>
-		`;
+		<div class="playbook__attribute blackbox">
+			<select>
+				<option></option>
+				<option>W4</option>
+				<option>W6</option>
+				<option>W8</option>
+				<option>W10</option>
+				<option>W12</option>
+			</select>
+			<label>${titel}</label>
+		</div>
+	`;
   }
 }
