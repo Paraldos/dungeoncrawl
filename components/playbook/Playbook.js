@@ -4,16 +4,12 @@ import Attributes from "./Attributes.js";
 import Inventory from "./Inventory.js";
 import Condition from "./Condition.js";
 import Startwerte from "./Startwerte.js";
-import PlaybookTitle from "./PlaybookTitle.js";
 import Talents from "./Talents.js";
 
 export default class playbook extends page {
   constructor() {
     super(".playbook");
-    listOfPlaybooks.forEach((playbook) => {
-      this.addPlaybook(playbook);
-    });
-
+    listOfPlaybooks.forEach((playbook) => this.addPlaybook(playbook));
     document.querySelectorAll(".checkbox").forEach((checkbox) => {
       checkbox.addEventListener("click", () => {
         checkbox.classList.toggle("checkbox--checked");
@@ -38,7 +34,7 @@ export default class playbook extends page {
 		${new Startwerte().getStartwerte()}
 	`;
     this.right.innerHTML = `
-		${new PlaybookTitle().getPlaybookTitle(playbook.title)}
+		${this.getPlaybookTitle(playbook.title)}
 		<p>${playbook.description}</p>
 		<div class="talents__header">
 			<h3>Feats</h3>
@@ -51,5 +47,15 @@ export default class playbook extends page {
 		</div>
 		${new Talents().getTalents(playbook.stunts)}
 	`;
+  }
+
+  getPlaybookTitle(title) {
+    return `
+        <div class="playbook__playbook-title blackbox">
+            <h2>${title}</h2>
+            <p>Level</p>
+            <input></input>
+        </div>
+    `;
   }
 }
