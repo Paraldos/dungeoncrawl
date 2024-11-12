@@ -20,10 +20,7 @@ export default class playbook extends page {
     this.left = this.addDiv("playbook__left", this.section);
     this.right = this.addDiv("playbook__right", this.section);
     this.left.innerHTML = `
-		<div class="blackbox">
-			<input></input>
-			<label>Charakter</label>
-		</div>
+		${this.getCharackterBox()}
 		${new Attributes().getAttributes()}
 		${new Inventory().getInventory()}
 		${this.getCondition("Gold")}
@@ -34,16 +31,25 @@ export default class playbook extends page {
     this.right.innerHTML = `
 		${this.getPlaybookTitle(playbook.title)}
 		<p>${playbook.description}</p>
-		<div class="talents__header">
+		<div class="talents__header blackbox">
 			<h3>Feats</h3>
-			<p>Feats sind permanente Vorteile, von denen du jederzeit profitierst.</p>
+			<label>Feats sind permanente Vorteile, von denen du jederzeit profitierst.</label>
 		</div>
 		${new Talents().getTalents(playbook.feats)}
-		<div class="talents__header">
+		<div class="talents__header blackbox">
 			<h3>Stunts</h3>
-			<p>Stunts sind aktive Fähigkeiten, die du mit 1 Punkt Ausdauer aktivieren musst.</p>
+			<label>Stunts sind aktive Fähigkeiten, die du mit 1 Punkt Ausdauer aktivieren musst.</label>
 		</div>
 		${new Talents().getTalents(playbook.stunts)}
+	`;
+  }
+
+  getCharackterBox() {
+    return `
+		<div class="blackbox">
+			<input></input>
+			<label>Charakter</label>
+		</div>
 	`;
   }
 
