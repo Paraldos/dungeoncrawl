@@ -2,22 +2,11 @@ export default class Inventory {
   getInventory() {
     return `
 		<div class="inventory">
-			${this.getIventoryLabels()}
-			${this.getInventorySlot()}
-			${this.getInventorySlot()}
-			${this.getInventorySlot()}
-			${this.getInventorySlot()}
-			${this.getInventorySlot()}
-			${this.getInventorySlot()}
-		</div>
-	`;
-  }
-
-  getIventoryLabels() {
-    return `
-		<div class="inventory__labels">
-			<p>Item</p>
-			<p>Bonus</p>
+			<div class="inventory__labels">
+				<p>Item</p>
+				<p>Bonus</p>
+			</div>
+			${new Array(6).fill(this.getInventorySlot()).join("")}
 		</div>
 	`;
   }
