@@ -16,7 +16,7 @@ export default class Navbar {
 
   onPlaybookAdded(txt, id) {
     const link = document.createElement("li");
-    link.innerHTML = `<a href="#${id}">${txt}</a>`;
+    link.innerHTML = `<a class="button" href="#${id}">${txt}</a>`;
     this.submenuPlaybooks.appendChild(link);
   }
 

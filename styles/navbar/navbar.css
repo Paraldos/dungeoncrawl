@@ -1,5 +1,10 @@
 nav {
+  width: 100%;
   height: var(--size__navbar-height);
+  position: fixed;
+  background-color: var(--color__navbar-background);
+  top: 0;
+  z-index: 1000;
 
   .logo {
     fill: var(--color__navbar-text);
@@ -30,14 +35,45 @@ nav {
 
 .navbar__submenu {
   display: none;
+  flex-direction: column;
+  gap: 5px;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: red;
+  background-color: var(--color__navbar-background);
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
   list-style: none;
+
+  padding-top: 5px;
+  padding: 5px;
+
+  border-radius: 0 0 5px 5px;
+
+  transition: all 0.3s;
+  transform: translate(0, -10px);
+
+  a {
+    color: var(--color__navbar-text);
+    font-size: 0.8rem;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: var(--color__navbar-text);
+  }
+
+  a:hover {
+    color: var(--color__navbar-text--hover);
+  }
 }
 
 .navbar__link:hover .navbar__submenu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transform: translate(0, 0);
 }
