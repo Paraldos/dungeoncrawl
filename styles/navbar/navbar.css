@@ -2,15 +2,9 @@ nav {
   width: 100%;
   height: var(--size__navbar-height);
   position: fixed;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--c7) 10%,
-    var(--c7) 90%,
-    transparent
-  );
+  background: var(--color__background);
   top: 0;
-  z-index: 1000;
+  z-index: 500;
 
   .logo {
     fill: var(--color__navbar-text);
