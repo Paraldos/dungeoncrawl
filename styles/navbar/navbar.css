@@ -2,7 +2,13 @@ nav {
   width: 100%;
   height: var(--size__navbar-height);
   position: fixed;
-  background-color: var(--color__background);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--c7) 10%,
+    var(--c7) 90%,
+    transparent
+  );
   top: 0;
   z-index: 1000;
 
@@ -41,25 +47,20 @@ nav {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--color__background);
-
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
   list-style: none;
 
-  padding-top: 5px;
+  background: var(--color__background);
+  box-shadow: 0px 15px 5px 5px var(--color__background);
   padding: 5px;
-
-  border-radius: 0 0 5px 5px;
-
-  transition: all 0.3s;
-  transform: translate(0, -10px);
+  padding-top: 15px;
 
   a {
+    display: block;
     color: var(--color__navbar-text);
     font-size: 0.8rem;
     padding: 5px;
     text-decoration: none;
+    width: 100%;
   }
 
   a:visited {
@@ -75,5 +76,4 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  transform: translate(0, 0);
 }
