@@ -6,9 +6,18 @@ export default class Navbar {
     this.navLinks.forEach((link) => {
       link.addEventListener("click", () => this.onClickNavLink(link));
     });
-    document.addEventListener("playbookAdded", (e) => {
-      console.log(e.detail);
-    });
+    this.submenuPlaybooks = document.querySelector(
+      ".navbar__submenu--playbooks"
+    );
+    document.addEventListener("playbookAdded", (e) =>
+      this.onPlaybookAdded(e.detail)
+    );
+  }
+
+  onPlaybookAdded(details) {
+    const link = document.createElement("li");
+    link.innerHTML = `<a href="#${details.id}">${details.title}</a>`;
+    this.submenuPlaybooks.appendChild(link);
   }
 
   onClickNavLink(selectedLink) {

@@ -7,9 +7,6 @@ import Talents from "./Talents.js";
 export default class playbook extends page {
   constructor() {
     super(".playbook");
-    this.submenuPlaybooks = document.querySelector(
-      ".navbar__submenu--playbooks"
-    );
     listOfPlaybooks.forEach((playbook) => {
       this.addPlaybook(playbook);
       this.addPlaybookToNavbar(playbook);
@@ -23,15 +20,18 @@ export default class playbook extends page {
 
   addPlaybookToNavbar(playbook) {
     document.dispatchEvent(
-      new Event("playbookAdded", { detail: { playbook: playbook } })
+      new CustomEvent("playbookAdded", {
+        detail: { title: playbook.title, id: this.getId(playbook) },
+      })
     );
-    const link = document.createElement("li");
-    link.innerHTML = `<a data-target="playbook">${playbook.title}</a>`;
-    this.submenuPlaybooks.appendChild(link);
+  }
+
+  getId(playbook) {
+    return "playbook__" + playbook.title.toLowerCase();
   }
 
   addPlaybook(playbook) {
-    this.section = this.addSection();
+    this.section = this.addSection(this.getId(playbook));
     this.left = this.addDiv("playbook__left", this.section);
     this.right = this.addDiv("playbook__right", this.section);
     this.left.innerHTML = `

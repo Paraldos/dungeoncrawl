@@ -3,8 +3,9 @@ export default class Page {
     this.container = document.querySelector(selector);
   }
 
-  addSection() {
+  addSection(id = "") {
     const section = document.createElement("section");
+    section.id = id;
     this.container.appendChild(section);
     return section;
   }
