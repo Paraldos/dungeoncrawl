@@ -3,8 +3,7 @@ const descriptions = {
   wizzard_tricks:
     "Du beherrschst Zaubertricks (z.B. eine Tür mit Telekinese öffnen oder eine Pfeife mit einem Fingerschnippen entzünden).",
   banish: "Du beendest einen Zauber, den du sehen kannst.",
-  barrier:
-    "Du erschaffst eine undurchdringliche magische Barriere (max. 3 m²).",
+  barrier: "Du erschaffst eine undurchdringliche magische Wand (max. 3 m²).",
   message:
     "Du schicks eine kurze mentale Nachricht an jemanden, den du kennst.",
   clairvoyance:
@@ -15,6 +14,7 @@ const descriptions = {
   teleport:
     "Du teleportierst dich an einen Ort, den du in den letzten 24 Stunden gesehen hast.",
   iron_skin: "Deine Gesundheit steigt um 1 Punkt.",
+  iron_will: "Deine Ausdauer steigt um 1 Punkt.",
   feat_of_strength:
     "Du vollbringst eine übernatürliche Krafttat, wie z. B. Metallgitter mit bloßen Händen verbiegen.",
   rage: "Vorteil auf STÄ-Proben (einschließlich Angriffe).",
@@ -27,7 +27,8 @@ const descriptions = {
     "Du kannst kleine Pflanzen nach belieben wachsen lassen und erhältst Vorteil beim Umgang mit Pflanzen.",
   animal_friend:
     "Du kannst mit Tieren sprechen und erhältst Vorteil beim Umgang mit Tieren.",
-  animal_control: "Du gibst einem Tier oder Schwarm einen magischen Befehl.",
+  animal_control:
+    "Du gibst einem Tier oder einem Schwarm Kleintiere einen magischen Befehl.",
   entangle: "Eine Gruppe Gegner kann sich eine Runde lang nicht bewegen.",
   growth:
     "Du lässt Pflanzen in eine von dir gewünschte Form wachsen (Baumbrücke dauert ca. 1 Minute).",
@@ -39,7 +40,7 @@ const descriptions = {
   counter: "Gelingt deine Parade, erleidet dein Gegner einen Treffer.",
   maneuver: "Du erhältst einen Vorteil auf eine Attacke oder Parade.",
   inner_fire:
-    "Du bist immun gegen Hitze und Kälte und erhältst Vorteil bei Paraden gegen Feuer.",
+    "Du bist immun gegen Hitze und Kälte und erhältst Vorteil wen du dich gegen Feuerschaden verteidigst.",
   sorcerer_tricks:
     "Du kannst kleine Flammen und Hitze erzeugen und manipulieren (z.B. eine Pfeife anzünden).",
   arsonist:
