@@ -22,6 +22,9 @@ export default class playbook extends page {
   }
 
   addPlaybookToNavbar(playbook) {
+    document.dispatchEvent(
+      new Event("playbookAdded", { detail: { playbook: playbook } })
+    );
     const link = document.createElement("li");
     link.innerHTML = `<a data-target="playbook">${playbook.title}</a>`;
     this.submenuPlaybooks.appendChild(link);

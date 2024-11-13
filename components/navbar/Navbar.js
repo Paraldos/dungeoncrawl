@@ -6,6 +6,9 @@ export default class Navbar {
     this.navLinks.forEach((link) => {
       link.addEventListener("click", () => this.onClickNavLink(link));
     });
+    document.addEventListener("playbookAdded", (e) => {
+      console.log(e.detail);
+    });
   }
 
   onClickNavLink(selectedLink) {
