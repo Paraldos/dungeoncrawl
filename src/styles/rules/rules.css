@@ -1,0 +1,45 @@
+.rules {
+  h2 {
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    fill: white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    svg {
+      fill: white;
+      height: 2em;
+      width: 2em;
+    }
+  }
+
+  ul {
+    list-style: url("/src/assets/img/pentagram.svg");
+    padding-left: 20px;
+  }
+
+  li {
+    padding-bottom: 5px;
+  }
+
+  p {
+    padding-bottom: 5px;
+  }
+
+  .rules__content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .rules__column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

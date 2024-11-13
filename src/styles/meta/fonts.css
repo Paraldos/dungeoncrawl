@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Roboto;
+  src: url("/src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("/src/assets/fonts/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: Faculty;
+  src: url("/src/assets/fonts/FacultyGlyphic-Regular.ttf") format("truetype");
+}
