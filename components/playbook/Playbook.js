@@ -21,7 +21,7 @@ export default class playbook extends page {
   addPlaybookToNavbar(playbook) {
     document.dispatchEvent(
       new CustomEvent("playbookAdded", {
-        detail: { title: playbook.title, id: this.getId(playbook) },
+        detail: { txt: playbook.title, id: this.getId(playbook) },
       })
     );
   }

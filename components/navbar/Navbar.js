@@ -10,13 +10,13 @@ export default class Navbar {
       ".navbar__submenu--playbooks"
     );
     document.addEventListener("playbookAdded", (e) =>
-      this.onPlaybookAdded(e.detail)
+      this.onPlaybookAdded(e.detail.txt, e.detail.id)
     );
   }
 
-  onPlaybookAdded(details) {
+  onPlaybookAdded(txt, id) {
     const link = document.createElement("li");
-    link.innerHTML = `<a href="#${details.id}">${details.title}</a>`;
+    link.innerHTML = `<a href="#${id}">${txt}</a>`;
     this.submenuPlaybooks.appendChild(link);
   }
 
