@@ -1,7 +1,7 @@
 section {
-  background-color: white;
+  background-color: var(--color__section);
   width: 29.7cm;
   height: 21cm;
-  margin: 10px auto;
+  margin: 15px auto;
   padding: 50px;
 }

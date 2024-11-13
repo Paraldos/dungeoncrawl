@@ -1,27 +1,25 @@
 * {
-  --c1: #06080a;
-  --c2: #080e12;
-  --c3: #09151b;
-  --c4: #081e26;
-  --c5: #052a32;
-  --c6: #184042;
-  --c7: #204c48;
-  --c8: #365c51;
-  --c9: #4e715f;
-  --c10: #809a80;
-  --c11: #9eaf99;
-
+  /* size */
   --size__navbar-height: 70px;
 
-  --color__background: var(--c1);
-  --color__text: var(--c1);
-  --color__section: white;
+  /* color */
+  --c1: #ff0546;
+  --c2: #9c173b;
+  --c3: #660f31;
+  --c4: #450327;
+  --c5: #270022;
+  --c6: #17001d;
+  --c7: #09010d;
 
-  --color__selector-background: var(--c5);
+  --color__background: var(--c7);
+  --color__section: white;
+  --color__text: var(--c7);
+  --color__text--contrast: white;
 
   --color__navbar-background: var(--c1);
-  --color__navbar-text: var(--c11);
-  --color__navbar-text--hover: white;
+  --color__navbar-text: var(--c2);
+  --color__navbar-text--hover: var(--c1);
+
   --color__navbar-button-border: var(--c6);
   --color__navbar-button-1: var(--c4);
   --color__navbar-button-2: var(--c7);

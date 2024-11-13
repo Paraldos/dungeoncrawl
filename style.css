@@ -2,7 +2,6 @@
 @import "./styles/basics/_import.css";
 @import "./styles/navbar/navbar.css";
 @import "./styles/playbooks/_import.css";
-@import "./styles/karten.css";
 
 * {
   box-sizing: border-box;
