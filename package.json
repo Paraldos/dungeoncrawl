@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "DungeonCrawl",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,15 +7,15 @@
     "mammoth": "^1.8.0"
   },
   "devDependencies": {
-    "css-loader": "^7.1.2",
-    "style-loader": "^4.0.0",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.0"
+    "webpack-dev-server": "^4.15.0",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0"
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack --watch --progress"
   },
   "author": "",
   "license": "ISC"
