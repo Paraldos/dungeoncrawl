@@ -1,0 +1,18 @@
+.rules {
+  h2 {
+    background-color: black;
+    color: white;
+    fill: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      fill: white;
+      height: 1.6em;
+      width: 1.6em;
+      margin: 0 20px;
+    }
+  }
+}

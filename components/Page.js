@@ -1,6 +1,9 @@
+import Svg from "./Svg.js";
+
 export default class Page {
   constructor(selector) {
     this.container = document.querySelector(selector);
+    this.svg = new Svg();
   }
 
   addSection(id = "") {
