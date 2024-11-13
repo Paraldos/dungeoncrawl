@@ -50,7 +50,7 @@ nav {
   list-style: none;
 
   background: var(--color__background);
-  box-shadow: 0px 15px 5px 5px var(--color__background);
+  box-shadow: 0px 15px 5px 3px var(--color__background);
   padding: 5px;
   padding-top: 15px;
 
@@ -61,6 +61,7 @@ nav {
     padding: 5px;
     text-decoration: none;
     width: 100%;
+    border-width: 1px;
   }
 
   a:visited {
