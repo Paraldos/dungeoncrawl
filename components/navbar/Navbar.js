@@ -9,12 +9,19 @@ export default class Navbar {
   }
 
   onClickNavLink(selectedLink) {
+    this.focusBtn(selectedLink);
+    this.focusPages(selectedLink);
+  }
+
+  focusBtn(selectedLink) {
     this.navLinks.forEach((link) => {
       link == selectedLink
         ? link.classList.add("btn-selected")
         : link.classList.remove("btn-selected");
     });
+  }
 
+  focusPages(selectedLink) {
     const target = selectedLink.getAttribute("data-target");
     if (target) {
       this.pages.forEach((page) => {
