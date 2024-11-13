@@ -6,7 +6,7 @@ button,
   color: var(--color__navbar-text);
   background: transparent;
 
-  background-image: linear-gradient(90deg, var(--c4), var(--c2), var(--c4));
+  background-image: linear-gradient(to right, var(--c3), var(--c2), var(--c3));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -30,7 +30,7 @@ button,
 button.btn-selected,
 button:hover,
 .button:hover {
-  background-image: linear-gradient(90deg, var(--c4), var(--c1), var(--c4));
+  background-image: linear-gradient(to right, var(--c4), var(--c1), var(--c4));
   text-decoration: none;
 }
 
