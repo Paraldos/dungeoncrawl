@@ -15,4 +15,23 @@
       margin: 0 20px;
     }
   }
+
+  ul {
+    list-style: url("/assets/img/pentagram.svg");
+    padding-left: 20px;
+  }
+
+  li {
+    padding-bottom: 5px;
+  }
+
+  p {
+    padding-bottom: 5px;
+  }
+
+  .rules__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
