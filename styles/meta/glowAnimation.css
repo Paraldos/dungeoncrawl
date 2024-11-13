@@ -1,20 +1,5 @@
 .glow-animation {
   --size: var(--size);
   --negative-size: calc(var(--size) * -1);
-
-  animation: infinite;
-  animation-name: glow;
-  animation-duration: 2s;
-}
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px 2px var(--c1);
-  }
-  50% {
-    box-shadow: 0 0 7px 7px var(--c1);
-  }
-  100% {
-    box-shadow: 0 0 5px 2px var(--c1);
-  }
+  box-shadow: 0 0 7px 7px var(--c1);
 }

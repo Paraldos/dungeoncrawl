@@ -1,18 +1,20 @@
 .rules {
   h2 {
+    font-size: 2em;
     background-color: black;
     color: white;
     fill: white;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
 
     svg {
       fill: white;
-      height: 1.6em;
-      width: 1.6em;
-      margin: 0 20px;
+      height: 2em;
+      width: 2em;
     }
   }
 
@@ -29,9 +31,15 @@
     padding-bottom: 5px;
   }
 
-  .rules__content {
+  .rules__content-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .rules__column {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 }
