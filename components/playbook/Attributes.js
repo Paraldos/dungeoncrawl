@@ -17,11 +17,11 @@ export default class Attributes {
 		<div class="playbook__attribute blackbox">
 			<select>
 				<option></option>
-				<option>W4</option>
-				<option>W6</option>
-				<option>W8</option>
-				<option>W10</option>
-				<option>W12</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
 			</select>
 			<label>${titel}</label>
 		</div>
