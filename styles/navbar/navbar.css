@@ -21,4 +21,23 @@ nav {
 .navbar__links {
   display: flex;
   gap: 20px;
+  position: relative;
+}
+
+.navbar__link {
+  position: relative;
+}
+
+.navbar__submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  list-style: none;
+}
+
+.navbar__link:hover .navbar__submenu {
+  display: block;
 }

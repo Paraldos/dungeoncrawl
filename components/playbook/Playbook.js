@@ -7,12 +7,24 @@ import Talents from "./Talents.js";
 export default class playbook extends page {
   constructor() {
     super(".playbook");
-    listOfPlaybooks.forEach((playbook) => this.addPlaybook(playbook));
+    this.submenuPlaybooks = document.querySelector(
+      ".navbar__submenu--playbooks"
+    );
+    listOfPlaybooks.forEach((playbook) => {
+      this.addPlaybook(playbook);
+      this.addPlaybookToNavbar(playbook);
+    });
     document.querySelectorAll(".checkbox").forEach((checkbox) => {
       checkbox.addEventListener("click", () => {
         checkbox.classList.toggle("checkbox--checked");
       });
     });
+  }
+
+  addPlaybookToNavbar(playbook) {
+    const link = document.createElement("li");
+    link.innerHTML = `<a data-target="playbook">${playbook.title}</a>`;
+    this.submenuPlaybooks.appendChild(link);
   }
 
   addPlaybook(playbook) {
@@ -79,6 +91,6 @@ export default class playbook extends page {
   }
 
   getStartwerte() {
-    return `<p><strong>Startwerte: </strong>Attribute: 2 x 1 Punkt, 4x 2 Punkte / 3 Standard Gegenstände / W6 Gold / 3 Gesundheit / 6 Ausdauer / 1 Feat / 1 Stunt</p>`;
+    return `<p><strong>Startwerte: </strong>Attribute: 2x 1 Punkt, 4x 2 Punkte / 3 Standard Gegenstände / W6 Gold / 3 Gesundheit / 6 Ausdauer / 1 Feat / 1 Stunt</p>`;
   }
 }
