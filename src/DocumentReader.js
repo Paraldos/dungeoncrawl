@@ -1,11 +1,22 @@
 import mammoth from "mammoth";
 
 export default class DocumentReader {
-  constructor() {}
+  constructor() {
+    console.log("DocumentReader initialized");
+    this.read("/src/data/Regeln.docx");
+  }
 
   async read(file) {
-    const result = await mammoth.extractRawText({ arrayBuffer: file });
-    console.log(result);
-    return result.value;
+    fetch(file)
+      .then((response) => response.arrayBuffer())
+      .then((arrayBuffer) => {
+        return mammoth.extractRawText({ arrayBuffer: arrayBuffer });
+      })
+      .then((result) => {
+        console.log(result.value); // Ausgabe des Inhalts in der Konsole
+      })
+      .catch((err) => {
+        console.error("Fehler beim Lesen der DOCX-Datei:", err);
+      });
   }
 }
