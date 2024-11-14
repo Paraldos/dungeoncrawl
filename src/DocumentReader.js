@@ -10,7 +10,7 @@ export default class DocumentReader {
     fetch(file)
       .then((response) => response.arrayBuffer())
       .then((arrayBuffer) => {
-        return mammoth.extractRawText({ arrayBuffer: arrayBuffer });
+        return mammoth.convertToHtml({ arrayBuffer: arrayBuffer });
       })
       .then((result) => {
         console.log(result.value); // Ausgabe des Inhalts in der Konsole
