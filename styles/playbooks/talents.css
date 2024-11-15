@@ -18,9 +18,7 @@
 
 .talents__list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  padding-left: 5px;
 
   li {
     display: flex;

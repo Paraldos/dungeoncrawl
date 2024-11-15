@@ -10,7 +10,7 @@ const descriptions = {
     "Der Erzähler beantwortet 3 Ja/Nein-Fragen zu einem Objekt, das du berührst.",
   levitation: "Du schwebst in Schrittgeschwindigkeit.",
   telekinesis:
-    "Bewege einen Gegenstand mit mentaler Kraft (verwende INT als mentale KRA und GES).",
+    "Bewege einen Gegenstand mit mentaler Kraft (verwende INT als KRA und GES).",
   teleport:
     "Du teleportierst dich an einen Ort, den du in den letzten 24 Stunden gesehen hast.",
   iron_skin: "Deine Gesundheit steigt um 1 Punkt.",
