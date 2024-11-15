@@ -20,10 +20,10 @@ export default class Page {
     });
   }
 
-  addDiv(className, parent) {
-    const div = document.createElement("div");
-    div.classList.add(className);
-    parent.appendChild(div);
-    return div;
+  addGridContainer(parent) {
+    const gridContainer = document.createElement("div");
+    gridContainer.classList.add("grid-container");
+    parent.appendChild(gridContainer);
+    return gridContainer;
   }
 }
