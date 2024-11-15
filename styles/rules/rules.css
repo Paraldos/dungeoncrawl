@@ -17,17 +17,4 @@
       width: 2em;
     }
   }
-
-  ul {
-    list-style: url("/assets/img/pentagram.svg");
-    padding-left: 20px;
-  }
-
-  li {
-    padding-bottom: 5px;
-  }
-
-  p {
-    padding-bottom: 5px;
-  }
 }

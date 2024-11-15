@@ -20,17 +20,18 @@ export default class Page {
     });
   }
 
+  addDiv(className, parent) {
+    const div = document.createElement("div");
+    div.classList = className;
+    parent.appendChild(div);
+    return div;
+  }
+
   addGridContainer(parent) {
-    const gridContainer = document.createElement("div");
-    gridContainer.classList.add("grid-container");
-    parent.appendChild(gridContainer);
-    return gridContainer;
+    return this.addDiv("grid-container", parent);
   }
 
   addFlexColumn(parent) {
-    const flexColumn = document.createElement("div");
-    flexColumn.classList.add("flex-column");
-    parent.appendChild(flexColumn);
-    return flexColumn;
+    return this.addDiv("flex-column", parent);
   }
 }
