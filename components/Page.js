@@ -26,4 +26,11 @@ export default class Page {
     parent.appendChild(gridContainer);
     return gridContainer;
   }
+
+  addFlexColumn(parent) {
+    const flexColumn = document.createElement("div");
+    flexColumn.classList.add("flex-column");
+    parent.appendChild(flexColumn);
+    return flexColumn;
+  }
 }
