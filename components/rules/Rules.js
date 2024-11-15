@@ -10,8 +10,8 @@ export default class Regeln extends page {
     const section = this.addSection("rules");
     section.innerHTML += `
 		<h2>Regeln${this.svg.getPentagramm()}</h2>
-		<div class="rules__content-container">
-			<div class="rules__column">
+		<div class="grid-container">
+			<div class="flex-column">
 				<div>
 					<h3>Einfache Proben</h3>
 					<p>Einfache Proben sind der mechanische Kern des Spiels. Tust du etwas das wichtig ist und schief gehen kann, wird eine Probe fällig, um den Ausgang zu bestimmen.</p>
@@ -45,7 +45,7 @@ export default class Regeln extends page {
 					<p>Ist eine Probe gefährlich, kann ein scheitern negative Konsequenzen nach sich ziehen, wie z.B. Stress oder Schaden. Defensive Proben (z.B. einer Falle ausweichen) sind typischerweise immer riskant.</p>
 				</div>
 			</div>
-			<div class="rules__column">
+			<div class="flex-column">
 				<div>
 					<h3>Herausforderungen</h3>
 					<p>Eine umfangreiche Aufgabe, wie z.B. einen Kampf oder Recherchen, kann der Erzähler auch als Herausforderungen darstellen.</p>

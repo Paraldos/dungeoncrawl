@@ -30,16 +30,4 @@
   p {
     padding-bottom: 5px;
   }
-
-  .rules__content-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .rules__column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
 }
