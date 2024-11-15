@@ -1,22 +1,15 @@
 import mammoth from "mammoth";
 
 export default class DocumentReader {
-  constructor() {
-    console.log("DocumentReader initialized");
-    this.read("/src/data/Regeln.docx");
-  }
-
-  async read(file) {
-    fetch(file)
-      .then((response) => response.arrayBuffer())
-      .then((arrayBuffer) => {
-        return mammoth.convertToHtml({ arrayBuffer: arrayBuffer });
-      })
-      .then((result) => {
-        console.log(result.value); // Ausgabe des Inhalts in der Konsole
-      })
-      .catch((err) => {
-        console.error("Fehler beim Lesen der DOCX-Datei:", err);
-      });
+  async getHtml(file) {
+    try {
+      const response = await fetch(file);
+      const arrayBuffer = await response.arrayBuffer();
+      const result = await mammoth.convertToHtml({ arrayBuffer: arrayBuffer });
+      return result.value;
+    } catch (err) {
+      console.error("Fehler beim Lesen der DOCX-Datei:", err);
+      throw err;
+    }
   }
 }
