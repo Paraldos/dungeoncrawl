@@ -39,7 +39,7 @@ const listOfPlaybooks = [
 
   new Playbook(
     "Feuermagier",
-    "Zerstörerisch und Wild. Du trägst die Macht des Feuers in dir. Sie ist gefährlich, aber wenn du sie entfesselst, kannst du deine Feinde mit einem mächtigen Sturm aus Feuer bezwingen.",
+    "Zerstörerisch und Wild. Du trägst die Macht des Feuers in dir. Sie ist tödlich und wen du sie entfesselst, kannst du deine Feinde mit einem Sturm aus Feuer und Asche vernichten.",
     [
       new Talent("Feuerlanze", descriptions.magic_missile("Feuer")),
       new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
@@ -50,7 +50,7 @@ const listOfPlaybooks = [
     [
       new Talent("Brandstifter", descriptions.arsonist),
       new Talent(
-        "Feuersturm",
+        "Explosion",
         descriptions.multiattack("mit einer explosion aus Feuer")
       ),
       new Talent("Flammenschild", descriptions.shield_of_flames),
@@ -59,7 +59,7 @@ const listOfPlaybooks = [
   ),
   new Playbook(
     "Illusionist",
-    "Charismatisch, manipulativ und einfallsreich. Du bist ein Meister der Trugbilder und Täuschung und deine Magie erlaubt es dir andere zu manipulieren und zu verwirren.",
+    "Charismatisch, manipulativ und einfallsreich. Du bist ein Meister der Trugbilder und Täuschung und deine Magie erlaubt es dir andere in deinen Bann zu schlagen oder zu verwirren.",
     [
       new Talent("Charmeur", descriptions.skill(["Überreden", "Betören"])),
       new Talent(
@@ -106,7 +106,7 @@ const listOfPlaybooks = [
         "Courage",
         descriptions.skill(["Entschlossenheit", "Willenskraft"])
       ),
-      new Talent("Eiserner Wille", descriptions.iron_skin, [false]),
+      new Talent("Eisern", descriptions.iron_skin, [false]),
       new Talent("Intuition", descriptions.intuition),
       new Talent("Prediger", descriptions.skill(["überreden", "betören"])),
     ],

@@ -48,7 +48,7 @@ const descriptions = {
   shield_of_flames:
     "Gelingt deine Parade, erleidet dein Gegner einen Treffer (zählt wie eine erfolgreiche Attacke).",
   fire_control:
-    "Kontrolliere, stärke, schwäche oder lösche ein Feuer (max. 3 m³ Volumen) oder bewege es (max. 9 m).",
+    "Kontrolliere, stärke, schwäche, lösche oder beweg ein Feuer (max. 3m³ Volumen und max. 9m distanze).",
   hypnosis: "Das Ziel gehorcht einem Befehl von dir (kein Selbstmord).",
   illusion:
     "Du erzeugst ein Trugbild (max. 3 m³), ein Geräusch und/oder einen Geruch.",
