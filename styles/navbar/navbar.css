@@ -13,6 +13,12 @@ nav {
   }
 }
 
+@media print {
+  nav {
+    display: none;
+  }
+}
+
 .navbar__content {
   height: 100%;
   max-width: 1300px;

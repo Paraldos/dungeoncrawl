@@ -21,6 +21,13 @@ body {
   min-height: 100vh;
 }
 
+@media print {
+  body {
+    background-color: transparent;
+    padding-top: 0;
+  }
+}
+
 ul {
   list-style: url("/assets/img/pentagram.svg");
   padding-left: 20px;

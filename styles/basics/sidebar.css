@@ -10,6 +10,12 @@
   box-shadow: 0 0 7px 7px var(--c1);
 }
 
+@media print {
+  .sidebar {
+    display: none;
+  }
+}
+
 .sidebar--left {
   left: 0;
 }

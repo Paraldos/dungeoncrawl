@@ -1,9 +1,15 @@
 section {
   background-color: var(--color__section);
-  width: 29.7cm;
-  height: 21cm;
+  height: 841px;
+  width: 1189px;
   margin: 15px auto;
   padding: 40px;
+}
+
+@media print {
+  section {
+    margin: 0 0 0 0;
+  }
 }
 
 .section__grid {
