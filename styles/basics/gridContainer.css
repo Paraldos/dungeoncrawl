@@ -4,6 +4,10 @@
   gap: 20px;
 }
 
+.grid--3-colums {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;

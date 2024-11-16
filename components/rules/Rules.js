@@ -3,16 +3,17 @@ import page from "../Page.js";
 export default class Regeln extends page {
   constructor() {
     super(".rules");
-    this.addPage();
+    this.addRulesPage();
+    this.addExamplesPage();
   }
 
-  addPage() {
+  addRulesPage() {
     const section = this.addSection("rules");
     section.innerHTML += `<h2>Regeln${this.svg.getPentagramm()}</h2>`;
-    const gridContainer = this.addGridContainer(section);
+    const gridContainer = this.addDiv("grid-container", section);
     const columnLeft = this.addFlexColumn(gridContainer);
     const columnRight = this.addFlexColumn(gridContainer);
-    columnLeft.innerHTML += `
+    columnLeft.innerHTML = `
 		<div>
 			<h3>Einfache Proben</h3>
 			<p>Einfache Proben sind der mechanische Kern des Spiels. Tust du etwas das wichtig ist und schief gehen kann, wird eine Probe fällig, um den Ausgang zu bestimmen.</p>
@@ -43,7 +44,7 @@ export default class Regeln extends page {
 			<p>Ist eine Probe gefährlich, kann ein scheitern negative Konsequenzen nach sich ziehen, wie z.B. Stress oder Schaden. Defensive Proben (z.B. einer Falle ausweichen) sind typischerweise immer riskant.</p>
 		</div>
 	`;
-    columnRight.innerHTML += `
+    columnRight.innerHTML = `
 		<div>
 			<h3>Herausforderungen</h3>
 			<p>Eine umfangreiche Aufgabe, wie z.B. einen Kampf oder Recherchen, kann der Erzähler auch als Herausforderungen darstellen.</p>
@@ -63,5 +64,20 @@ export default class Regeln extends page {
 			<p>Es ist in der Verantwortung der Spieler, die Feats und Stunts ihren Charakter im Auge zu haben, und bei Bedarf anzuwenden.</p>
 		</div>
 	`;
+  }
+
+  addExamplesPage() {
+    const section = this.addSection("rules");
+    section.innerHTML += `<h2>Beispiele${this.svg.getPentagramm()}</h2>`;
+    const gridContainer = this.addDiv(
+      "grid-container, grid--3-colums",
+      section
+    );
+    const columnLeft = this.addFlexColumn(gridContainer);
+    const columnMiddle = this.addFlexColumn(gridContainer);
+    const columnRight = this.addFlexColumn(gridContainer);
+    columnLeft.innerHTML = `Test`;
+    columnMiddle.innerHTML = `Test`;
+    columnRight.innerHTML = `Test`;
   }
 }

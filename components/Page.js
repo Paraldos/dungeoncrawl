@@ -27,10 +27,6 @@ export default class Page {
     return div;
   }
 
-  addGridContainer(parent) {
-    return this.addDiv("grid-container", parent);
-  }
-
   addFlexColumn(parent) {
     return this.addDiv("flex-column", parent);
   }
