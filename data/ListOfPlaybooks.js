@@ -23,7 +23,7 @@ const listOfPlaybooks = [
     "Weise, naturverbunden und wandelbar. Du trägst die uralte Macht der Natur in dir und kannst andere heilen, dich in wilde Tiere verwandeln und Pflanzen beherrschen.",
     [
       new Talent("Dornen", descriptions.magic_missile("Dornen")),
-      new Talent("Eiserner Wille", descriptions.iron_skin, [false, false]),
+      new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
       new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
       new Talent("Pflanzenfreund", descriptions.plant_friend),
       new Talent("Tierfreund", descriptions.animal_friend),
@@ -42,7 +42,7 @@ const listOfPlaybooks = [
     "Zerstörerisch und Wild. Du trägst die Macht des Feuers in dir. Sie ist gefährlich, aber wenn du sie entfesselst, kannst du deine Feinde mit einem mächtigen Sturm aus Feuer bezwingen.",
     [
       new Talent("Feuerlanze", descriptions.magic_missile("Feuer")),
-      new Talent("Eiserner Wille", descriptions.iron_skin, [false, false]),
+      new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
       new Talent("Inneres Feuer", descriptions.inner_fire),
       new Talent("Tricks", descriptions.sorcerer_tricks),
       new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
@@ -66,7 +66,7 @@ const listOfPlaybooks = [
         "Dieb",
         descriptions.skill(["Diebstahl", "Falschspiel", "ähnlichen Tricks"])
       ),
-      new Talent("Eiserner Wille", descriptions.iron_skin, [false, false]),
+      new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
       new Talent(
         "Schauspieler",
         descriptions.skill(["Verkleiden", "Fälschen", "Auftreten"])
@@ -159,7 +159,7 @@ const listOfPlaybooks = [
         "Arkanes Geschoss",
         descriptions.magic_missile("arkaner Energie")
       ),
-      new Talent("Eiserner Wille", descriptions.iron_skin, [false, false]),
+      new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
       new Talent("Genie", descriptions.genius, [true]),
       new Talent("Gelehrter", descriptions.skill(["Bildung", "Wissen"])),
       new Talent("Zaubertricks", descriptions.wizzard_tricks),
