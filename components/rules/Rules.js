@@ -10,7 +10,7 @@ export default class Regeln extends page {
   addRulesPage() {
     const section = this.addSection("rules");
     section.innerHTML += `<h2>Regeln${this.svg.getPentagramm()}</h2>`;
-    const gridContainer = this.addDiv("grid-container", section);
+    const gridContainer = this.addDiv("section__grid", section);
     const columnLeft = this.addFlexColumn(gridContainer);
     const columnRight = this.addFlexColumn(gridContainer);
     columnLeft.innerHTML = `
@@ -69,7 +69,10 @@ export default class Regeln extends page {
   addExamplesPage() {
     const section = this.addSection("rules");
     section.innerHTML += `<h2>Beispiele${this.svg.getPentagramm()}</h2>`;
-    const gridContainer = this.addDiv("grid-container grid--3-colums", section);
+    const gridContainer = this.addDiv(
+      "section__grid section__grid--3-colums",
+      section
+    );
     const columnLeft = this.addFlexColumn(gridContainer);
     const columnMiddle = this.addFlexColumn(gridContainer);
     const columnRight = this.addFlexColumn(gridContainer);

@@ -5,3 +5,19 @@ section {
   margin: 15px auto;
   padding: 40px;
 }
+
+.section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.section__grid--3-colums {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

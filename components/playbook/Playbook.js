@@ -32,7 +32,7 @@ export default class playbook extends page {
 
   addPlaybook(playbook) {
     const section = this.addSection(this.getId(playbook));
-    const grid = this.addDiv("grid-container", section);
+    const grid = this.addDiv("section__grid", section);
     this.left = this.addDiv("playbook__left flex-column", grid);
     this.right = this.addDiv("playbook__right flex-column", grid);
 

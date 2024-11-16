@@ -1,5 +1,5 @@
 .playbook {
-  .grid-container {
+  .section__grid {
     grid-template-columns: 2fr 3fr;
     gap: 30px;
   }
