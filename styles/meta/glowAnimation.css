@@ -1,5 +1,0 @@
-.glow-animation {
-  --size: var(--size);
-  --negative-size: calc(var(--size) * -1);
-  box-shadow: 0 0 7px 7px var(--c1);
-}
