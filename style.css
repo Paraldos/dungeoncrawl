@@ -33,4 +33,6 @@ li {
 
 p {
   padding-bottom: 5px;
+  text-align: justify;
+  hyphens: auto;
 }

@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 50px;
 }
 
 .grid--3-colums {
@@ -11,5 +11,5 @@
 .flex-column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
