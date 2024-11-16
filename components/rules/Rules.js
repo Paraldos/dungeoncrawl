@@ -59,8 +59,12 @@ export default class Regeln extends page {
 			<p>Bist du an der Reihe, kannst du dich eine Zone weit bewegen und dann noch eine Handlung ausführen.</p>
 		</div>
 		<div>
+			<h3>Pasch</h3>
+			<p>Ein Pasch bedeutet, dass die Probe besonders spektakulär gelingt oder scheitert und bei Herausforderungen zählt ein erfolgreicher Pasch als zwei Erfolge.</p>
+		</div>
+		<div>
 			<h3>Feats und Stunts</h3>
-			<p>Je nach Klasse und Stufe erhält jeder Charakter eine Handvoll Feats und Stunts. Diese geben ihm gewöhnlich einen Vorteil auf bestimmte Proben, +1 Erfolg bei Proben in Herausforderungen oder erlauben ihm einzigartige Handlungen, die ihm sonst nicht offenstehen würden.</p>
+			<p>Je nach Klasse und Stufe erhält jeder Charakter eine Handvoll Feats und Stunts. Diese geben ihm gewöhnlich einen Vorteil auf bestimmte Proben, extra Erfolge bei Herausforderungen oder erlauben ihm einzigartige Handlungen, die ihm sonst nicht offenstehen würden.</p>
 			<p>Es ist in der Verantwortung der Spieler, die Feats und Stunts ihren Charakter im Auge zu haben, und bei Bedarf anzuwenden.</p>
 		</div>
 	`;
