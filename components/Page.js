@@ -23,7 +23,7 @@ export default class Page {
   addDiv(className, parent) {
     const div = document.createElement("div");
     div.classList = className;
-    parent.appendChild(div);
+    if (parent) parent.appendChild(div);
     return div;
   }
 
