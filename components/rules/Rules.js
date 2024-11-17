@@ -23,9 +23,8 @@ export default class Regeln extends page {
 			<p>Zeigen deine Würfel einen Pasch ist das Ergebnis kritisch, und die Probe gelingt oder misslingt besonders spektakulär.</p>
 		</div>
 		<div>
-			<h3>Einfache Proben</h3>
-			<p>Benutzt du ein passendes Werkzeug, darfst du dessen Bonus zu deinem Ergebnis addieren.</p>
-			<p>Ist nichts angegeben, kannst du von folgenden Werten ausgehen:</p>
+			<h3>Werkzeug</h3>
+			<p>Benutzt du ein passendes Werkzeug, darfst du dessen Bonus zu deinem Ergebnis addieren. Ist nichts angegeben, kannst du von folgenden Werten ausgehen:</p>
 			<ul>
 				<li>Improvisiertes Werkzeug +1 (z.B. ein Stuhl oder Messer als Waffe)</li>
 				<li>Passendes Werkzeug +2 (z.B. ein Schwert im Kampf)</li>
@@ -34,16 +33,19 @@ export default class Regeln extends page {
 		</div>
 		<div>
 			<h3>Vor- und Nachteil</h3>
-			<p>Einige Umstände können dir einen Vor- oder Nachteil einbringen.</p>
-			<p>Überwiegen die Vorteile, rollst du 3W6 und verwendest die zwei besseren.</p>
-			<p>Überwiegen die Nachteile, rollst du 3W6 und verwendest die zwei schlechteren.</p>
-			<p>Gleichen sich Vor- und Nachteile aus, rollst du eine normale Probe.</p>
+			<p>Einige Umstände können dir Vor- und Nachteil für deine Probe einbringen.</p>
+			<ul>
+				<li>Überwiegen die Vorteile, rollst du 3W6 und verwendest die zwei besseren.</li>
+				<li>Überwiegen die Nachteile, rollst du 3W6 und verwendest die zwei schlechteren.</li>
+				<li>Gleichen sich Vor- und Nachteile aus, rollst du eine normale Probe.</li>
+			</ul>
 		</div>
 		<div>
 			<h3>Riskante Proben</h3>
-			<p>Ist eine Probe gefährlich, kann ein scheitern negative Konsequenzen nach sich ziehen, wie z.B. Stress oder Schaden. Defensive Proben (z.B. einer Falle ausweichen) sind typischerweise immer riskant.</p>
+			<p>Ist eine Probe besonders gefährlich, kann der Erzähler sie als riskant deklarieren. Das bedeutet, du erleidest einen Treffer sollte die Probe scheitern.</p>
+			<p>Defensive Proben (z.B. einer Falle ausweichen) sind typischerweise immer riskant.</p>
 		</div>
-	`;
+		`;
     columnRight.innerHTML = `
 		<div>
 			<h3>Herausforderungen</h3>
@@ -57,10 +59,6 @@ export default class Regeln extends page {
 		<div>
 			<p><strong>Optional, Zonen</strong>: Bei komplexen Herausforderungen kann es nützlich sein eine grobe Skizze der Umgebung zu zeichnen und diese in Zonen zu unterteilen. Eine Taverne könnte z.B. aus dem Hof vor dem Gebäude, dem Hauptraum und der Küche bestehen.</p>
 			<p>Bist du an der Reihe, kannst du dich eine Zone weit bewegen und dann noch eine Handlung ausführen.</p>
-		</div>
-		<div>
-			<h3>Pasch</h3>
-			<p>Ein Pasch bedeutet, dass die Probe besonders spektakulär gelingt oder scheitert und bei Herausforderungen zählt ein erfolgreicher Pasch als zwei Erfolge.</p>
 		</div>
 		<div>
 			<h3>Feats und Stunts</h3>
