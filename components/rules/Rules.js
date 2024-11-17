@@ -16,9 +16,9 @@ export default class Regeln extends page {
     columnLeft.innerHTML = `
 		<div>
 			<h3>Einfache Proben</h3>
-			<p>Einfache Proben sind der mechanische Kern des Spiels. Tust du etwas das wichtig ist und schief gehen kann, wird eine Probe fällig, um den Ausgang zu bestimmen.</p>
-			<p>Der Erzähler bestimmt welches Attribut geprüft wird und welchen Schwierigkeitsgrad (SG) du schlagen musst.</p>
-			<p>Du rollst zwei W6 und addierst das geprüfte Attribut (und Werkzeugbonus, wen du welches benutzt).</p>
+			<p>Einfache Proben bilden den mechanischen Kern des Spiels. Immer wenn du etwas wichtiges tust, dass potenziell schiefgehen kann, kann der Erzähler eine Probe fordern, um den Ausgang der Situation zu bestimmen.</p>
+			<p>Der Erzähler legt fest, welches Attribut geprüft wird und welchen Schwierigkeitsgrad (SG) du erreichen musst.</p>
+			<p>Du würfelst mit zwei W6 und addierst das entsprechende Attribut sowie einen möglichen Bonus durch ein Werkzeug (falls du eines verwendest).</p>
 			<p>Erreichst oder übertriffst du den geforderten SG, ist die Probe gelungen.</p>
 			<p>Zeigen deine Würfel einen Pasch ist das Ergebnis kritisch, und die Probe gelingt oder misslingt besonders spektakulär.</p>
 		</div>
@@ -27,7 +27,7 @@ export default class Regeln extends page {
 			<p>Benutzt du ein passendes Werkzeug, darfst du dessen Bonus zu deinem Ergebnis addieren. Ist nichts angegeben, kannst du von folgenden Werten ausgehen:</p>
 			<ul>
 				<li>Improvisiertes Werkzeug +1 (z.B. ein Stuhl oder Messer als Waffe)</li>
-				<li>Passendes Werkzeug +2 (z.B. ein Schwert im Kampf)</li>
+				<li>Passendes Werkzeug +2 (z.B. ein Dietrich zum Schlösser knacken)</li>
 				<li>Gutes Werkzeug +3 (z.B. voll ausgestattete Werkstatt für Reparaturen)</li>
 			</ul>
 		</div>
@@ -42,7 +42,7 @@ export default class Regeln extends page {
 		</div>
 		<div>
 			<h3>Riskante Proben</h3>
-			<p>Ist eine Probe besonders gefährlich, kann der Erzähler sie als riskant deklarieren. Das bedeutet, du erleidest einen Treffer sollte die Probe scheitern.</p>
+			<p>Ist eine Probe besonders gefährlich, kann der Erzähler sie als riskant deklarieren. Das bedeutet, du erleidest einen Punkt Schaden, sollte die Probe scheitern.</p>
 			<p>Defensive Proben (z.B. einer Falle ausweichen) sind typischerweise immer riskant.</p>
 		</div>
 		`;
@@ -63,14 +63,14 @@ export default class Regeln extends page {
 		<div>
 			<h3>Feats und Stunts</h3>
 			<p>Je nach Klasse und Stufe erhält jeder Charakter eine Handvoll Feats und Stunts. Diese geben ihm gewöhnlich einen Vorteil auf bestimmte Proben, extra Erfolge bei Herausforderungen oder erlauben ihm einzigartige Handlungen, die ihm sonst nicht offenstehen würden.</p>
-			<p>Es ist in der Verantwortung der Spieler, die Feats und Stunts ihren Charakter im Auge zu haben, und bei Bedarf anzuwenden.</p>
+			<p>Es ist in der Verantwortung der Spieler, die Feats und Stunts ihrer Charaktere im Auge zu haben, und bei Bedarf anzuwenden.</p>
 		</div>
 	`;
   }
 
   addExamplesPage() {
     const section = this.addSection("rules");
-    section.innerHTML += `<h2>Beispiele${this.svg.getPentagramm()}</h2>`;
+    section.innerHTML += `<h2>Spiel Beispiele${this.svg.getPentagramm()}</h2>`;
     const gridContainer = this.addDiv(
       "section__grid section__grid--3-colums",
       section
