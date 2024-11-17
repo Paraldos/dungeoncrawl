@@ -6,9 +6,10 @@ export default class Page {
     this.svg = new Svg();
   }
 
-  addSection(id = "") {
+  addSection(id = "", countsAsPage = true) {
     const section = document.createElement("section");
     section.id = id;
+    if (countsAsPage) section.classList.add("page");
     this.container.appendChild(section);
     return section;
   }

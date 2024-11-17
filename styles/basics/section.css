@@ -4,6 +4,7 @@ section {
   width: 1189px;
   margin: 15px auto;
   padding: 50px;
+  position: relative;
 }
 
 @media print {
