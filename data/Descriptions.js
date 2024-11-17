@@ -8,15 +8,16 @@ const descriptions = {
     "Du schicks eine kurze mentale Nachricht an jemanden, den du kennst.",
   clairvoyance:
     "Der Erzähler beantwortet 3 Ja/Nein-Fragen zu einem Objekt, das du berührst.",
-  levitation: "Du schwebst in Schrittgeschwindigkeit.",
+  levitation:
+    "Du kannst für den Rest der Runde in Schrittgeschwindigkeit durch die Luft schweben.",
   telekinesis:
-    "Bewege einen Gegenstand mit mentaler Kraft (verwende INT als KRA und GES).",
+    "Bewege einen Gegenstand mit mentaler Kraft (verwende INT als mentale STÄ und GES).",
   teleport:
     "Du teleportierst dich an einen Ort, den du in den letzten 24 Stunden gesehen hast.",
   iron_skin: "Deine Gesundheit steigt um 1 Punkt.",
   iron_will: "Deine Ausdauer steigt um 1 Punkt.",
   feat_of_strength:
-    "Du vollbringst eine übernatürliche Krafttat, wie z. B. Metallgitter mit bloßen Händen verbiegen.",
+    "Du kannst einen übernatürlichen Kraftakt vollbringen, wie z. B. Metallgitter mit bloßen Händen verbiegen.",
   rage: "Vorteil auf STÄ-Proben (einschließlich Angriffe).",
   fury: "Vorteil auf ZÄH-Proben (einschließlich Paraden).",
   intuition: "Konzentriere dich, um Böses in der Nähe zu spüren.",
@@ -37,7 +38,8 @@ const descriptions = {
   weather_control: "Du veränderst das Wetter (muss zur Umgebung passen).",
   bodyguard:
     "Nahe Verbündete erhalten für eine Runde Vorteil auf ihre Paraden.",
-  counter: "Gelingt deine Parade, erleidet dein Gegner einen Treffer.",
+  counter:
+    "Verteidige dich gegen einen Angriff. Gelingt deine Probe, erleidet der Angreifer einen Treffer (zählt wie eine erfolgreiche Attacke).",
   maneuver: "Du erhältst einen Vorteil auf eine Attacke oder Parade.",
   inner_fire:
     "Du bist immun gegen Hitze und Kälte und erhältst Vorteil wen du dich gegen Feuerschaden verteidigst.",
@@ -45,19 +47,17 @@ const descriptions = {
     "Du kannst kleine Flammen und Hitze erzeugen und manipulieren (z.B. eine Pfeife anzünden).",
   arsonist:
     "Ein Gegenstand, den du berührst, verbrennt oder schmilzt (z.B. eine Eisentür schmelzen dauert 1 Minute).",
-  shield_of_flames:
-    "Gelingt deine Parade, erleidet dein Gegner einen Treffer (zählt wie eine erfolgreiche Attacke).",
   fire_control:
-    "Kontrolliere, stärke, schwäche, lösche oder beweg ein Feuer (max. 3m³ Volumen und max. 9m distanze).",
+    "Du kannst ein Feuer (max. 3m³) stärke, schwäche, lösche oder beweg (max. 9m).",
   hypnosis: "Das Ziel gehorcht einem Befehl von dir (kein Selbstmord).",
   illusion:
-    "Du erzeugst ein Trugbild (max. 3 m³), ein Geräusch und/oder einen Geruch.",
+    "Du erzeugst eine Illusion mit Bild (max. 3 m³), Geräusch und/oder Geruch.",
   forget: "Das Ziel vergisst ein Ereignis der letzten 7 Tage.",
   confuse: "Das Ziel muss für eine Runde aussetzen.",
   sneakAttack:
     "Dein Angriff trifft eine Schwachstelle des Gegners (gelunge Probe zählt als 2 Erfolge).",
   multitalent: "Du erhältst Vorteil auf eine beliebige Nicht-Kampf-Probe.",
-  vanish: "Andere ignorieren dich, als wärst du unsichtbar.",
+  vanish: "Du wirst unsichtbar, bist du dich auffällig verhältst.",
   oath: "Du akzeptierst den Schwur einer anderen Person. Bei Bruch erleidest das Opfer eine Wunde und eine deutlich sichtbares Mal.",
   multiclass_feats: "Wähle einen Feat einer anderen Klasse.",
   multiclass_stunts: "Wähle einen Stunt einer anderen Klasse.",
@@ -66,7 +66,7 @@ const descriptions = {
 
   magic_missile(damagetype, advantage = false) {
     return `Du schleuderst ein magisches Geschoss aus ${damagetype}${
-      advantage ? " mit Vorteil" : ""
+      advantage ? " und erhältst einen Vorteil auf die Probe" : ""
     }.`;
   },
 

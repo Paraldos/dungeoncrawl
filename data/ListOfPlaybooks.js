@@ -53,7 +53,7 @@ const listOfPlaybooks = [
         "Explosion",
         descriptions.multiattack("mit einer explosion aus Feuer")
       ),
-      new Talent("Flammenschild", descriptions.shield_of_flames),
+      new Talent("Flammenschild", descriptions.counter),
       new Talent("Kontrolle", descriptions.fire_control),
     ]
   ),
