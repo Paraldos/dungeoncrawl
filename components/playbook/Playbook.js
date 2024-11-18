@@ -1,16 +1,14 @@
-import listOfPlaybooks from "../../data/ListOfPlaybooks.js";
+import listOfPlaybooks from "./data/ListOfPlaybooks.js";
 import page from "../Page.js";
 import Attributes from "./Attributes.js";
 import Inventory from "./Inventory.js";
 import Talents from "./Talents.js";
 
 export default class playbook extends page {
-  constructor() {
+  constructor(playbook) {
     super(".playbook");
-    listOfPlaybooks.forEach((playbook) => {
-      this.addPlaybook(playbook);
-      this.addPlaybookToNavbar(playbook);
-    });
+    this.addPlaybook(playbook);
+    this.addPlaybookToNavbar(playbook);
     document.querySelectorAll(".checkbox").forEach((checkbox) => {
       checkbox.addEventListener("click", () => {
         checkbox.classList.toggle("checkbox--checked");

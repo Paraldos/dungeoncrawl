@@ -1,6 +1,6 @@
+import descriptions from "./Descriptions.js";
 import Talent from "./Talent.js";
 import Playbook from "./Playbook.js";
-import descriptions from "./Descriptions.js";
 
 const listOfPlaybooks = [
   new Playbook(
