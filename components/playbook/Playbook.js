@@ -1,4 +1,3 @@
-import listOfPlaybooks from "./data/ListOfPlaybooks.js";
 import page from "../Page.js";
 import Attributes from "./Attributes.js";
 import Inventory from "./Inventory.js";
