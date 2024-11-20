@@ -2,7 +2,6 @@ import Svg from "./Svg.js";
 
 export default class Page {
   constructor(selector) {
-    this.container = document.querySelector(selector);
     this.svg = new Svg();
   }
 
@@ -10,7 +9,7 @@ export default class Page {
     const section = document.createElement("section");
     section.id = id;
     if (countsAsPage) section.classList.add("page");
-    this.container.appendChild(section);
+    document.body.appendChild(section);
     return section;
   }
 

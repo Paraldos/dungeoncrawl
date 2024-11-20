@@ -2,7 +2,7 @@ import page from "../Page.js";
 
 export default class Regeln extends page {
   constructor() {
-    super(".rules");
+    super();
     this.addRulesPage();
     this.addExamplesPage();
   }
