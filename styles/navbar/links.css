@@ -16,10 +16,11 @@
     border-image-slice: 1;
     border-image-source: linear-gradient(
       to right,
-      var(--color__navbar-text--contrast),
+      transparent 12%,
       var(--color__navbar-text),
-      var(--color__navbar-text--contrast)
+      transparent 88%
     );
+    transition: all 0.1s ease;
 
     text-align: center;
     text-transform: uppercase;
