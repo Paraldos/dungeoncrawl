@@ -5,7 +5,7 @@ import Talents from "./Talents.js";
 
 export default class playbook extends page {
   constructor(playbook) {
-    super(".playbook");
+    super();
     this.playbook = playbook;
 
     this.addPlaybook(playbook);
@@ -24,6 +24,7 @@ export default class playbook extends page {
 
   addPlaybook() {
     const section = this.addSection(this.getId());
+    section.classList.add("playbook");
     const grid = this.addDiv("section__grid", section);
     this.left = this.addDiv("playbook__left flex-column", grid);
     this.right = this.addDiv("playbook__right flex-column", grid);

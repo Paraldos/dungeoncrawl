@@ -1,7 +1,7 @@
 import Svg from "./Svg.js";
 
 export default class Page {
-  constructor(selector) {
+  constructor() {
     this.svg = new Svg();
   }
 
