@@ -6,6 +6,30 @@ section {
   padding: 50px;
   position: relative;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  counter-increment: pages 1;
+}
+
+section::after {
+  content: counter(pages);
+  color: var(--color__text--contrast);
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: var(--color__text);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-child(odd)::after {
+  left: 20px;
 }
 
 @media print {
