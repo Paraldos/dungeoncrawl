@@ -9,7 +9,11 @@ export default class playbook extends page {
     this.playbook = playbook;
 
     this.addPlaybook(playbook);
-    // window.navbar.addNavbarItem(playbook.title, this.getId(playbook));
+    window.navbar.addSubmenuItem(
+      "playbooks",
+      playbook.title,
+      this.getId(playbook)
+    );
 
     document.querySelectorAll(".checkbox").forEach((checkbox) => {
       checkbox.addEventListener("click", () => {
