@@ -69,9 +69,9 @@ export default class Regeln extends page {
 			<h3>Herausforderungen</h3>
 			<p>Umfangreiche Aufgaben, wie z.B. einen Kampf oder Recherchen, kann der Erzähler als Herausforderungen darstellen.</p>
 			<p>Dazu beschreibt er was vor sich geht und bestimmt dann, wie viele Erfolge nötig sind, um die Aufgabe zu bewältigen.</p>
-			<p>Die Spieler dürfen dann reihum Handeln und Proben ablegen, um Erfolge beizusteuern. Kritische Erfolge zählen dabei doppelt. Haben sie genug Erfolge angesammelt, ist die Herausforderung gemeistert.</p>
-			<p>Ansonsten folgt der Erzähler. Er beschreibt, wie die Helden vorrankommen und wie sich die Situation entwickelt, ehe eine neue Runde beginnt.</p>
-			<p>Ist eine Situation gefährlich, wie z.B. während eines Kampfes, kann der Erzähler in seinem Zug auch einen Gegenschlag einstreuen, dem die Helden mit einer riskanten Probe widerstehen müssen.</p>
+			<p>Die Spieler dürfen dann reihum Handeln und Proben ablegen, um Erfolge beizusteuern und kritische Erfolge zählen dabei doppelt.</p>
+			<p>Ist der Erzähler dran, beschreibt, wie die Helden vorrankommen und wie sich die Situation entwickelt. Ist eine Situation gefährlich, wie z.B. während eines Kampfes, kann er seinen Zug auch nutzen um einen Gegenschlag einstreuen, dem die Helden mit einer riskanten Probe widerstehen müssen.</p>
+			<p>Haben die Spieler genug Erfolge angesammelt, ist die Herausforderung gemeistert.</p>
 		</div>
 		<div>
 			<p><strong>Optional, Zonen</strong>: Bei komplexen Herausforderungen kann es nützlich sein eine grobe Skizze der Umgebung zu zeichnen und diese in Zonen zu unterteilen. Eine Taverne könnte z.B. aus dem Hof vor dem Gebäude, dem Hauptraum und der Küche bestehen.</p>
