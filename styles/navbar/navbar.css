@@ -1,15 +1,21 @@
+@import "./logo.css";
+
 nav {
   width: 100%;
   height: var(--size__navbar-height);
-  position: fixed;
   background: var(--color__background);
+  position: fixed;
   top: 0;
   z-index: 500;
 
-  .logo {
-    fill: var(--color__navbar-text);
+  .navbar__content {
     height: 100%;
-    aspect-ratio: 1;
+    max-width: var(--size__section-width);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 15px 5px;
+    margin: auto;
   }
 }
 
@@ -17,16 +23,6 @@ nav {
   nav {
     display: none;
   }
-}
-
-.navbar__content {
-  height: 100%;
-  max-width: 1300px;
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  padding: 15px 30px;
-  margin: auto;
 }
 
 .navbar__links {
