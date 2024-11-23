@@ -12,9 +12,14 @@ export default class Regeln extends page {
     window.navbar.addNavbarItem("Regeln", "rules");
 
     section.innerHTML += `<h2>Regeln${this.svg.getPentagramm()}</h2>`;
-    const gridContainer = this.addDiv("section__grid", section);
+    const gridContainer = this.addDiv(
+      "section__grid section__grid--3-colums",
+      section
+    );
     const columnLeft = this.addFlexColumn(gridContainer);
+    const columnMiddle = this.addFlexColumn(gridContainer);
     const columnRight = this.addFlexColumn(gridContainer);
+
     columnLeft.innerHTML = `
 		<div>
 			<h3>Einfache Proben</h3>
@@ -33,6 +38,9 @@ export default class Regeln extends page {
 				<li>Gutes Werkzeug +3 (z.B. voll ausgestattete Werkstatt für Reparaturen)</li>
 			</ul>
 		</div>
+		`;
+
+    columnMiddle.innerHTML = `
 		<div>
 			<h3>Vor- und Nachteil</h3>
 			<p>Einige Umstände können dir Vor- und Nachteil für deine Probe einbringen.</p>
@@ -42,30 +50,32 @@ export default class Regeln extends page {
 				<li>Gleichen sich Vor- und Nachteile aus, rollst du eine normale Probe.</li>
 			</ul>
 		</div>
+
 		<div>
 			<h3>Riskante Proben</h3>
-			<p>Ist eine Probe besonders gefährlich, kann der Erzähler sie als riskant deklarieren. Das bedeutet, du erleidest einen Punkt Schaden, sollte die Probe scheitern.</p>
+			<p>Gefährliche Proben kann der Erzähler auch als riskant einstufen. Das bedeutet, du erleidest einen Punkt Schaden, sollte die Probe scheitern.</p>
 			<p>Defensive Proben (z.B. einer Falle ausweichen) sind typischerweise immer riskant.</p>
 		</div>
-		`;
+
+		<div>
+			<h3>Feats und Stunts</h3>
+			<p>Je nach Klasse und Stufe erhält jeder Charakter eine Handvoll Feats und Stunts. Diese geben ihm gewöhnlich einen Vorteil auf bestimmte Proben, extra Erfolge bei Herausforderungen oder erlauben ihm einzigartige Handlungen, die ihm sonst nicht offenstehen würden.</p>
+			<p>Es ist in der Verantwortung der Spieler, die Feats und Stunts ihrer Charaktere im Auge zu haben, und bei Bedarf anzuwenden.</p>
+		</div>
+	`;
+
     columnRight.innerHTML = `
 		<div>
 			<h3>Herausforderungen</h3>
-			<p>Eine umfangreiche Aufgabe, wie z.B. einen Kampf oder Recherchen, kann der Erzähler auch als Herausforderungen darstellen.</p>
-			<p>Dazu beschreibt der Erzähler erstmal was vor sich geht und bestimmt wie viele Erfolge nötig sind, um die Aufgabe zu bewältigen.</p>
-			<p>Die Spieler dürfen dann reihum Handeln und Proben ablegen, um Erfolge beizusteuern. Kritische Erfolge zählen doppelt.
-			Haben die Spieler genug Erfolge angesammelt, ist die Herausforderung gemeistert.</p>
+			<p>Umfangreiche Aufgaben, wie z.B. einen Kampf oder Recherchen, kann der Erzähler als Herausforderungen darstellen.</p>
+			<p>Dazu beschreibt er was vor sich geht und bestimmt dann, wie viele Erfolge nötig sind, um die Aufgabe zu bewältigen.</p>
+			<p>Die Spieler dürfen dann reihum Handeln und Proben ablegen, um Erfolge beizusteuern. Kritische Erfolge zählen dabei doppelt. Haben sie genug Erfolge angesammelt, ist die Herausforderung gemeistert.</p>
 			<p>Ansonsten folgt der Erzähler. Er beschreibt, wie die Helden vorrankommen und wie sich die Situation entwickelt, ehe eine neue Runde beginnt.</p>
 			<p>Ist eine Situation gefährlich, wie z.B. während eines Kampfes, kann der Erzähler in seinem Zug auch einen Gegenschlag einstreuen, dem die Helden mit einer riskanten Probe widerstehen müssen.</p>
 		</div>
 		<div>
 			<p><strong>Optional, Zonen</strong>: Bei komplexen Herausforderungen kann es nützlich sein eine grobe Skizze der Umgebung zu zeichnen und diese in Zonen zu unterteilen. Eine Taverne könnte z.B. aus dem Hof vor dem Gebäude, dem Hauptraum und der Küche bestehen.</p>
 			<p>Bist du an der Reihe, kannst du dich eine Zone weit bewegen und dann noch eine Handlung ausführen.</p>
-		</div>
-		<div>
-			<h3>Feats und Stunts</h3>
-			<p>Je nach Klasse und Stufe erhält jeder Charakter eine Handvoll Feats und Stunts. Diese geben ihm gewöhnlich einen Vorteil auf bestimmte Proben, extra Erfolge bei Herausforderungen oder erlauben ihm einzigartige Handlungen, die ihm sonst nicht offenstehen würden.</p>
-			<p>Es ist in der Verantwortung der Spieler, die Feats und Stunts ihrer Charaktere im Auge zu haben, und bei Bedarf anzuwenden.</p>
 		</div>
 	`;
   }
