@@ -1,4 +1,4 @@
-import page from "../Page.js";
+import page from "../../Page.js";
 import Attributes from "./Attributes.js";
 import Inventory from "./Inventory.js";
 import Talents from "./Talents.js";

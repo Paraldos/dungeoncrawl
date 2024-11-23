@@ -1,4 +1,4 @@
-import Checkbox from "../Checkbox.js";
+import Checkbox from "../../Checkbox.js";
 
 export default class Talents {
   getTalents(listOfTalents) {
