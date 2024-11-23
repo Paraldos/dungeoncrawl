@@ -1,7 +1,7 @@
-import Navbar from "./components/navbar/Navbar.js";
-import Regeln from "./components/rules/Rules.js";
-import Examples from "./components/rules/Examples.js";
-import playbooks from "./components/rules/Playbooks.js";
+import Navbar from "/scripts/navbar/Navbar.js";
+import Regeln from "/scripts/rules/Rules.js";
+import Examples from "/scripts/rules/Examples.js";
+import playbooks from "/scripts/rules/Playbooks.js";
 
 window.navbar = new Navbar();
 new Regeln();
