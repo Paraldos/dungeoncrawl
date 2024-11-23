@@ -1,5 +1,5 @@
 @import "./styles/meta/_import.css";
-@import "./styles/basics/_import.css";
+@import "./styles/_import.css";
 @import "./styles/navbar/navbar.css";
 @import "./styles/rules/rules.css";
 @import "./styles/playbooks/_import.css";
