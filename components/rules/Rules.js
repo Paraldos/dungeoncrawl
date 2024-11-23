@@ -9,6 +9,9 @@ export default class Regeln extends page {
 
   addRulesPage() {
     const section = this.addSection("rules");
+    section.classList.add("rules");
+    window.navbar.addNavbarItem("Regeln", "rules");
+
     section.innerHTML += `<h2>Regeln${this.svg.getPentagramm()}</h2>`;
     const gridContainer = this.addDiv("section__grid", section);
     const columnLeft = this.addFlexColumn(gridContainer);
@@ -69,7 +72,10 @@ export default class Regeln extends page {
   }
 
   addExamplesPage() {
-    const section = this.addSection("rules");
+    const section = this.addSection("examples");
+    section.classList.add("rules");
+    window.navbar.addNavbarItem("Spiel Beispiele", "examples");
+
     section.innerHTML += `<h2>Spiel Beispiele${this.svg.getPentagramm()}</h2>`;
     const gridContainer = this.addDiv(
       "section__grid section__grid--3-colums",
