@@ -19,7 +19,8 @@
   --color__text--contrast: white;
 
   --color__navbar-text: black;
-  --color__navbar-text--hover: white;
+  --color__navbar-text--contrast: white;
+  --color__navbar-text--hover: grey;
 
   --color__navbar-button-border: black;
   --color__navbar-button-1: black;

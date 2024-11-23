@@ -1,0 +1,37 @@
+.navbar__link:hover .navbar__submenu {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: all;
+}
+
+.navbar__submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: var(--color__background);
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.1s;
+  pointer-events: none;
+
+  li {
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    font-size: 0.9rem;
+    padding: 0;
+    width: 100%;
+    border-width: 1px;
+    margin: 0;
+    text-decoration: none;
+  }
+}

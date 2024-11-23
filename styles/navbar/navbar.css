@@ -1,4 +1,6 @@
 @import "./logo.css";
+@import "./links.css";
+@import "./submenu.css";
 
 nav {
   width: 100%;
@@ -7,6 +9,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 500;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   .navbar__content {
     height: 100%;
@@ -23,54 +26,4 @@ nav {
   nav {
     display: none;
   }
-}
-
-.navbar__links {
-  display: flex;
-  gap: 20px;
-  position: relative;
-}
-
-.navbar__link {
-  position: relative;
-}
-
-.navbar__submenu {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  list-style: none;
-
-  background: var(--color__background);
-  box-shadow: 0px 15px 5px 3px var(--color__background);
-  padding: 5px;
-  padding-top: 15px;
-
-  a {
-    display: block;
-    color: var(--color__navbar-text);
-    font-size: 0.9rem;
-    padding: 5px;
-    text-decoration: none;
-    width: 100%;
-    border-width: 1px;
-  }
-
-  a:visited {
-    color: var(--color__navbar-text);
-  }
-
-  a:hover {
-    color: var(--color__navbar-text--hover);
-  }
-}
-
-.navbar__link:hover .navbar__submenu {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
