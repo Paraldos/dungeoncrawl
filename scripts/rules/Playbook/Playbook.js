@@ -6,8 +6,11 @@ import Talents from "./Talents.js";
 export default class playbook extends page {
   constructor(playbook) {
     super(".playbook");
+    this.playbook = playbook;
+
     this.addPlaybook(playbook);
-    this.addPlaybookToNavbar(playbook);
+    // window.navbar.addNavbarItem(playbook.title, this.getId(playbook));
+
     document.querySelectorAll(".checkbox").forEach((checkbox) => {
       checkbox.addEventListener("click", () => {
         checkbox.classList.toggle("checkbox--checked");
@@ -15,20 +18,8 @@ export default class playbook extends page {
     });
   }
 
-  addPlaybookToNavbar(playbook) {
-    document.dispatchEvent(
-      new CustomEvent("playbookAdded", {
-        detail: { txt: playbook.title, id: this.getId(playbook) },
-      })
-    );
-  }
-
-  getId(playbook) {
-    return "playbook__" + playbook.title.toLowerCase();
-  }
-
-  addPlaybook(playbook) {
-    const section = this.addSection(this.getId(playbook));
+  addPlaybook() {
+    const section = this.addSection(this.getId());
     const grid = this.addDiv("section__grid", section);
     this.left = this.addDiv("playbook__left flex-column", grid);
     this.right = this.addDiv("playbook__right flex-column", grid);
@@ -43,19 +34,23 @@ export default class playbook extends page {
 		${this.getStartwerte()}
 	`;
     this.right.innerHTML = `
-		${this.getPlaybookTitle(playbook.title)}
-		<p>${playbook.description}</p>
+		${this.getPlaybookTitle(this.playbook.title)}
+		<p>${this.playbook.description}</p>
 		<div class="talents__header blackbox">
 			<h3>Feats</h3>
 			<label>Feats sind permanente Vorteile, von denen du jederzeit profitierst.</label>
 		</div>
-		${new Talents().getTalents(playbook.feats)}
+		${new Talents().getTalents(this.playbook.feats)}
 		<div class="talents__header blackbox">
 			<h3>Stunts</h3>
 			<label>Stunts sind aktive Fähigkeiten, die du mit 1 Punkt Ausdauer aktivieren musst.</label>
 		</div>
-		${new Talents().getTalents(playbook.stunts)}
+		${new Talents().getTalents(this.playbook.stunts)}
 	`;
+  }
+
+  getId() {
+    return "playbook__" + this.playbook.title.toLowerCase();
   }
 
   getCharackterBox() {
