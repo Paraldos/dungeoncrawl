@@ -23,38 +23,27 @@ export default class Regeln extends page {
     columnLeft.innerHTML = `
 		<div>
 			<h3>Einfache Proben</h3>
-			<p>Einfache Proben bilden den mechanischen Kern des Spiels. Immer wenn du etwas wichtiges tust, dass potenziell schiefgehen kann, kann der Erzähler eine Probe fordern, um den Ausgang der Situation zu bestimmen.</p>
+			<p>Einfache Proben bilden den mechanischen Kern des Spiels. Immer wenn du etwas Wichti-ges tust, dass potenziell schiefgehen kann, kann der Erzähler eine Probe fordern, um den Aus-gang der Situation zu bestimmen.</p>
 			<p>Der Erzähler legt fest, welches Attribut geprüft wird und welchen Schwierigkeitsgrad (SG) du erreichen musst.</p>
-			<p>Du würfelst mit zwei W6 und addierst das entsprechende Attribut sowie einen möglichen Bonus durch ein Werkzeug (falls du eines verwendest).</p>
-			<p>Erreichst oder übertriffst du den geforderten SG, ist die Probe gelungen.</p>
-			<p>Zeigen deine Würfel einen Pasch ist das Ergebnis kritisch, und die Probe gelingt oder misslingt besonders spektakulär.</p>
+			<p>Du rollst den Würfel, den du im geprüften Attri-but hast (W4, W6, W8, W10 oder W12). Er-reichst oder übertriffst du den geforderten SG, ist die Probe gelungen.</p>
 		</div>
+
 		<div>
 			<h3>Werkzeug</h3>
-			<p>Benutzt du ein passendes Werkzeug, darfst du dessen Bonus zu deinem Ergebnis addieren. Ist nichts angegeben, kannst du von folgenden Werten ausgehen:</p>
-			<ul>
-				<li>Improvisiertes Werkzeug +1 (z.B. ein Stuhl oder Messer als Waffe)</li>
-				<li>Passendes Werkzeug +2 (z.B. ein Dietrich zum Schlösser knacken)</li>
-				<li>Gutes Werkzeug +3 (z.B. voll ausgestattete Werkstatt für Reparaturen)</li>
-			</ul>
+			<p>Benutzt du Werkzeug, dass zur Probe passt, darfst du zwei Würfel rollen, den deines Attributs und den des Werkzeugs, und das bessere Er-gebnis zählt.</p>
+			<p>Optional, Improvisiertes Werkzeug: Benutzt du Werkzeug, für das du keine Werte hast, kannst du davon ausgehen, dass es einen W6 gibt.</p>
+		</div>
+
+		<div>
+			<h3>Bonis und Malis</h3>
+			<p>Einige Umstände, wie z.B. Feats oder Stunts, können dir einen Bonus oder Malus verschaf-fen. Diese verrechnest du schlicht mit dem ge-würfelten Ergebnis, bevor du es mit dem SG vergleichst.</p>
 		</div>
 		`;
 
     columnMiddle.innerHTML = `
 		<div>
-			<h3>Vor- und Nachteil</h3>
-			<p>Einige Umstände können dir Vor- und Nachteil für deine Probe einbringen.</p>
-			<ul>
-				<li>Überwiegen die Vorteile, rollst du 3W6 und verwendest die zwei besseren.</li>
-				<li>Überwiegen die Nachteile, rollst du 3W6 und verwendest die zwei schlechteren.</li>
-				<li>Gleichen sich Vor- und Nachteile aus, rollst du eine normale Probe.</li>
-			</ul>
-		</div>
-
-		<div>
 			<h3>Riskante Proben</h3>
-			<p>Gefährliche Proben kann der Erzähler auch als riskant einstufen. Das bedeutet, du erleidest einen Punkt Schaden, sollte die Probe scheitern.</p>
-			<p>Defensive Proben (z.B. einer Falle ausweichen) sind typischerweise immer riskant.</p>
+			<p>Ist eine Probe besonders gefährlich, kann der Erzähler sie als riskant deklarieren. Das bedeu-tet, du erleidest einen Punkt Schaden, sollte die Probe scheitern. Defensive Proben (z.B. einer Falle ausweichen) sind typischerweise immer riskant.</p>
 		</div>
 
 		<div>
@@ -67,14 +56,14 @@ export default class Regeln extends page {
     columnRight.innerHTML = `
 		<div>
 			<h3>Herausforderungen</h3>
-			<p>Umfangreiche Aufgaben, wie z.B. einen Kampf oder Recherchen, kann der Erzähler als Herausforderungen darstellen.</p>
-			<p>Dazu beschreibt er was vor sich geht und bestimmt dann, wie viele Erfolge nötig sind, um die Aufgabe zu bewältigen.</p>
-			<p>Die Spieler dürfen dann reihum Handeln und Proben ablegen, um Erfolge beizusteuern und kritische Erfolge zählen dabei doppelt.</p>
-			<p>Ist der Erzähler dran, beschreibt, wie die Helden vorrankommen und wie sich die Situation entwickelt. Ist eine Situation gefährlich, wie z.B. während eines Kampfes, kann er seinen Zug auch nutzen um einen Gegenschlag einstreuen, dem die Helden mit einer riskanten Probe widerstehen müssen.</p>
+			<p>Eine umfangreiche Aufgabe, wie z.B. einen Kampf oder Recherchen, kann der Erzähler auch als Herausforderungen darstellen.</p>
+			<p>Dazu beschreibt der Erzähler erstmal was vor sich geht und bestimmt wie viele Erfolge nötig sind, um die Aufgabe zu bewältigen.</p>
+			<p>Die Spieler dürfen dann reihum Handeln und Proben ablegen, um Erfolge beizusteuern. Der Spieler links vom Erzähler beginnt und dann geht es im Uhrzeigersinn weiter.</p>
+			<p>Ist der Erzähler an der Reihe, beschreibt er wie sich die Situation entwickelt und wen die Situa-tion gefährlich ist, kann er einen Gegenschlag einstreuen, dem die Spieler mit einer riskanten Probe widerstehen müssen.</p>
 			<p>Haben die Spieler genug Erfolge angesammelt, ist die Herausforderung gemeistert.</p>
 		</div>
 		<div>
-			<p><strong>Optional, Zonen</strong>: Bei komplexen Herausforderungen kann es nützlich sein eine grobe Skizze der Umgebung zu zeichnen und diese in Zonen zu unterteilen. Eine Taverne könnte z.B. aus dem Hof vor dem Gebäude, dem Hauptraum und der Küche bestehen.</p>
+			<p><strong>Optional, Zonen</strong>: Während komplexer Herausforderungen kann es nützlich sein eine grobe Skizze der Umge-bung zu zeichnen und diese in Zonen zu unter-teilen. Eine Taverne könnte z.B. aus dem Hof vor dem Gebäude, dem Hauptraum und der Küche bestehen.</p>
 			<p>Bist du an der Reihe, kannst du dich eine Zone weit bewegen und dann noch eine Handlung ausführen.</p>
 		</div>
 	`;
