@@ -33,14 +33,14 @@ export default class Regeln extends page {
 			<p>Benutzt du Werkzeug, dass zur Probe passt, darfst du zwei Würfel rollen, den deines Attributs und den des Werkzeugs, und das bessere Ergebnis zählt.</p>
 			<p>Optional, Improvisiertes Werkzeug: Benutzt du Werkzeug, für das du keine Werte hast, kannst du davon ausgehen, dass es einen W6 gibt.</p>
 		</div>
+		`;
 
+    columnMiddle.innerHTML = `
 		<div>
 			<h3>Bonis und Malis</h3>
 			<p>Einige Umstände, wie z.B. Feats oder Stunts, können dir einen Bonus oder Malus verschaffen. Diese verrechnest du schlicht mit dem gewürfelten Ergebnis, bevor du es mit dem SG vergleichst.</p>
 		</div>
-		`;
 
-    columnMiddle.innerHTML = `
 		<div>
 			<h3>Riskante Proben</h3>
 			<p>Ist eine Probe besonders gefährlich, kann der Erzähler sie als riskant deklarieren. Das bedeutet, du erleidest einen Punkt Schaden, sollte die Probe scheitern. Defensive Proben (z.B. einer Falle ausweichen) sind typischerweise immer riskant.</p>
