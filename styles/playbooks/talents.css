@@ -25,6 +25,7 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 4px;
+    padding-bottom: 5px;
   }
 
   p {
