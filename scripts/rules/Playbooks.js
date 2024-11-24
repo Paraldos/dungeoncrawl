@@ -5,8 +5,8 @@ import Playbook from "./Playbook/Playbook.js";
 export default class playbooks extends page {
   constructor() {
     super();
-    this.addSecondPage();
     this.addFirstPage();
+    this.addSecondPage();
     listOfPlaybooks.forEach((playbook) => new Playbook(playbook));
   }
 
@@ -99,7 +99,7 @@ export default class playbooks extends page {
     section.classList.add("rules");
 
     const gridContainer = this.addDiv(
-      "section__grid section__grid--3-colums",
+      "section__grid section__grid--3-colums section__grid--with-top-padding",
       section
     );
     const columnLeft = this.addFlexColumn(gridContainer);
@@ -114,36 +114,36 @@ export default class playbooks extends page {
       </div>
 
       <div>
-        <h3>Werdegang</h3>
-        <p>Abhängig von Level lässt sich der Werdegang deines Helden in drei Akte einteilen. Daran kannst du ablesen, wie hoch deine Attribute maximal steigen können und welche Schätze du finden kannst.</p>
-
-        <table>
-          <tr>
-            <th>Level</th>
-            <th>Werdegang</th>
-            <th>Attribute</th>
-            <th>Schätze</th>
-          </tr>
-          <tr>
-            <td>1 bis 5</td>
-            <td>Abenteurer</td>
-            <td>W8</td>
-            <td>Bronze</td>
-          </tr>
-          <tr>
-            <td>6 bis 10</td>
-            <td>Held</td>
-            <td>W10</td>
-            <td>Silber</td>
-          </tr>
-          <tr>
-            <td>11 bis 15</td>
-            <td>Legende</td>
-            <td>W12</td>
-            <td>Gold</td>
-          </tr>
-        </table>
+        <h3>Status</h3>
+        <p>Abhängig von Level lässt sich der Status deines Helden in drei Stufen einteilen: Abenteurer, Held und Legende. Daran kannst du ablesen, wie hoch deine Attribute maximal steigen können und welche Schätze du finden kannst.</p>
       </div>
+
+      <table>
+        <tr>
+          <th>Level</th>
+          <th>Status</th>
+          <th>Att.</th>
+          <th>Schätze</th>
+        </tr>
+        <tr>
+          <td>1 bis 5</td>
+          <td>Abenteurer</td>
+          <td>W8</td>
+          <td>Bronze</td>
+        </tr>
+        <tr>
+          <td>6 bis 10</td>
+          <td>Held</td>
+          <td>W10</td>
+          <td>Silber</td>
+        </tr>
+        <tr>
+          <td>11 bis 15</td>
+          <td>Legende</td>
+          <td>W12</td>
+          <td>Gold</td>
+        </tr>
+      </table>
     `;
 
     columnMiddle.innerHTML = `

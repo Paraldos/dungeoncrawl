@@ -50,3 +50,7 @@ section::after {
   flex-direction: column;
   gap: 10px;
 }
+
+.section__grid--with-top-padding {
+  padding-top: 50px;
+}
