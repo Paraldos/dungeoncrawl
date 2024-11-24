@@ -1,0 +1,22 @@
+ul {
+  margin-top: 5px;
+}
+
+li {
+  list-style: none;
+  padding: 5px 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  background-image: url("/assets/img/arrowCircleRight.svg");
+  background-size: cover;
+  height: 1rem;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

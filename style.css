@@ -28,14 +28,6 @@ body {
   }
 }
 
-ul {
-  list-style: url("/assets/img/pentagram.svg");
-}
-
-li {
-  padding-bottom: 5px;
-}
-
 p {
   padding-bottom: 5px;
   text-align: justify;
