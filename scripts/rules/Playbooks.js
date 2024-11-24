@@ -26,10 +26,10 @@ export default class playbooks extends page {
     columnLeft.innerHTML = `
     <div>
       <h3>Generierung</h3>
-      <p>Bevor das Spiel beginnt, musst du einen Cha-rakter generieren, den du im Spiel verkörperst. Befolge dazu die folgenden Schritte:</p>
+      <p>Bevor das Spiel beginnt, musst du einen Charakter generieren, den du im Spiel verkörperst. Befolge dazu die folgenden Schritte:</p>
       <ul>
         <li><strong>Playbook</strong>: Wähle ein Playbook, dass dir gefällt.</li>
-        <li><strong>Beschreibung</strong>: Überleg dir einen Namen und/oder eine kurze Beschreibung (z.B. El-ron, der elfische Klingentänzer).</li>
+        <li><strong>Beschreibung</strong>: Überleg dir einen Namen und/oder eine kurze Beschreibung (z.B. Elron, der elfische Klingentänzer).</li>
         <li><strong>Attribute</strong>: Verteil die folgenden Werte auf deine Attribute: 3x W4 und 3x W6.</li>
         <li><strong>Inventar</strong>: Wähle drei Standardgegenstände (z.B. eine Waffe, Rüstung und Rationen).</li>
         <li><strong>Gold</strong>: Du startest mit W6 Gold.</li>
@@ -46,18 +46,18 @@ export default class playbooks extends page {
 
     <div>
       <h4>Beschreibung</h4>
-      <p>Hier kannst du den Namen deines Charakters und ein paar Schlagworte zu seiner Herkunft eintragen (z.B. Elron, der elfische Klingentän-zer).</p>
+      <p>Hier kannst du den Namen deines Charakters und ein paar Schlagworte zu seiner Herkunft eintragen (z.B. Elron, der elfische Klingentänzer).</p>
     </div>
 
     <div>
       <h4>Attribute</h4>
-      <p>Attribute sind die Grundlage deines Charakters. Sie werden auf einer Skala von Würfeln ge-messen: W4, W6, W8, W10, W12. Müsst du eine Probe auf das Attribut ablegen, rollst du diesen Würfel, um dein Ergebnis zu bestimmen. Je höher der Wert, umso besser.</p>
+      <p>Attribute sind die Grundlage deines Charakters. Sie werden auf einer Skala von Würfeln gemessen: W4, W6, W8, W10, W12. Müsst du eine Probe auf das Attribut ablegen, rollst du diesen Würfel, um dein Ergebnis zu bestimmen. Je höher der Wert, umso besser.</p>
     </div>
 
     <div>
       <h4>Inventar</h4>
-      <p>Das Inventar verkörpert die WICHTIGEN Ge-genstände deines Charakters, wie z.B. Waffen, Rüstungen, Rationen oder magische Artefakte. Du kannst bis zu 6 Gegenstände tragen.</p>
-      <p>Einige Gegenstände, wie z.B. Rationen, haben Ladungen, die bestimmen, wie oft du sie benut-zen kannst, bevor sie aufgebraucht sind.</p>
+      <p>Das Inventar verkörpert die WICHTIGEN Gegenstände deines Charakters, wie z.B. Waffen, Rüstungen, Rationen oder magische Artefakte. Du kannst bis zu 6 Gegenstände tragen.</p>
+      <p>Einige Gegenstände, wie z.B. Rationen, haben Ladungen, die bestimmen, wie oft du sie benutzen kannst, bevor sie aufgebraucht sind.</p>
     </div>
 
     <div>
@@ -83,7 +83,7 @@ export default class playbooks extends page {
 
     <div>
       <h4>Feats</h4>
-      <p>Feats sind besondere Fähigkeiten, die dein Cha-rakter erlernen kann. Sie sind immer aktiv und du kannst sie jederzeit und ohne extra Kosten benutzen.</p>
+      <p>Feats sind besondere Fähigkeiten, die dein Charakter erlernen kann. Sie sind immer aktiv und du kannst sie jederzeit und ohne extra Kosten benutzen.</p>
     </div>
 
     <div>
