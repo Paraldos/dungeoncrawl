@@ -11,7 +11,7 @@ export default class Regeln extends page {
     section.classList.add("rules");
     window.navbar.addNavbarItem("Regeln", "rules");
 
-    section.innerHTML += `<h2>Regeln${this.svg.getPentagramm()}</h2>`;
+    section.innerHTML += `<h2>Regeln${this.svg.getD20()}</h2>`;
     const gridContainer = this.addDiv(
       "section__grid section__grid--3-colums",
       section
