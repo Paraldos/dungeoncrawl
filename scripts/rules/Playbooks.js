@@ -5,8 +5,8 @@ import Playbook from "./Playbook/Playbook.js";
 export default class playbooks extends page {
   constructor() {
     super();
-    this.addFirstPage();
     this.addSecondPage();
+    this.addFirstPage();
     listOfPlaybooks.forEach((playbook) => new Playbook(playbook));
   }
 
