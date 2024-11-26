@@ -10,7 +10,3 @@
     gap: 10px;
   }
 }
-
-.playbook::after {
-  display: none;
-}

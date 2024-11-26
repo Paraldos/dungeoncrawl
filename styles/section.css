@@ -29,6 +29,10 @@ section::after {
   justify-content: center;
 }
 
+.no-counter::after {
+  display: none;
+}
+
 @media print {
   section {
     margin: 0 0 0 0;

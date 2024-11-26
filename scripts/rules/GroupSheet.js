@@ -5,7 +5,8 @@ export default class GroupSheet extends page {
     super();
     const section = this.addSection("group-sheet");
     section.classList.add("rules");
-    window.navbar.addNavbarItem("Group Sheet", "group-sheet");
+    section.classList.add("no-counter");
+    window.navbar.addNavbarItem("Gruppenbogen", "group-sheet");
 
     section.innerHTML += `<h2>Gruppenbogen ${this.svg.getD20()}</h2>`;
     const gridContainer = this.addDiv(
