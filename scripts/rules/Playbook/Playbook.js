@@ -42,17 +42,34 @@ export default class playbook extends page {
     this.right.innerHTML = `
 		${this.getPlaybookTitle(this.playbook.title)}
 		<p>${this.playbook.description}</p>
-		<div class="talents__header blackbox">
-			<h3>Feats</h3>
-			<label>Feats sind permanente Vorteile, von denen du jederzeit profitierst.</label>
-		</div>
+		${this.getFeatHeader()}
 		${new Talents().getTalents(this.playbook.feats)}
-		<div class="talents__header blackbox">
-			<h3>Stunts</h3>
-			<label>Stunts sind aktive Fähigkeiten, die du mit 1 Punkt Ausdauer aktivieren musst.</label>
-		</div>
+		${this.getStuntsHeader()}
 		${new Talents().getTalents(this.playbook.stunts)}
 	`;
+  }
+
+  getFeatHeader() {
+    return this.getTalentsHeader(
+      "Feats",
+      "Feats sind permanente Vorteile, von denen du jederzeit profitierst."
+    );
+  }
+
+  getStuntsHeader() {
+    return this.getTalentsHeader(
+      "Stunts",
+      "Stunts sind aktive Fähigkeiten, die du mit 1 Punkt Ausdauer aktivieren musst."
+    );
+  }
+
+  getTalentsHeader(title, description) {
+    return `
+      <div class="talents__header blackbox">
+        <h3>${title}</h3>
+        <label>${description}</label>
+      </div>
+    `;
   }
 
   getId() {

@@ -19,6 +19,9 @@ export default class GroupSheet extends page {
 
     columnLeft.innerHTML = `
       ${this.getGroupDescription()}
+      ${this.getAllies()}
+      ${this.getEnemies()}
+      ${this.getGold()}
     `;
   }
 
@@ -29,5 +32,17 @@ export default class GroupSheet extends page {
 			<label>Gruppe</label>
 		</div>
 	`;
+  }
+
+  getAllies() {
+    return ``;
+  }
+
+  getEnemies() {
+    return ``;
+  }
+
+  getGold() {
+    return ``;
   }
 }
