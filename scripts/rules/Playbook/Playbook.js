@@ -31,7 +31,7 @@ export default class playbook extends page {
     this.right = this.addDiv("playbook__right flex-column", grid);
 
     this.left.innerHTML = `
-		${this.getCharackterBox()}
+		${this.getCharackterDescription()}
 		${new Attributes().getAttributes()}
 		${new Inventory().getInventory()}
 		${this.getCondition("Gold")}
@@ -59,7 +59,7 @@ export default class playbook extends page {
     return "playbook__" + this.playbook.title.toLowerCase();
   }
 
-  getCharackterBox() {
+  getCharackterDescription() {
     return `
 		<div class="blackbox">
 			<input></input>

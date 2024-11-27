@@ -16,5 +16,18 @@ export default class GroupSheet extends page {
     const columnLeft = this.addFlexColumn(gridContainer);
     const columnMiddle = this.addFlexColumn(gridContainer);
     const columnRight = this.addFlexColumn(gridContainer);
+
+    columnLeft.innerHTML = `
+      ${this.getGroupDescription()}
+    `;
+  }
+
+  getGroupDescription() {
+    return `
+		<div class="blackbox">
+			<input></input>
+			<label>Charakter</label>
+		</div>
+	`;
   }
 }
