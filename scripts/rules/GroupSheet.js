@@ -26,7 +26,7 @@ export default class GroupSheet extends page {
     return `
 		<div class="blackbox">
 			<input></input>
-			<label>Charakter</label>
+			<label>Gruppe</label>
 		</div>
 	`;
   }
