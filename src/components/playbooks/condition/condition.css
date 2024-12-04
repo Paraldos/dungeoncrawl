@@ -1,0 +1,28 @@
+.playbook__condition {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  > div {
+    width: 100%;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 80px 1fr;
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  input:nth-child(1) {
+    text-align: center;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  label {
+    color: white;
+  }
+}

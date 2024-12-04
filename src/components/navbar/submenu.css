@@ -1,0 +1,49 @@
+.navbar__link > .navbar__submenu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  transition: all 0.1s;
+  margin-top: 0;
+
+  li {
+    padding: 0;
+  }
+
+  li:before {
+    display: none;
+  }
+
+  a {
+    font-size: 0.8rem;
+    padding: 0;
+    width: 100%;
+    border-width: 1px;
+    margin: 0;
+  }
+
+  @media (min-width: 1150px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    gap: 15px;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: white;
+
+    padding: 20px 0;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-30px);
+  }
+
+  @media only screen and (max-width: 1150px) {
+    gap: 15px;
+
+    width: 75%;
+    margin: auto;
+
+    transform: translate(0);
+  }
+}

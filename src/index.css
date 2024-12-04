@@ -1,0 +1,42 @@
+@import "./styles/_import.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding: calc(var(--size__navbar-height) + 8px);
+
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media only screen and (max-width: 1150px) {
+    scroll-padding: 0;
+  }
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: var(--size__navbar-height);
+
+  background-color: var(--color__background);
+
+  color: var(--color__text);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+
+  @media only screen and (max-width: 1150px) {
+    padding-top: 0;
+  }
+}
+
+@media print {
+  body {
+    background-color: transparent;
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,48 @@
+.navbar__link {
+  position: relative;
+  padding: 10px 0;
+
+  a {
+    padding: 0 30px;
+    margin: 5px;
+    display: inline-block;
+    width: 100%;
+
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      to right,
+      transparent 12%,
+      black,
+      transparent 88%
+    );
+    transition: all 0.1s ease;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    width: 450px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .navbar__link:hover .navbar__submenu {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+  }
+}

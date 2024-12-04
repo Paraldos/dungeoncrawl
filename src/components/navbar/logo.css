@@ -1,0 +1,6 @@
+.navbar__logo {
+  fill: var(--color__navbar-text);
+  height: 100%;
+  max-height: 40px;
+  aspect-ratio: 1;
+}

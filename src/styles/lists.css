@@ -1,0 +1,21 @@
+ul {
+  margin-top: 5px;
+
+  li {
+    list-style: none;
+    padding: 5px 0;
+    padding-left: 25px;
+    position: relative;
+  }
+
+  li::before {
+    content: "";
+    background-image: url("/src/assets/d6-black.svg");
+    background-size: cover;
+    height: 1rem;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+}

@@ -1,0 +1,21 @@
+.playbook {
+  .grid {
+    grid-template-columns: 2fr 3fr;
+    gap: 30px;
+    padding: 40px;
+
+    @media only screen and (max-width: 1150px) {
+      padding: 30px 15px;
+
+      & > :first-child {
+        display: none;
+      }
+    }
+
+    > div {
+      @media only screen and (max-width: 1150px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

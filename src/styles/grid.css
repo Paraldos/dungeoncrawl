@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 50px;
+
+  @media only screen and (max-width: 1150px) {
+    display: block;
+    padding: 15px;
+  }
+}
+
+.grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media only screen and (max-width: 1150px) {
+    margin-bottom: 25px;
+  }
+}
+
+.grid--no-top-padding {
+  padding-top: 0;
+}
+
+.grid--3-colums {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid--with-top-padding {
+  padding-top: 50px;
+}

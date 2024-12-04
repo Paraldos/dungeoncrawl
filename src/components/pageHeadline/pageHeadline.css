@@ -1,0 +1,24 @@
+.page-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 80px;
+  padding: 0 50px;
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  img {
+    height: 2em;
+    aspect-ratio: 1;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    padding: 0 15px;
+  }
+}

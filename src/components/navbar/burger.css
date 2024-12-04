@@ -1,0 +1,29 @@
+.navbar__burger {
+  height: 80%;
+  aspect-ratio: 1;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 50;
+
+  @media only screen and (max-width: 1150px) {
+    display: inline-block;
+  }
+
+  img {
+    height: 100%;
+    aspect-ratio: 1;
+  }
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) rotate(-25deg);
+  }
+}

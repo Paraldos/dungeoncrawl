@@ -1,0 +1,51 @@
+section {
+  background-color: var(--color__section);
+  height: var(--size__section-height);
+  width: var(--size__section-width);
+  margin: 15px auto;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  counter-increment: pages 1;
+  position: relative;
+
+  @media only screen and (max-width: 1150px) {
+    width: 100%;
+    height: fit-content;
+    margin-top: 0;
+  }
+}
+
+section::after {
+  content: counter(pages);
+  color: white;
+  background-image: url("/src/assets/diamond-black.svg");
+  background-size: cover;
+  background-position: center;
+
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media only screen and (max-width: 1150px) {
+    display: none;
+  }
+}
+
+.no-counter::after {
+  display: none;
+}
+
+@media print {
+  section {
+    margin: 0 0 0 0;
+    box-shadow: none;
+  }
+}
