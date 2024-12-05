@@ -25,11 +25,11 @@ const Left = () => {
         </p>
         <p>
           Du kannst bis zu 6 Gegenstände im deinem Inventar tragen und wen du
-          eine Handlung aus-führst, kannst du EINEN beliebigen Gegentand aus
+          eine Handlung ausführst, kannst du EINEN beliebigen Gegentand aus
           deinem, Inventar benutzen und von dessen Vorzügen zu profitieren.
         </p>
         <p>
-          Alltägliche Gegenstände kannst du überall kau-fen und sie sind so
+          Alltägliche Gegenstände kannst du überall kaufen und sie sind so
           günstig, dass du kein Gold dafür investieren musst.
         </p>
         <p>
@@ -52,7 +52,7 @@ const Left = () => {
         <p>
           Rationen verkörpern die alltägliche Abenteurer Ausrüstung, wie z.B.
           Nahrung, Fackeln oder Seile. Du musst solche simplen Dinge also nicht
-          im Detail verwalten. Anstelle dessen ver-brauchst du schlicht eine
+          im Detail verwalten. Anstelle dessen verbrauchst du schlicht eine
           Ladung Rationen, wen du z.B. eine Fackel oder ein Seil benutzt.
         </p>
       </div>

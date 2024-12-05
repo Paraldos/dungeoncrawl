@@ -10,9 +10,9 @@ const Rules = () => {
             <h3>Einfache Proben</h3>
             <p>
               Einfache Proben bilden den mechanischen Kern des Spiels. Immer
-              wenn du etwas Wichti-ges tust, dass potenziell schiefgehen kann,
-              kann der Erzähler eine Probe fordern, um den Aus-gang der
-              Situation zu bestimmen.
+              wenn du etwas Wichtiges tust, dass potenziell schiefgehen kann,
+              kann der Erzähler eine Probe fordern, um den Ausgang der Situation
+              zu bestimmen.
             </p>
             <p>
               Der Erzähler legt fest, welches Attribut geprüft wird und wie hoch
@@ -20,7 +20,7 @@ const Rules = () => {
             </p>
             <p>
               Du rollst einen W12 und addierst das geprüfte Attribut. Erreichst
-              oder übertriffst du den gefor-derten SG, ist die Probe gelungen.
+              oder übertriffst du den geforderten SG, ist die Probe gelungen.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ const Rules = () => {
             <h3>Kritischer Erfolg Proben</h3>
             <p>
               Zeigt dein Würfel eine 12, ist das ein kritischer Erfolg und die
-              Probe gelingt besonders spekta-kulär. Wen möglich, entwickelt sich
+              Probe gelingt besonders spektakulär. Wen möglich, entwickelt sich
               die Situation besonders gut für den Charakter.
             </p>
           </div>
@@ -78,7 +78,7 @@ const Rules = () => {
             <h3>Riskante Proben</h3>
             <p>
               Ist eine Probe besonders gefährlich, kann der Erzähler sie als
-              riskant deklarieren. Das bedeu-tet, du erleidest einen Punkt
+              riskant deklarieren. Das bedeutet, du erleidest einen Punkt
               Schaden, sollte die Probe scheitern. Defensive Proben (z.B. einer
               Falle ausweichen) sind typischerweise immer riskant.
             </p>
@@ -93,20 +93,20 @@ const Rules = () => {
               kann der Erzähler als Herausforderungen abhandeln.
             </p>
             <p>
-              Dazu beschreibt er was vor sich geht und be-stimmt wie viele
-              Erfolge nötig sind, um die Auf-gabe zu bewältigen.
+              Dazu beschreibt er was vor sich geht und bestimmt wie viele
+              Erfolge nötig sind, um die Aufgabe zu bewältigen.
             </p>
             <p>
               Die Spieler dürfen dann reihum Handeln und Proben ablegen, um
-              Erfolge beizusteuern. Kriti-sche Erfolge zählen dabei doppelt. Der
+              Erfolge beizusteuern. Kritische Erfolge zählen dabei doppelt. Der
               Spieler links vom Erzähler beginnt und dann geht es im
               Uhrzeigersinn weiter.
             </p>
             <p>
               Ist der Erzähler an der Reihe, beschreibt er wie sich die
-              Situation entwickelt und wen die Situa-tion gefährlich ist, kann
-              er einen Gegenschlag einstreuen, dem die Spieler mit einer
-              riskanten Probe widerstehen müssen.
+              Situation entwickelt und wen die Situation gefährlich ist, kann er
+              einen Gegenschlag einstreuen, dem die Spieler mit einer riskanten
+              Probe widerstehen müssen.
             </p>
             <p>
               Haben die Spieler genug Erfolge angesammelt, ist die
@@ -121,7 +121,7 @@ const Rules = () => {
             </p>
             <p>
               Eine Taverne könnte z.B. aus dem Hof vor dem Gebäude, dem
-              Hauptraum und der Küche be-stehen.
+              Hauptraum und der Küche bestehen.
             </p>
             <p>
               Bist du an der Reihe, kannst du dich eine Zone weit bewegen und

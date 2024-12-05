@@ -19,9 +19,9 @@ const Left = () => {
           ihr eine Quest löst und wen ihr einen Boss Gegner besiegt.
         </p>
         <p>
-          Hast du genug EP gesammelt, kannst du wäh-rend einer Auszeit
-          trainieren, um eine Stufe auf-steigen. Wieviel EP du dafür brauchst
-          und wel-che Vorteile, dass mit sich bringt, findest du in der Tabelle
+          Hast du genug EP gesammelt, kannst du während einer Auszeit
+          trainieren, um eine Stufe aufsteigen. Wieviel EP du dafür brauchst und
+          welche Vorteile, dass mit sich bringt, findest du in der Tabelle
           weiter unten.
         </p>
       </div>
@@ -30,13 +30,13 @@ const Left = () => {
         <p>
           Verbringen die Helden wenigstens eine Woche in einer sicheren Umgebung
           (z.B. in einer Stadt oder ihrer Zuflucht), wird das als Auszeit
-          be-zeichnet.
+          bezeichnet.
         </p>
         <p>
           Während einer Auszeit erholst du dich von sämtlichem Schaden und
           Einschränkungen. Nutzt du die Zeit zum Arbeiten, erhältst du einen W6
-          Gold. Alternative kannst du 2W6 Gold in-vestieren, um eine der
-          folgenden Aktionen aus-zuführen:
+          Gold. Alternative kannst du 2W6 Gold investieren, um eine der
+          folgenden Aktionen auszuführen:
         </p>
         <ul>
           <li>
@@ -49,9 +49,9 @@ const Left = () => {
             Stufe auf.
           </li>
           <li>
-            <strong>Vorbereiten</strong>: Während des nächsten Aben-teuers
-            kannst du dem Erzähler jederzeit eine Ja/Nein Frage stellen, die er
-            wahrheitsge-mäß beantworten muss.
+            <strong>Vorbereiten</strong>: Während des nächsten Abenteuers kannst
+            du dem Erzähler jederzeit eine Ja/Nein Frage stellen, die er
+            wahrheitsgemäß beantworten muss.
           </li>
           <li>
             <strong>Zuflucht</strong>: Geht nur einmal pro Auszeit und Gruppe.

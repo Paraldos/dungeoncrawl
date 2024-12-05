@@ -30,11 +30,11 @@ const Left = () => {
           </li>
           <li>
             <strong>Beschreibung</strong>: Überleg dir einen Namen und/oder eine
-            kur-ze Beschreibung
+            kurze Beschreibung
           </li>
           <li>
             <strong>Attribute</strong>: Verteil die folgenden Werte auf deine
-            Attri-bute:
+            Attribute:
             <ul>
               <li>2x 4 Punkte</li>
               <li>2x 3 Punkte</li>
@@ -90,7 +90,7 @@ const Middle = () => {
       <div>
         <h4>Inventar</h4>
         <p>
-          Das Inventar beinhaltet die WICHTIGEN Ge-genstände deines Charakters,
+          Das Inventar beinhaltet die WICHTIGEN Gegenstände deines Charakters,
           wie z.B. Waffen, Rüstungen, Rationen oder magische Artefakte. Du
           kannst bis zu 6 Gegenstände tragen.
         </p>
@@ -148,8 +148,8 @@ const Right = () => {
           erlernen kann.
         </p>
         <p>
-          Feats sind simpel und können jederzeit und oh-ne extra Kosten
-          aktiviert werden.
+          Feats sind simpel und können jederzeit und ohne extra Kosten aktiviert
+          werden.
         </p>
         <p>Stunts sind schwieriger und jede Nutzung kostet einen Punkt Mana.</p>
       </div>

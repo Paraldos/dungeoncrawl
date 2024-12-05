@@ -9,7 +9,7 @@ const Examples = () => {
           <div>
             <h3>Einfache Probe</h3>
             <p>
-              Eine Gruppe Helden versucht eine verschlos-sene Tür aufzubekommen.
+              Eine Gruppe Helden versucht eine verschlossene Tür aufzubekommen.
             </p>
             <p>
               Der Schurke möchte versuchen das Türschloss zu knacken, wofür der
@@ -23,12 +23,12 @@ const Examples = () => {
           </div>
           <div>
             <p>
-              Der Barbar der Gruppe ist wegen der Verzöge-rung genervt und
-              kündigt and die Tür einzu-schlagen, wofür der Erzähler eine Stärke
+              Der Barbar der Gruppe ist wegen der Verzögerung genervt und
+              kündigt and die Tür einzuschlagen, wofür der Erzähler eine Stärke
               Probe gegen 12 verlangt.
             </p>
             <p>
-              Der Barbar hat 4 Punkte Stärke und kein Werk-zeug. Da die Probe
+              Der Barbar hat 4 Punkte Stärke und kein Werkzeug. Da die Probe
               recht schwer ist, benutzt er einen Stunt, der ihm einen Vorteil
               auf die Probe gewährt.
             </p>
@@ -43,20 +43,20 @@ const Examples = () => {
           <div>
             <h3>Herausforderung</h3>
             <p>
-              Ein Barbar, ein Waldläufer und ein Krieger, ver-sucht einen
+              Ein Barbar, ein Waldläufer und ein Krieger, versucht einen
               gefährlichen Wald zu durchqueren. Eine Herausforderung, für welche
               der Erzähler 4 Erfolge verlangt.
             </p>
             <p>
               Der Barbar kommt zuerst und er versucht sich mit seiner Axt durchs
               Unterholz zu schlagen. Der Erzähler stimmt zu und verlangt eine
-              ris-kante Probe auf Stärke. Die Probe misslingt und der Barbar
+              riskante Probe auf Stärke. Die Probe misslingt und der Barbar
               erleidet einen Punkt Schaden durch einen hinterhältigen Pfeil
               eines lauernden Goblins.
             </p>
             <p>
               Der Waldläufers folgt und er versucht einen sicheren Pfad für die
-              Gruppe zu finden. Hier-führt verlangt der Erzähler eine Probe auf
+              Gruppe zu finden. Hierführt verlangt der Erzähler eine Probe auf
               Weisheit, welche gelingt!
             </p>
             <p>
@@ -66,11 +66,11 @@ const Examples = () => {
               auf Weisheit, die gelingt!
             </p>
             <p>
-              Nachdem alle Spieler gehandelt haben, be-schreibt der Erzähler wie
+              Nachdem alle Spieler gehandelt haben, beschreibt der Erzähler wie
               die Gruppe etwa die Hälfte des Weges geschafft hat. Sie weichen
               Gruppen von Monstern aus, überqueren einen reißenden Fluss und
               erklimmen steile Hügel. Allerdings beginnt nun die Nacht
-              hereinzubre-chen, was die Aufgabe erschwert.
+              hereinzubrechen, was die Aufgabe erschwert.
             </p>
             <p>
               Nun sind die Spieler wieder am Zug. Sie brauch zwei weitere
@@ -83,7 +83,7 @@ const Examples = () => {
           <div>
             <h3>Kampf</h3>
             <p>
-              Unsere Helden aus dem letzten Beispiel, wer-den von einer Gruppe
+              Unsere Helden aus dem letzten Beispiel, werden von einer Gruppe
               Goblins überrascht und in einen Kampf verwickelt.
             </p>
             <p>
@@ -109,7 +109,7 @@ const Examples = () => {
             </p>
             <p>
               Nach den Helden kommen der Erzähler und er verlangt eine Probe auf
-              Zähigkeit. Der Waldläu-fer und Krieger scheitern, und erleiden
+              Zähigkeit. Der Waldläufer und Krieger scheitern, und erleiden
               jeweils einen Punkt Schaden durch die Angriffe der Goblins.
             </p>
             <p>
