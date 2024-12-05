@@ -14,7 +14,7 @@ const NavbarBurger = ({ onClickHandler }) => {
         height="100"
         fill="#fff"
         stroke="#fff"
-        stroke-width=".16"
+        strokeWidth=".16"
         viewBox="-4.32 -4.32 24.64 24.64"
       >
         <rect
@@ -24,7 +24,7 @@ const NavbarBurger = ({ onClickHandler }) => {
           y="-4.32"
           fill="#000"
           stroke="none"
-          stroke-width="0"
+          strokeWidth="0"
           rx="12.32"
         />
         <path d="M2 3h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z" />
