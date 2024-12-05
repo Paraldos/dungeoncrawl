@@ -33,14 +33,16 @@ section::after {
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  @media only screen and (max-width: 1150px) {
-    display: none;
-  }
 }
 
 .no-counter::after {
   display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+  section::after {
+    display: none;
+  }
 }
 
 @media print {
