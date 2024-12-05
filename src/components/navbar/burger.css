@@ -10,6 +10,10 @@
   cursor: pointer;
   z-index: 50;
 
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
   @media only screen and (max-width: 1150px) {
     display: inline-block;
   }
