@@ -39,20 +39,21 @@ nav {
     bottom: var(--size__navbar-height);
     width: 100vw;
     height: calc(100vh - var(--size__navbar-height));
-    transition: all 0.2s;
+    transition: all 0.3s;
 
     padding: 0;
     background-color: white;
-
-    .navbar-active .navbar__content {
-      left: 0%;
-    }
   }
 }
 
 @media only screen and (max-width: 1150px) {
+  .navbar__content {
+    opacity: 0;
+  }
+
   .navbar-active .navbar__content {
     left: 0%;
+    opacity: 1;
   }
 }
 
