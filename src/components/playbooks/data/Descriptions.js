@@ -17,7 +17,7 @@ const descriptions = {
   iron_skin: "Deine Gesundheit steigt um 1 Punkt.",
   iron_will: "Deine Ausdauer steigt um 1 Punkt.",
   feat_of_strength:
-    "Du kannst einen übernatürlichen Kraftakt vollbringen, wie z. B. Metallgitter mit bloßen Händen verbiegen.",
+    "Du vollbringst einen übernatürlichen Kraftakt, wie z. B. Metallgitter mit bloßen Händen verbiegen.",
   rage: "Vorteil auf STÄ-Proben (einschließlich Angriffe).",
   fury: "Vorteil auf ZÄH-Proben (einschließlich Paraden).",
   intuition: "Konzentriere dich, um Böses in der Nähe zu spüren.",

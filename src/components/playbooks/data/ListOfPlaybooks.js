@@ -160,7 +160,6 @@ const listOfPlaybooks = [
         descriptions.magic_missile("arkaner Energie")
       ),
       new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
-      new Talent("Genie", descriptions.genius, [true]),
       new Talent("Gelehrter", descriptions.skill(["Bildung", "Wissen"])),
       new Talent("Zaubertricks", descriptions.wizzard_tricks),
     ],
