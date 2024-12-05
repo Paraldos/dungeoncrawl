@@ -11,7 +11,8 @@ section {
   @media only screen and (max-width: 1150px) {
     width: 100%;
     height: fit-content;
-    margin-top: 0;
+    margin: 0;
+    box-shadow: none;
   }
 }
 
