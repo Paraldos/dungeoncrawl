@@ -19,6 +19,11 @@
     aspect-ratio: 1;
   }
 
+  &:focus-visible {
+    outline: none;
+    background-color: transparent;
+  }
+
   &:hover {
     filter: brightness(0.7);
   }
