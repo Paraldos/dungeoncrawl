@@ -19,6 +19,10 @@
     aspect-ratio: 1;
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &:focus-visible {
     outline: none;
     background-color: transparent;
