@@ -12,9 +12,6 @@ const Talents = ({ listOfTalents }) => {
       {listOfTalents.map((talent, index) => (
         <Talent key={index} talent={talent} />
       ))}
-      {listOfTalents[listOfTalents.length - 1].stages.map((stage, index) => (
-        <input className="talents__input" key={index} type="text"></input>
-      ))}
     </ul>
   );
 };

@@ -9,6 +9,7 @@ import Condition from "./condition/Condition";
 import Title from "./title/Title";
 import TalentHeader from "./talentHeader/TalentHeader";
 import Talents from "./talents/Talents";
+import Multiclass from "./Multiclass/Multiclass";
 
 const Playbook = ({ playbook }) => {
   Playbook.propTypes = {
@@ -30,6 +31,8 @@ const Playbook = ({ playbook }) => {
         <div>
           <Title txt={playbook.title} />
           <p>{playbook.description}</p>
+          <TalentHeader title="Passiv" description="Permanente Verbesserung." />
+
           <TalentHeader
             title="Feats"
             description="Feats sind permanente Vorteile, von denen du jederzeit profitierst."
@@ -40,6 +43,11 @@ const Playbook = ({ playbook }) => {
             description="Stunts sind aktive Fähigkeiten, die du mit 1 Punkt Ausdauer aktivieren musst."
           />
           <Talents listOfTalents={playbook.stunts} />
+          <TalentHeader
+            title="Multiclass"
+            description="Wähle Passiv, Feat oder Talent einer anderen Klasse. Max 2 Stück."
+          />
+          <Multiclass />
         </div>
       </div>
     </section>

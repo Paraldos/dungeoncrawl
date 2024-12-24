@@ -13,6 +13,7 @@
 
   h3 {
     margin: 0;
+    padding-top: 1px;
   }
 
   label {
@@ -20,6 +21,7 @@
     text-align: right;
     margin-top: 1px;
     padding: 5px 0;
+    line-height: 5px;
 
     @media only screen and (max-width: 1150px) {
       display: none;
