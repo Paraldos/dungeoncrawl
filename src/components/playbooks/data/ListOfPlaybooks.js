@@ -6,8 +6,8 @@ const listOfPlaybooks = [
   new Playbook(
     "Barbar",
     "Stark, wild und tödlich. In dir schlummert ein ungezähmter Zorn, den du entfesseln kannst, um deine Gegner mit brutaler Gewalt zu vernichten.",
+    [new Talent("Eisern", descriptions.iron_skin, [false, false])],
     [
-      new Talent("Eisern", descriptions.iron_skin, [false, false]),
       new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
       new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
     ],
@@ -22,11 +22,13 @@ const listOfPlaybooks = [
     "Druide",
     "Weise, naturverbunden und wandelbar. Du trägst die uralte Macht der Natur in dir und kannst andere heilen, dich in wilde Tiere verwandeln und Pflanzen beherrschen.",
     [
-      new Talent("Dornen", descriptions.magic_missile("Dornen")),
       new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
-      new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
       new Talent("Pflanzenfreund", descriptions.plant_friend),
       new Talent("Tierfreund", descriptions.animal_friend),
+    ],
+    [
+      new Talent("Dornen", descriptions.magic_missile("Dornen")),
+      new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
     ],
     [
       new Talent("Kontrolle", descriptions.animal_control),
@@ -41,9 +43,11 @@ const listOfPlaybooks = [
     "Feuermagier",
     "Zerstörerisch und Wild. Du trägst die Macht des Feuers in dir. Sie ist tödlich und wen du sie entfesselst, kannst du deine Feinde mit einem Sturm aus Feuer und Asche vernichten.",
     [
-      new Talent("Feuerlanze", descriptions.magic_missile("Feuer")),
       new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
       new Talent("Inneres Feuer", descriptions.inner_fire),
+    ],
+    [
+      new Talent("Feuerlanze", descriptions.magic_missile("Feuer")),
       new Talent("Tricks", descriptions.sorcerer_tricks),
       new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
     ],
@@ -60,13 +64,13 @@ const listOfPlaybooks = [
   new Playbook(
     "Illusionist",
     "Charismatisch, manipulativ und einfallsreich. Du bist ein Meister der Trugbilder und Täuschung und deine Magie erlaubt es dir andere in deinen Bann zu schlagen oder zu verwirren.",
+    [new Talent("Eiserner Wille", descriptions.iron_will, [false, false])],
     [
       new Talent("Charmeur", descriptions.skill(["Überreden", "Betören"])),
       new Talent(
         "Dieb",
         descriptions.skill(["Diebstahl", "Falschspiel", "ähnlichen Tricks"])
       ),
-      new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
       new Talent(
         "Schauspieler",
         descriptions.skill(["Verkleiden", "Fälschen", "Auftreten"])
@@ -84,9 +88,9 @@ const listOfPlaybooks = [
   new Playbook(
     "Kämpfer",
     "Standhaft, diszipliniert und gefährlich. Als Kämpfer liegen dir Gewalt im Blut. Wird es brenzlig, zückst du deine Waffe und machst dich berreit für den Kampf.",
+    [new Talent("Eisern", descriptions.iron_skin, [false])],
     [
       new Talent("Athlet", descriptions.skill(["Athletik", "Ausdauer"])),
-      new Talent("Eisern", descriptions.iron_skin, [false]),
       new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
       new Talent("Taktiker", descriptions.skill(["Taktik", "Strategie"])),
     ],
@@ -101,12 +105,12 @@ const listOfPlaybooks = [
   new Playbook(
     "Kleriker",
     "Entschlossen und Weise. Du kannst die Macht des Glaubens als Magie kanalisiert, deine Verbündeten Stärken und böse Mächte in Schach halten.",
+    [new Talent("Eisern", descriptions.iron_skin, [false])],
     [
       new Talent(
         "Courage",
         descriptions.skill(["Entschlossenheit", "Willenskraft"])
       ),
-      new Talent("Eisern", descriptions.iron_skin, [false]),
       new Talent("Intuition", descriptions.intuition),
       new Talent("Prediger", descriptions.skill(["überreden", "betören"])),
     ],
@@ -125,6 +129,7 @@ const listOfPlaybooks = [
   new Playbook(
     "Schurke",
     "Heimlichkeit, List und Tücke. Als Schurke verlässt du dich auf nicht auf rohe Gewalt, sondern suchst nach cleveren alternativen, um deine Ziele zu erreichen.",
+    [new Talent("Eisern", descriptions.iron_skin, [false])],
     [
       new Talent(
         "Akrobat",
@@ -154,12 +159,12 @@ const listOfPlaybooks = [
   new Playbook(
     "Zauberer",
     "Geheimnisvoll, intelligent und willensstark. Zauberer meistern arkane Magie, mit der sie die Grundfesten der Realität formen und ihrem Willen unterwerfen können.",
+    [new Talent("Eiserner Wille", descriptions.iron_will, [false, false])],
     [
       new Talent(
         "Arkanes Geschoss",
         descriptions.magic_missile("arkaner Energie")
       ),
-      new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
       new Talent("Gelehrter", descriptions.skill(["Bildung", "Wissen"])),
       new Talent("Zaubertricks", descriptions.wizzard_tricks),
     ],
