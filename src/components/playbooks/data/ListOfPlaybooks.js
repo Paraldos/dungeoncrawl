@@ -13,9 +13,16 @@ const listOfPlaybooks = [
     ],
     [
       new Talent("Blutrausch", descriptions.multiattack()),
-      new Talent("Kraftakt", descriptions.feat_of_strength),
-      new Talent("Rage", descriptions.rage),
-      new Talent("Wut", descriptions.fury),
+      new Talent(
+        "Kriegsschrei",
+        "Verbündete erhalten eine Runde einen Vorteil auf Attacken."
+      ),
+      new Talent("Rage", "Vorteil auf Stärke Probe (kann auch Angriff sein)."),
+      new Talent(
+        "Zäh wie Leder",
+        "Vorteil auf Zähigkeit Probe (kann auch Parade sein)."
+      ),
+      new Talent("Wuchtschlag", "Attacke verursacht 2 Schaden."),
     ]
   ),
   new Playbook(

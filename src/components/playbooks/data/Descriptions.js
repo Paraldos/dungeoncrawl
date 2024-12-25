@@ -71,7 +71,7 @@ const descriptions = {
   },
 
   multiattack(type_of_attack = "im Nahkampf") {
-    return `Du attackierst mehrere Gegner ${type_of_attack} (Gelunge Probe zählt als 2 Erfolge).`;
+    return `Du attackierst bis zu drei Gegner ${type_of_attack}.`;
   },
 
   skill(skills = []) {
