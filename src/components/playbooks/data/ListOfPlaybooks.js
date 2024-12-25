@@ -12,11 +12,8 @@ const listOfPlaybooks = [
       new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
     ],
     [
-      new Talent("Blutrausch", descriptions.multiattack()),
-      new Talent(
-        "Kriegsschrei",
-        "Verbündete erhalten eine Runde einen Vorteil auf Attacken."
-      ),
+      new Talent("Blutrausch", descriptions.multiattack("im Nahkampf")),
+      new Talent("Kriegsschrei", descriptions.inspiration(["Angriffe"])),
       new Talent("Rage", "Vorteil auf Stärke Probe (kann auch Angriff sein)."),
       new Talent(
         "Zäh wie Leder",

@@ -64,6 +64,14 @@ const descriptions = {
   regeneration: "Du erholst dich von einer Wunde.",
   bloodsense: "Stell drei Ja/Nein Fragen zu Blut das du gerade kostest.",
 
+  inspiration(skills = []) {
+    const string_of_skills =
+      skills.length > 1
+        ? skills.slice(0, -1).join(", ") + " oder " + skills[skills.length - 1]
+        : skills.join("");
+    return `Verbündete erhalten eine Runde einen Vorteil auf ${string_of_skills}.`;
+  },
+
   magic_missile(damagetype, advantage = false) {
     return `Du schleuderst ein magisches Geschoss aus ${damagetype}${
       advantage ? " und erhältst einen Vorteil auf die Probe" : ""
