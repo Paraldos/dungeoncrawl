@@ -14,8 +14,8 @@ const descriptions = {
     "Bewege einen Gegenstand mit mentaler Kraft (verwende INT als mentale STÄ und GES).",
   teleport:
     "Du teleportierst dich an einen Ort, den du in den letzten 24 Stunden gesehen hast.",
-  iron_skin: "Deine Gesundheit steigt um 1 Punkt.",
-  iron_will: "Deine Ausdauer steigt um 1 Punkt.",
+  health: "Deine Gesundheit steigt um 1 Punkt.",
+  mana: "Deine Ausdauer steigt um 1 Punkt.",
   feat_of_strength:
     "Du vollbringst einen übernatürlichen Kraftakt, wie z. B. Metallgitter mit bloßen Händen verbiegen.",
   rage: "Vorteil auf STÄ-Proben (einschließlich Angriffe).",
@@ -24,18 +24,6 @@ const descriptions = {
   sanctuary: "Solange du betest, können sich böse Kreaturen dir nicht nähern.",
   healing: "Eine Person, die du berührst, heilt eine Wunde.",
   blessing: "Deine Verbündeten erhalten einen Vorteil auf ihre nächste Probe.",
-  plant_friend:
-    "Du kannst kleine Pflanzen nach belieben wachsen lassen und erhältst Vorteil beim Umgang mit Pflanzen.",
-  animal_friend:
-    "Du kannst mit Tieren sprechen und erhältst Vorteil beim Umgang mit Tieren.",
-  animal_control:
-    "Du gibst einem Tier oder einem Schwarm Kleintiere einen magischen Befehl.",
-  entangle: "Eine Gruppe Gegner kann sich eine Runde lang nicht bewegen.",
-  growth:
-    "Du lässt Pflanzen in eine von dir gewünschte Form wachsen (Baumbrücke dauert ca. 1 Minute).",
-  transformation:
-    "Du verwandelst dich in ein kleines Tier (z. B. Katze oder Maus) oder eine Pflanze (z. B. Baum).",
-  weather_control: "Du veränderst das Wetter (muss zur Umgebung passen).",
   bodyguard:
     "Nahe Verbündete erhalten für eine Runde Vorteil auf ihre Paraden.",
   counter:

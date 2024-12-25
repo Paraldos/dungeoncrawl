@@ -31,15 +31,10 @@ const Playbook = ({ playbook }) => {
         <div>
           <Title txt={playbook.title} />
           <p>{playbook.description}</p>
-          <TalentHeader
-            title="Verbesserungen"
-            description="Verbesserungen sind permanente Erweiterungen deines Charakters."
-          />
-          <Talents listOfTalents={playbook.passives} />
 
           <TalentHeader
             title="Feats"
-            description="Feats sind aktive Fähigkeiten, die kostenlos aktiviert werden können."
+            description="Feats sind permanente Verbesserungen und Fähigkeiten die du kostenlos aktivieren kannst."
           />
           <Talents listOfTalents={playbook.feats} />
 
@@ -48,6 +43,7 @@ const Playbook = ({ playbook }) => {
             description="Stunts sind aktive Fähigkeiten, die du mit 1 Punkt Ausdauer aktivieren musst."
           />
           <Talents listOfTalents={playbook.stunts} />
+
           <TalentHeader
             title="Multiclass"
             description="Du kannst bis zu zwei Verbesserungen, Feats oder Talente einer anderen Klasse erlernen."

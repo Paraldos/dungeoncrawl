@@ -5,49 +5,66 @@ import Playbook from "./Playbook.js";
 const listOfPlaybooks = [
   new Playbook(
     "Barbar",
-    "Stark, wild und tödlich. In dir schlummert ein ungezähmter Zorn, den du entfesseln kannst, um deine Gegner mit brutaler Gewalt zu vernichten.",
-    [new Talent("Eisern", descriptions.iron_skin, [false, false])],
+    "Stark, wild und tödlich. In dir schlummert ein ungezähmter Zorn, den du ent-fesseln kannst, um deine Gegner mit brutaler Gewalt zu vernichten.",
     [
+      new Talent("Eisern", descriptions.health, [false, false]),
       new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
       new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
     ],
     [
       new Talent("Blutrausch", descriptions.multiattack("im Nahkampf")),
       new Talent("Kriegsschrei", descriptions.inspiration(["Angriffe"])),
-      new Talent("Rage", "Vorteil auf Stärke Probe (kann auch Angriff sein)."),
-      new Talent(
-        "Zäh wie Leder",
-        "Vorteil auf Zähigkeit Probe (kann auch Parade sein)."
-      ),
       new Talent("Wuchtschlag", "Attacke verursacht 2 Schaden."),
+      new Talent("Wut", "Vorteil auf Zähigkeit Probe (kann auch Parade sein)."),
+      new Talent("Zorn", "Vorteil auf Stärke Probe (kann auch Angriff sein)."),
     ]
   ),
+
   new Playbook(
     "Druide",
     "Weise, naturverbunden und wandelbar. Du trägst die uralte Macht der Natur in dir und kannst andere heilen, dich in wilde Tiere verwandeln und Pflanzen beherrschen.",
     [
-      new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
-      new Talent("Pflanzenfreund", descriptions.plant_friend),
-      new Talent("Tierfreund", descriptions.animal_friend),
-    ],
-    [
       new Talent("Dornen", descriptions.magic_missile("Dornen")),
+      new Talent("Eiserner Wille", descriptions.mana),
+      new Talent(
+        "Pflanzenfreund",
+        "Du kannst kleine Pflanzen nach Belieben wachsen lassen und erhältst Vor-teil beim Umgang mit Pflanzen."
+      ),
       new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
+      new Talent(
+        "Tierfreund",
+        "Du kannst mit Tieren sprechen und erhältst Vorteil beim Umgang mit Tieren."
+      ),
     ],
     [
-      new Talent("Kontrolle", descriptions.animal_control),
-      new Talent("Ranken", descriptions.entangle),
-      new Talent("Wachstum", descriptions.growth),
-      new Talent("Wandel", descriptions.transformation),
-      new Talent("Wettermacht", descriptions.weather_control),
+      new Talent(
+        "Kontrolle",
+        "Du gibst einem Tier oder einem Schwarm Kleintiere einen magischen Be-fehl."
+      ),
+      new Talent(
+        "Ranken",
+        "Du verklemmst oder hältst einen Mechanismus oder Tür oder bis zu drei Personen. Ranken entfernen dauert eine ganze Runde."
+      ),
+      new Talent(
+        "Wachstum",
+        "Du lässt Pflanzen in eine von dir gewünschte Form wachsen (Baumbrücke dauert ca. 1 Minute)."
+      ),
+      new Talent(
+        "Wandel",
+        "Du verwandelst dich in ein kleines Tier (z. B. Katze oder Maus) oder eine Pflanze (z. B. Baum)."
+      ),
+      new Talent(
+        "Wettermacht",
+        "Du veränderst das Wetter (muss zur Umgebung passen)."
+      ),
     ]
   ),
 
   new Playbook(
     "Feuermagier",
-    "Zerstörerisch und Wild. Du trägst die Macht des Feuers in dir. Sie ist tödlich und wen du sie entfesselst, kannst du deine Feinde mit einem Sturm aus Feuer und Asche vernichten.",
+    "Zerstörerisch und Wild. Du trägst die Macht des Feuers in dir. Sie ist tödlich und wenn du sie entfesselst, kannst du deine Feinde mit einem Sturm aus Feuer und Asche vernichten.",
     [
-      new Talent("Eiserner Wille", descriptions.iron_will, [false, false]),
+      new Talent("Eiserner Wille", descriptions.mana, [false, false]),
       new Talent("Inneres Feuer", descriptions.inner_fire),
     ],
     [
@@ -68,7 +85,7 @@ const listOfPlaybooks = [
   new Playbook(
     "Illusionist",
     "Charismatisch, manipulativ und einfallsreich. Du bist ein Meister der Trugbilder und Täuschung und deine Magie erlaubt es dir andere in deinen Bann zu schlagen oder zu verwirren.",
-    [new Talent("Eiserner Wille", descriptions.iron_will, [false, false])],
+    [new Talent("Eiserner Wille", descriptions.mana, [false, false])],
     [
       new Talent("Charmeur", descriptions.skill(["Überreden", "Betören"])),
       new Talent(
@@ -92,7 +109,7 @@ const listOfPlaybooks = [
   new Playbook(
     "Kämpfer",
     "Standhaft, diszipliniert und gefährlich. Als Kämpfer liegen dir Gewalt im Blut. Wird es brenzlig, zückst du deine Waffe und machst dich berreit für den Kampf.",
-    [new Talent("Eisern", descriptions.iron_skin, [false])],
+    [new Talent("Eisern", descriptions.health, [false])],
     [
       new Talent("Athlet", descriptions.skill(["Athletik", "Ausdauer"])),
       new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
@@ -109,7 +126,7 @@ const listOfPlaybooks = [
   new Playbook(
     "Kleriker",
     "Entschlossen und Weise. Du kannst die Macht des Glaubens als Magie kanalisiert, deine Verbündeten Stärken und böse Mächte in Schach halten.",
-    [new Talent("Eisern", descriptions.iron_skin, [false])],
+    [new Talent("Eisern", descriptions.health, [false])],
     [
       new Talent(
         "Courage",
@@ -133,7 +150,7 @@ const listOfPlaybooks = [
   new Playbook(
     "Schurke",
     "Heimlichkeit, List und Tücke. Als Schurke verlässt du dich auf nicht auf rohe Gewalt, sondern suchst nach cleveren alternativen, um deine Ziele zu erreichen.",
-    [new Talent("Eisern", descriptions.iron_skin, [false])],
+    [new Talent("Eisern", descriptions.health, [false])],
     [
       new Talent(
         "Akrobat",
@@ -163,7 +180,7 @@ const listOfPlaybooks = [
   new Playbook(
     "Zauberer",
     "Geheimnisvoll, intelligent und willensstark. Zauberer meistern arkane Magie, mit der sie die Grundfesten der Realität formen und ihrem Willen unterwerfen können.",
-    [new Talent("Eiserner Wille", descriptions.iron_will, [false, false])],
+    [new Talent("Eiserner Wille", descriptions.mana, [false, false])],
     [
       new Talent(
         "Arkanes Geschoss",
