@@ -77,9 +77,9 @@ const descriptions = {
   skill(skills = []) {
     const string_of_skills =
       skills.length > 1
-        ? skills.slice(0, -1).join(", ") + " und " + skills[skills.length - 1]
+        ? skills.slice(0, -1).join(", ") + " oder " + skills[skills.length - 1]
         : skills.join("");
-    return `Vorteil auf Proben mit ${string_of_skills}.`;
+    return `Vorteil ${string_of_skills} Probe.`;
   },
 };
 export default descriptions;
