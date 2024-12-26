@@ -10,7 +10,7 @@ const descriptions = {
   message:
     "Du schickst eine kurze mentale Nachricht an jemanden, den du kennst.",
   clairvoyance:
-    "Der Erzähler muss dir 3 Ja/Nein Fragen zu einem Objekt beantworten, dass du berührst.",
+    "Der Erzähler muss dir 3 Ja/Nein Fragen zu einem Objekt beantworten.",
   levitation:
     "Du kannst für den Rest der Runde in Schrittgeschwindigkeit durch die Luft schweben.",
   telekinesis:
@@ -46,14 +46,14 @@ const descriptions = {
   multiclass_feats: "Wähle einen Feat einer anderen Klasse.",
   multiclass_stunts: "Wähle einen Stunt einer anderen Klasse.",
   regeneration: "Du erholst dich von einer Wunde.",
-  bloodsense: "Stell drei Ja/Nein Fragen zu Blut das du gerade kostest.",
   magicMissile:
     "Würfel eine Zauberprobe als Attacke gegen einen Gegner den du sehen kannst.",
   magicMissilePlus:
     "Würfel eine Zauberprobe mit Vorteil als Attacke gegen einen Gegner den du sehen kannst.",
   explosion:
-    "Würfel eine Zauberprobe als Attacke. Jeder in einem 6m Durchmesser Bereich ist betroffen.",
+    "Würfel eine Zauberprobe als Attacke. Jeder in einem 6m Ø ist betroffen.",
   heavyAttack: "Attacke verursacht 2 Schaden.",
+  multiattack: "Du attackierst bis zu drei Gegner.",
 
   inspiration(skills = []) {
     const string_of_skills =
@@ -61,10 +61,6 @@ const descriptions = {
         ? skills.slice(0, -1).join(", ") + " oder " + skills[skills.length - 1]
         : skills.join("");
     return `Verbündete erhalten eine Runde einen Vorteil auf ${string_of_skills}.`;
-  },
-
-  multiattack(type_of_attack = "im Nahkampf") {
-    return `Du attackierst bis zu drei Gegner ${type_of_attack}.`;
   },
 
   skill(skills = []) {

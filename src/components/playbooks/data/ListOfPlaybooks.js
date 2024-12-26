@@ -12,7 +12,7 @@ const listOfPlaybooks = [
       new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
     ],
     [
-      new Talent("Blutrausch", descriptions.multiattack("im Nahkampf")),
+      new Talent("Blutrausch", descriptions.multiattack),
       new Talent("Kriegsschrei", descriptions.inspiration(["Angriffe"])),
       new Talent("Wuchtschlag", descriptions.heavyAttack),
       new Talent("Wut", "Vorteil auf Zähigkeit Probe (kann auch Parade sein)."),
@@ -82,7 +82,7 @@ const listOfPlaybooks = [
         "Brandstifter",
         "Ein Gegenstand, den du berührst, verbrennt oder schmilzt (z.B. eine Eisentür schmelzen dauert ca. 1 Minute)."
       ),
-      new Talent("Explosion", descriptions.explosion),
+      new Talent("Feuersturm", descriptions.explosion),
       new Talent("Flammenschild", descriptions.counter),
       new Talent(
         "Kontrolle",
@@ -131,7 +131,7 @@ const listOfPlaybooks = [
       new Talent("Bodyguard", descriptions.bodyguard),
       new Talent("Konter", descriptions.counter),
       new Talent("Manöver", descriptions.maneuver),
-      new Talent("Rundumschlag", descriptions.multiattack()),
+      new Talent("Rundumschlag", descriptions.multiattack),
       new Talent("Todesstoß", descriptions.heavyAttack),
     ]
   ),
@@ -198,7 +198,7 @@ const listOfPlaybooks = [
       new Talent("Zaubertricks", descriptions.wizzard_tricks),
     ],
     [
-      new Talent("Arkane Explosion", descriptions.explosion),
+      new Talent("Explosion", descriptions.explosion),
       new Talent("Bannen", descriptions.banish),
       new Talent("Barriere", descriptions.barrier),
       new Talent("Botschaft", descriptions.message),
