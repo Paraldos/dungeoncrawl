@@ -72,7 +72,7 @@ const descriptions = {
       skills.length > 1
         ? skills.slice(0, -1).join(", ") + " oder " + skills[skills.length - 1]
         : skills.join("");
-    return `Vorteil ${string_of_skills} Probe.`;
+    return `Vorteil auf Probe mit ${string_of_skills}.`;
   },
 };
 export default descriptions;
