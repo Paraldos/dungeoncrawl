@@ -22,7 +22,7 @@ const descriptions = {
   animalControll:
     "Ein Tier oder schwarm kleintiere muss deinen Befehlen folgen.",
   tendrils:
-    "Du verstrickts einen Mechanismus oder Tür oder bis zu drei Personen. Die Ranken zu entfernen dauert eine ganze Runde.",
+    "Du verstrickts einen Mechanismus oder Tür oder bis zu drei Personen. Die Ranken zu entfernen dauert eine ganze Runde. (Max einmal pro Szene)",
   growth:
     "Du lässt Pflanzen in eine von dir gewünschte Form wachsen (Baumbrücke dauert ca. 1 Minute).",
   transformation:
@@ -39,13 +39,11 @@ const descriptions = {
   clairvoyance:
     "Der Erzähler muss dir 3 Ja/Nein Fragen zu einem Objekt beantworten.",
   levitation:
-    "Du kannst für den Rest der Runde in Schrittgeschwindigkeit durch die Luft schweben.",
+    "Du kannst für eine Runde in Schrittgeschwindigkeit durch die Luft schweben.",
   telekinesis:
-    "Beweg einen Gegenstand mit mentaler Kraft (verwende KLU als mentale STÄ und GES).",
+    "Beweg einen Gegenstand mit mentaler Kraft (KLU ist mentale STÄ und GES).",
   teleport:
     "Du teleportierst dich an einen Ort, den du sehen kannst oder in den letzten 24 Stunden besucht hast.",
-  feat_of_strength:
-    "Du vollbringst einen übernatürlichen Kraftakt, wie z. B. Metallgitter mit bloßen Händen verbiegen.",
 
   counter:
     "Verteidige dich gegen einen Angriff. Gelingt die Probe, erleidet der Angreifer einen Schaden.",
@@ -58,7 +56,8 @@ const descriptions = {
   illusion:
     "Du erzeugst eine Illusion mit Bild (max. 3 m³), Geräusch und/oder Geruch.",
   forget: "Das Ziel vergisst ein Ereignis der letzten 7 Tage.",
-  confuse: "Bis zu drei Ziele müssen für eine Runde aussetzen.",
+  confuse:
+    "Bis zu drei Ziele müssen für eine Runde aussetzen (Max einmal pro Szene).",
   sneakAttack:
     "Bei Attacken aus dem Hinterhalt oder gegen überraschte Gegner verursachst du 2 Schaden.",
   multitalent:
@@ -68,11 +67,10 @@ const descriptions = {
   multiclass_stunts: "Wähle einen Stunt einer anderen Klasse.",
   regeneration: "Du erholst dich von einer Wunde.",
   magicMissile:
-    "Würfel eine Zauberprobe als Attacke gegen einen Gegner den du sehen kannst.",
+    "Einfessel eine Zauberattacke gegen einen Gegner den du sehen kannst.",
   magicMissilePlus:
-    "Würfel eine Zauberprobe mit Vorteil als Attacke gegen einen Gegner den du sehen kannst.",
-  explosion:
-    "Würfel eine Zauberprobe als Attacke. Jeder in einem 6m Ø ist betroffen.",
+    "Einfessel eine Zauberattacke mit Vorteil gegen einen Gegner den du sehen kannst.",
+  explosion: "Einfessel eine Zauberattacke. Jeder in einem 6m Ø ist betroffen.",
 
   inspiration(skills = []) {
     const string_of_skills =
