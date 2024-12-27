@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "./playbook.css";
 import Utils from "../utils";
 
-import NameTag from "./nameTag/NameTag";
+import CharackterName from "./CharackterName/CharackterName";
 import Attributes from "./attribute/Attributes";
 import Inventory from "./inventory/Inventory";
 import Condition from "./condition/Condition";
@@ -20,12 +20,12 @@ const Playbook = ({ playbook }) => {
     <section id={Utils.getId(playbook.title)} className="playbook no-counter">
       <div className="grid">
         <div>
-          <NameTag />
+          <CharackterName />
           <Attributes />
           <Inventory />
           <Condition title="Gold" />
           <Condition title="Gesundheit" />
-          <Condition title="Ausdauer" />
+          <Condition title="Mana" />
         </div>
 
         <div>

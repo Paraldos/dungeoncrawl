@@ -8,8 +8,8 @@ const Druid = new Playbook(
   [
     new Talent("Dornen", descriptions.magicMissile),
     new Talent("Extra Mana", descriptions.extraMana),
-    new Talent("Pflanzenfreund", descriptions.plantFriend),
     new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
+    new Talent("Pflanzenfreund", descriptions.plantFriend),
     new Talent("Tierfreund", descriptions.animalFriend),
   ],
   [

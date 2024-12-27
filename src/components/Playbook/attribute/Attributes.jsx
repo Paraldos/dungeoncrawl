@@ -3,7 +3,7 @@ import "./attributes.css";
 
 const Attributes = () => {
   const listOfAttributes = [
-    { name: "KRA", examples: "Heben, Schieben, Nahkampf" },
+    { name: "STÄ", examples: "Heben, Schieben, Nahkampf" },
     { name: "GES", examples: "Schleichen, Turnen, Klettern, Nahkampf" },
     { name: "ZÄH", examples: "Ausdauer, Luft Anhalten, Verteidigung" },
     { name: "CHA", examples: "Überzeugen, Einschüchtern, Handel" },
