@@ -15,8 +15,8 @@ const Barbarian = new Playbook(
     new Talent("Blutrausch", descriptions.multiattack),
     new Talent("Kriegsschrei", descriptions.inspiration(["Angriffe"])),
     new Talent("Wuchtschlag", descriptions.heavyAttack),
-    new Talent("Wut", "Vorteil auf Zähigkeit Probe (kann auch Parade sein)."),
-    new Talent("Zorn", "Vorteil auf Stärke Probe (kann auch Angriff sein)."),
+    new Talent("Wut", descriptions.anger),
+    new Talent("Zorn", descriptions.rage),
   ]
 );
 

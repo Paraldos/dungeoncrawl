@@ -2,6 +2,10 @@ const descriptions = {
   extraHealth: "Deine Gesundheit steigt permanent um 1 Punkt.",
   extraMana: "Dein Mana steigt permanent um 1 Punkt.",
 
+  heavyAttack: "Attacke verursacht 2 Schaden.",
+  anger: "Vorteil auf Zähigkeit Probe (kann auch Parade sein).",
+  rage: "Vorteil auf Stärke Probe (kann auch Angriff sein).",
+
   genius: "Du zauberst mit KLU.",
   wizzard_tricks:
     "Vollführ einen kleinen Zaubertrick (z.B. eine Tür mit Telekinese öffnen oder eine Pfeife mit einem Fingerschnippen entzünden).",
@@ -53,8 +57,8 @@ const descriptions = {
     "Würfel eine Zauberprobe mit Vorteil als Attacke gegen einen Gegner den du sehen kannst.",
   explosion:
     "Würfel eine Zauberprobe als Attacke. Jeder in einem 6m Ø ist betroffen.",
-  heavyAttack: "Attacke verursacht 2 Schaden.",
-  multiattack: "Du attackierst bis zu drei Gegner.",
+  multiattack:
+    "Nutz deine Aktion um bis zu drei verschiedene Gegner zu attackieren.",
 
   inspiration(skills = []) {
     const string_of_skills =
