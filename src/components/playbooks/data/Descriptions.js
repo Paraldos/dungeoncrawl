@@ -5,6 +5,7 @@ const descriptions = {
   genius: "Du zauberst mit KLU.",
   wizzard_tricks:
     "Vollführ einen kleinen Zaubertrick (z.B. eine Tür mit Telekinese öffnen oder eine Pfeife mit einem Fingerschnippen entzünden).",
+
   banish: "Du beendest einen Zauber, den du sehen kannst.",
   barrier: "Du erschaffst eine undurchdringliche magische Wand (max. 3m²).",
   message:

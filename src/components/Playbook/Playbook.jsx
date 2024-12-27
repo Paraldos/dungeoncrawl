@@ -46,7 +46,7 @@ const Playbook = ({ playbook }) => {
 
           <TalentHeader
             title="Multiclass"
-            description="Du kannst bis zu zwei Verbesserungen, Feats oder Talente einer anderen Klasse erlernen."
+            description="Du kannst zwei mal einen Feat oder ein Talent einer anderen Klasse erlernen."
           />
           <Multiclass />
         </div>

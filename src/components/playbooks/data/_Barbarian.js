@@ -6,6 +6,7 @@ const Barbarian = new Playbook(
   "Barbar",
   "Stark, wild und tödlich. In dir schlummert ein ungezähmter Zorn, den du entfesseln kannst, um deine Gegner mit brutaler Gewalt zu vernichten.",
   [
+    new Talent("Athlet", descriptions.skill(["Athletik", "Ausdauer"])),
     new Talent("Extra Gesundheit", descriptions.extraHealth, [false, false]),
     new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
     new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
