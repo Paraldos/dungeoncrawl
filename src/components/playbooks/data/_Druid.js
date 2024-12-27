@@ -7,7 +7,7 @@ const Druid = new Playbook(
   "Weise, naturverbunden und wandelbar. Du trägst die uralte Macht der Natur in dir und kannst andere heilen, dich in wilde Tiere verwandeln und Pflanzen beherrschen.",
   [
     new Talent("Dornen", descriptions.magicMissile),
-    new Talent("Ausdauernd", descriptions.mana),
+    new Talent("Extra Mana", descriptions.extraMana),
     new Talent(
       "Pflanzenfreund",
       "Du kannst kleine Pflanzen nach Belieben wachsen lassen und erhältst Vorteil beim Umgang mit Pflanzen."

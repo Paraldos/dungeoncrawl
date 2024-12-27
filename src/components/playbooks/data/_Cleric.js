@@ -6,12 +6,12 @@ const Cleric = new Playbook(
   "Kleriker",
   "Entschlossen und Weise. Du kannst die Macht des Glaubens als Magie kanalisiert, deine Verbündeten Stärken und böse Mächte in Schach halten.",
   [
-    new Talent("Ausdauernd", descriptions.mana),
     new Talent(
       "Courage",
       descriptions.skill(["Entschlossenheit", "Willenskraft"])
     ),
-    new Talent("Eisern", descriptions.health),
+    new Talent("Extra Gesundheit", descriptions.extraHealth),
+    new Talent("Extra Mana", descriptions.extraMana),
     new Talent("Intuition", descriptions.intuition),
     new Talent("Prediger", descriptions.skill(["überreden", "religion"])),
   ],

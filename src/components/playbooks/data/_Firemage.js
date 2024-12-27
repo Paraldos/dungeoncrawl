@@ -6,8 +6,8 @@ const Firemage = new Playbook(
   "Feuermagier",
   "Zerstörerisch und Wild. Du trägst die Macht des Feuers in dir. Sie ist tödlich und wenn du sie entfesselst, kannst du deine Feinde mit einem Sturm aus Feuer und Asche vernichten.",
   [
-    new Talent("Ausdauernd", descriptions.mana),
-    new Talent("Eisern", descriptions.health),
+    new Talent("Extra Gesundheit", descriptions.extraHealth),
+    new Talent("Extra Mana", descriptions.extraMana),
     new Talent("Feuerlanze", descriptions.magicMissile),
     new Talent(
       "Inneres Feuer",

@@ -1,8 +1,8 @@
 const descriptions = {
-  health: "Deine Gesundheit steigt um 1 Punkt.",
-  mana: "Deine Ausdauer steigt um 1 Punkt.",
+  extraHealth: "Deine Gesundheit steigt permanent um 1 Punkt.",
+  extraMana: "Dein Mana steigt permanent um 1 Punkt.",
 
-  genius: "Du zauberst mit INT.",
+  genius: "Du zauberst mit KLU.",
   wizzard_tricks:
     "Vollführ einen kleinen Zaubertrick (z.B. eine Tür mit Telekinese öffnen oder eine Pfeife mit einem Fingerschnippen entzünden).",
   banish: "Du beendest einen Zauber, den du sehen kannst.",
@@ -14,7 +14,7 @@ const descriptions = {
   levitation:
     "Du kannst für den Rest der Runde in Schrittgeschwindigkeit durch die Luft schweben.",
   telekinesis:
-    "Beweg einen Gegenstand mit mentaler Kraft (verwende INT als mentale STÄ und GES).",
+    "Beweg einen Gegenstand mit mentaler Kraft (verwende KLU als mentale STÄ und GES).",
   teleport:
     "Du teleportierst dich an einen Ort, den du sehen kannst oder in den letzten 24 Stunden besucht hast.",
   feat_of_strength:
