@@ -1,7 +1,7 @@
 import ListOfPlaybooks from "./data/ListOfPlaybooks.js";
-import Playbook from "./Playbook.jsx";
-import PlaybooksPageOne from "./PlaybooksPageOne.jsx";
-import PlaybooksPageTwo from "./PlaybooksPageTwo.jsx";
+import Playbook from "../Playbook/Playbook.jsx";
+import PlaybooksPageOne from "./RulePageOne/PlaybooksPageOne.jsx";
+import PlaybooksPageTwo from "./RulePageTwo/PlaybooksPageTwo.jsx";
 
 const Playbooks = () => {
   return (

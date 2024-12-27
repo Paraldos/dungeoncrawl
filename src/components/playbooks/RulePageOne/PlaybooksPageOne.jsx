@@ -1,4 +1,4 @@
-import PageHeadline from "../pageHeadline/PageHeadline";
+import PageHeadline from "../../pageHeadline/PageHeadline";
 
 const PlaybooksPageOne = () => {
   return (
