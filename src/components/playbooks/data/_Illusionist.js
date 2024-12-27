@@ -9,6 +9,7 @@ const Illusionist = new Playbook(
     new Talent("Charmeur", descriptions.skill(["Überreden", "Betören"])),
     new Talent("Dieb", descriptions.skill(["Diebstahl", "Falschspiel"])),
     new Talent("Extra Mana", descriptions.extraMana, [false, false]),
+    new Talent("Resonanz", descriptions.resonanz, [true]),
     new Talent("Schauspieler", descriptions.skill(["Verkleiden", "Auftreten"])),
   ],
   [

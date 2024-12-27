@@ -45,6 +45,8 @@ const descriptions = {
   teleport:
     "Du teleportierst dich an einen Ort, den du sehen kannst oder in den letzten 24 Stunden besucht hast.",
 
+  resonanz: "Du zauberst mit CHA.",
+
   counter:
     "Verteidige dich gegen einen Angriff. Gelingt die Probe, erleidet der Angreifer einen Schaden.",
   maneuver: "Vorteil auf eine Attacke oder Parade.",
@@ -63,8 +65,6 @@ const descriptions = {
   multitalent:
     "Vorteil auf eine beliebige Probe die nichts mit Kampf zu tun hat.",
   vanish: "Du wirst unsichtbar, bist du dich auffällig verhältst.",
-  multiclass_feats: "Wähle einen Feat einer anderen Klasse.",
-  multiclass_stunts: "Wähle einen Stunt einer anderen Klasse.",
   regeneration: "Du erholst dich von einer Wunde.",
   magicMissile:
     "Einfessel eine Zauberattacke gegen einen Gegner den du sehen kannst.",
