@@ -13,11 +13,7 @@ const Fighter = new Playbook(
     new Talent("Taktiker", descriptions.skill(["Taktik", "Strategie"])),
   ],
   [
-    new Talent(
-      "Befehle",
-      "Verbündete erhalten eine Runde einen Vorteil auf Paraden."
-    ),
-    new Talent("Bodyguard", descriptions.bodyguard),
+    new Talent("Befehle", descriptions.inspiration(["Paraden"])),
     new Talent("Konter", descriptions.counter),
     new Talent("Manöver", descriptions.maneuver),
     new Talent("Rundumschlag", descriptions.multiattack),
