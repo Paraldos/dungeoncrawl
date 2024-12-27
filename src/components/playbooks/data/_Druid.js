@@ -8,15 +8,16 @@ const Druid = new Playbook(
   [
     new Talent("Dornen", descriptions.magicMissile),
     new Talent("Extra Mana", descriptions.extraMana),
-    new Talent(
-      "Pflanzenfreund",
-      "Du kannst kleine Pflanzen nach Belieben wachsen lassen und erhältst Vorteil beim Umgang mit Pflanzen."
-    ),
+    new Talent("Pflanzenfreund", descriptions.plantFriend),
     new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
-    new Talent(
-      "Tierfreund",
-      "Du kannst mit Tieren sprechen und erhältst Vorteil beim Umgang mit Tieren."
-    ),
+    new Talent("Tierfreund", descriptions.animalFriend),
+  ],
+  [
+    new Talent("Tier Kontrolle", descriptions.animalControll),
+    new Talent("Ranken", descriptions.tendrils),
+    new Talent("Wachstum", descriptions.growth),
+    new Talent("Wandel", descriptions.transformation),
+    new Talent("Wettermacht", descriptions.weatherControll),
   ]
 );
 
