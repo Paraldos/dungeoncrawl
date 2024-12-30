@@ -5,7 +5,9 @@ import Utils from "../utils";
 import CharackterName from "./CharackterName/CharackterName";
 import Attributes from "./attribute/Attributes";
 import Inventory from "./inventory/Inventory";
-import Condition from "./condition/Condition";
+import Conditions from "./Conditions/Conditions";
+import Notes from "./Notes/Notes";
+
 import Title from "./title/Title";
 import TalentHeader from "./talentHeader/TalentHeader";
 import Talents from "./talents/Talents";
@@ -23,9 +25,8 @@ const Playbook = ({ playbook }) => {
           <CharackterName />
           <Attributes />
           <Inventory />
-          <Condition title="Gold" />
-          <Condition title="Gesundheit" />
-          <Condition title="Mana" />
+          <Conditions listOfConditions={["Gesundheit", "Mana"]} />
+          <Notes />
         </div>
 
         <div>

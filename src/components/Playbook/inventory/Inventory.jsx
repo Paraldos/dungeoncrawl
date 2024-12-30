@@ -5,11 +5,10 @@ const Inventory = () => {
   return (
     <div className="inventory">
       <div className="inventory__labels">
-        <p>Item</p>
+        <p>Werkzeug</p>
         <p>Bonus</p>
       </div>
-      <InventoryItem />
-      <InventoryItem />
+
       <InventoryItem />
       <InventoryItem />
       <InventoryItem />
