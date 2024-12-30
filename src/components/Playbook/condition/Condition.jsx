@@ -1,5 +1,6 @@
 import "./condition.css";
 import PropTypes from "prop-types";
+import BonusSelector from "../../bonusSelector/BonusSelector";
 
 const Condition = ({ title }) => {
   Condition.propTypes = {
@@ -9,7 +10,7 @@ const Condition = ({ title }) => {
   return (
     <div className="playbook__condition blackbox">
       <div>
-        <input type="text"></input>
+        <BonusSelector amountOfPoints={10} />
         <input type="text"></input>
       </div>
       <div>

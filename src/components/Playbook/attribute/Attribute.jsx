@@ -8,7 +8,7 @@ const Attribute = ({ attribute }) => {
 
   return (
     <div className="playbook__attribute blackbox">
-      <BonusSelector amountOfPoints={5} />
+      <BonusSelector amountOfPoints={7} />
       <label>{attribute.name}</label>
     </div>
   );
