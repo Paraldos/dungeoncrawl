@@ -15,7 +15,7 @@ const Rogue = new Playbook(
       "Einbrecher",
       descriptions.skill(["Fallen entschärfen", "Schlösser knacken"])
     ),
-    new Talent("Extra Gesundheit", descriptions.extraHealth),
+    new Talent("Extra Mana", descriptions.extraMana),
     new Talent("Hinterhalt", descriptions.sneakAttack),
     new Talent(
       "Schatten",
@@ -27,6 +27,7 @@ const Rogue = new Playbook(
     new Talent("Finesse", descriptions.maneuver),
     new Talent("Verschwinden", descriptions.vanish),
     new Talent("Multitalent", descriptions.multitalent),
+    new Talent("Stille", descriptions.silence),
   ]
 );
 

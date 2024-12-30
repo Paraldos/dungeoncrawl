@@ -9,27 +9,15 @@ const Firemage = new Playbook(
     new Talent("Extra Gesundheit", descriptions.extraHealth),
     new Talent("Extra Mana", descriptions.extraMana),
     new Talent("Feuerlanze", descriptions.magicMissile),
-    new Talent(
-      "Inneres Feuer",
-      "Du bist immun gegen Hitze und Kälte und erhältst Vorteil, wen du dich gegen Feuerschaden verteidigst."
-    ),
-    new Talent(
-      "Tricks",
-      "Du kannst kleine Flammen und Hitze erzeugen und manipulieren (z.B. eine Pfeife anzünden)."
-    ),
+    new Talent("Inneres Feuer", descriptions.inner_fire),
+    new Talent("Tricks", descriptions.sorcerer_tricks),
     new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
   ],
   [
-    new Talent(
-      "Brandstifter",
-      "Ein Gegenstand, den du berührst, verbrennt oder schmilzt (z.B. eine Eisentür schmelzen dauert ca. 1 Minute)."
-    ),
+    new Talent("Asche", descriptions.asch),
     new Talent("Feuersturm", descriptions.explosion),
     new Talent("Flammenschild", descriptions.counter),
-    new Talent(
-      "Kontrolle",
-      "Du kannst ein Feuer (max. 3m³) stärke, schwäche, lösche oder beweg (max. 9m)."
-    ),
+    new Talent("Kontrolle", descriptions.fire_controll),
   ]
 );
 

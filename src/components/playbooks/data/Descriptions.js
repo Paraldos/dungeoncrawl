@@ -2,8 +2,7 @@ const descriptions = {
   extraHealth: "Deine Gesundheit steigt permanent um 1 Punkt.",
   extraMana: "Dein Mana steigt permanent um 1 Punkt.",
 
-  multiattack:
-    "Nutz deine Aktion um bis zu drei verschiedene Gegner zu attackieren.",
+  multiattack: "Attackier bis zu drei Gegner in Reichweite.",
   heavyAttack: "Attacke verursacht 2 Schaden.",
   anger: "Vorteil auf Zähigkeit Probe (kann auch Parade sein).",
   rage: "Vorteil auf Stärke Probe (kann auch Angriff sein).",
@@ -18,11 +17,11 @@ const descriptions = {
   plantFriend:
     "Du kannst kleine Pflanzen nach Belieben wachsen lassen und erhältst Vorteil beim Umgang mit Pflanzen.",
   animalFriend:
-    "Du kannst mit Tieren sprechen und erhältst Vorteil beim Umgang mit Tieren.",
+    "Du kannst mit Tieren sprechen und erhältst Vorteil beim Umgang mit ihnen.",
   animalControll:
-    "Ein Tier oder schwarm kleintiere muss deinen Befehlen folgen.",
+    "Ein Tier oder Schwarm Kleintiere muss deinen Befehlen folgen.",
   tendrils:
-    "Du verstrickts einen Mechanismus oder Tür oder bis zu drei Personen. Die Ranken zu entfernen dauert eine ganze Runde. (Max einmal pro Szene)",
+    "Eine kleine Gruppe Gegner muss für eine Runde aussetzen (max. einmal pro Szene).",
   growth:
     "Du lässt Pflanzen in eine von dir gewünschte Form wachsen (Baumbrücke dauert ca. 1 Minute).",
   transformation:
@@ -37,7 +36,7 @@ const descriptions = {
   message:
     "Du schickst eine kurze mentale Nachricht an jemanden, den du kennst.",
   clairvoyance:
-    "Der Erzähler muss dir 3 Ja/Nein Fragen zu einem Objekt beantworten.",
+    "Der Erzähler beantwortet 3 Ja/Nein Fragen zu einem Objekt dass du siehst.",
   levitation:
     "Du kannst für eine Runde in Schrittgeschwindigkeit durch die Luft schweben.",
   telekinesis:
@@ -47,30 +46,34 @@ const descriptions = {
 
   resonanz: "Du zauberst mit CHA.",
 
-  counter:
-    "Verteidige dich gegen einen Angriff. Gelingt die Probe, erleidet der Angreifer einen Schaden.",
-  maneuver: "Vorteil auf eine Attacke oder Parade.",
   inner_fire:
     "Du bist immun gegen Hitze und Kälte und erhältst Vorteil wen du dich gegen Feuerschaden verteidigst.",
   sorcerer_tricks:
     "Du kannst kleine Flammen und Hitze erzeugen und manipulieren (z.B. eine Pfeife anzünden).",
+  asch: "Ein Objekt, dass du berührst, verbrennt oder schmilzt (eine Eisentür schmelzen dauert z.B. ca. 1 Minute).",
+  fire_controll:
+    "Solange du dich darauf konzentrierst, kannst du ein nahes Feuer stärken, schwäche, lösche oder in Schrittgeschwindigkeit beweg.",
+
   hypnosis: "Das Ziel gehorcht einem Befehl von dir (kein Selbstmord).",
   illusion:
     "Du erzeugst eine Illusion mit Bild (max. 3 m³), Geräusch und/oder Geruch.",
-  forget: "Das Ziel vergisst ein Ereignis der letzten 7 Tage.",
-  confuse:
-    "Bis zu drei Ziele müssen für eine Runde aussetzen (Max einmal pro Szene).",
+  forget: "Das Ziel vergisst ein Ereignis der letzten Tage.",
+  telepathy:
+    "Der Erzähler beantwortet 3 Ja/Nein Fragen zu einer Person die du siehst.",
+
+  counter:
+    "Verteidige dich gegen einen Angriff. Gelingt die Probe, erleidet der Angreifer einen Punkt Schaden.",
+  maneuver: "Vorteil auf eine Attacke oder Parade.",
   sneakAttack:
     "Bei Attacken aus dem Hinterhalt oder gegen überraschte Gegner verursachst du 2 Schaden.",
   multitalent:
     "Vorteil auf eine beliebige Probe die nichts mit Kampf zu tun hat.",
   vanish: "Du wirst unsichtbar, bist du dich auffällig verhältst.",
   regeneration: "Du erholst dich von einer Wunde.",
-  magicMissile:
-    "Einfessel eine Zauberattacke gegen einen Gegner den du sehen kannst.",
-  magicMissilePlus:
-    "Einfessel eine Zauberattacke mit Vorteil gegen einen Gegner den du sehen kannst.",
-  explosion: "Einfessel eine Zauberattacke. Jeder in einem 6m Ø ist betroffen.",
+  magicMissile: "Zauberprobe als Attacke.",
+  magicMissilePlus: "Zauberprobe mit Vorteil als Attacke.",
+  explosion: "Zauberprobe als Attacke. Jeder in einem 6m Ø ist betroffen.",
+  silence: "Du unterdrückst Geräusche in einem 6m Ø.",
 
   inspiration(skills = []) {
     const string_of_skills =

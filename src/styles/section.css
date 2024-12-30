@@ -17,11 +17,8 @@ section {
 }
 
 section::after {
-  content: counter(pages);
-  color: white;
-  background-image: url("/src/assets/diamond-black.svg");
-  background-size: cover;
-  background-position: center;
+  content: "- " counter(pages) " -";
+  color: black;
 
   position: absolute;
   bottom: 20px;

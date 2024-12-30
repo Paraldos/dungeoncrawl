@@ -13,13 +13,14 @@ const Cleric = new Playbook(
     new Talent("Extra Gesundheit", descriptions.extraHealth),
     new Talent("Extra Mana", descriptions.extraMana),
     new Talent("Intuition", descriptions.intuition),
-    new Talent("Prediger", descriptions.skill(["überreden", "religion"])),
+    new Talent("Prediger", descriptions.skill(["überreden", "Religion"])),
   ],
   [
     new Talent("Bannen", descriptions.banish),
     new Talent("Bannstrahl", descriptions.magicMissilePlus),
     new Talent("Heiligtum", descriptions.sanctuary),
     new Talent("Heilung", descriptions.healing),
+    new Talent("Seelenschau", descriptions.telepathy),
     new Talent("Segen", descriptions.blessing),
     new Talent("Schwur", descriptions.oath),
   ]

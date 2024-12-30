@@ -10,15 +10,16 @@ const Illusionist = new Playbook(
     new Talent("Dieb", descriptions.skill(["Diebstahl", "Falschspiel"])),
     new Talent("Extra Mana", descriptions.extraMana, [false, false]),
     new Talent("Resonanz", descriptions.resonanz, [true]),
-    new Talent("Schauspieler", descriptions.skill(["Verkleiden", "Auftreten"])),
+    new Talent("Schauspieler", descriptions.skill(["Auftreten", "Verkleiden"])),
   ],
   [
     new Talent("Botschaft", descriptions.message),
     new Talent("Hypnose", descriptions.hypnosis),
     new Talent("Illusion", descriptions.illusion),
     new Talent("Inspirieren", descriptions.blessing),
+    new Talent("Telepathie", descriptions.telepathy),
     new Talent("Vergessen", descriptions.forget),
-    new Talent("Verwirren", descriptions.confuse),
+    new Talent("Verwirren", descriptions.tendrils),
   ]
 );
 
