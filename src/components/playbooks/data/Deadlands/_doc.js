@@ -15,7 +15,11 @@ const doc = new Playbook(
     new Talent("Focus", descriptions.extraMana),
     new Talent("Wachsam", descriptions.skill(["Wahrnehmung"])),
   ],
-  [new Talent("Blutrausch", descriptions.multiattack)]
+  [new Talent("Ablenkung", descriptions.tendrils)],
+  [new Talent("Analyse", descriptions.clairvoyance)],
+  [new Talent("Knochensäge", descriptions.healing)],
+  [new Talent("Inspirieren", descriptions.blessing)],
+  [new Talent("Multitalent", descriptions.multitalent)]
 );
 
 export default doc;
