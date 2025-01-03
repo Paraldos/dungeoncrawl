@@ -4,7 +4,7 @@ import Playbook from "../Playbook.js";
 
 const doc = new Playbook(
   "Doc",
-  "Klug, geschickt und pragmatisch. Du bist die Person, die andere aufsuchen, wenn Kugeln entfernt, Wunden genäht oder Probleme gelöst werden müs-sen.",
+  "Klug, geschickt und pragmatisch. Du bist die Person, die andere aufsuchen, wenn Kugeln entfernt, Wunden genäht oder Probleme gelöst werden müssen.",
   [
     new Talent(
       "Arzt",

@@ -74,6 +74,7 @@ const descriptions = {
   magicMissilePlus: "Zauberprobe mit Vorteil als Attacke.",
   explosion: "Zauberprobe als Attacke. Jeder in einem 6m Ø ist betroffen.",
   silence: "Du unterdrückst Geräusche in einem 6m Ø.",
+  quickdraw: "Führ eine Attacke aus, bevor der eigentliche Kampf beginnt.",
 
   inspiration(skills = []) {
     const string_of_skills =
