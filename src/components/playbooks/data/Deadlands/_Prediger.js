@@ -13,17 +13,19 @@ const Prediger = new Playbook(
     new Talent("Eisern", descriptions.extraHealth),
     new Talent("Focus", descriptions.extraMana),
     new Talent("Intuition", descriptions.intuition),
-
-    new Talent("Taktiker", descriptions.skill(["Taktik", "Strategie"])),
-    new Talent("Trapper", descriptions.skill(["Wildnisleben", "Tieren"])),
+    new Talent(
+      "Prediger",
+      descriptions.skill(["Überreden", "Überzeugen", "Religion"])
+    ),
     new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
-    new Talent("Wachsam", descriptions.skill(["Wahrnehmung"])),
   ],
   [
-    new Talent("Blattschuss", descriptions.heavyAttack),
-    new Talent("Fächern", descriptions.multiattack),
-    new Talent("Präzision", descriptions.maneuver),
-    new Talent("Schnellziehen", descriptions.quickdraw),
+    new Talent("Eifer", descriptions.maneuver),
+    new Talent("Heiligtum", descriptions.sanctuary),
+    new Talent("Reinigung", descriptions.cleansing),
+    new Talent("Segen", descriptions.blessing),
+    new Talent("Schwur", descriptions.oath),
+    new Talent("Zorn Gottes", descriptions.heavyAttack),
   ]
 );
 
