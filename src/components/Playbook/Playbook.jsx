@@ -25,7 +25,7 @@ const Playbook = ({ playbook }) => {
           <CharackterName />
           <Attributes />
           <Inventory />
-          <Conditions listOfConditions={["Gesundheit", "Mana"]} />
+          <Conditions listOfConditions={["Gesundheit", "Ausdauer"]} />
           <Notes />
         </div>
 

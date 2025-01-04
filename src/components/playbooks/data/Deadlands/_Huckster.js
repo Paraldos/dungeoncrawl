@@ -9,6 +9,7 @@ const Huckster = new Playbook(
     new Talent("Charmeur", descriptions.skill(["Überreden", "Betören"])),
     new Talent("Focus", descriptions.extraMana),
     new Talent("Hinterhalt", descriptions.sneakAttack),
+    new Talent("Resonanz", descriptions.resonanz, [true]),
     new Talent(
       "Schatten",
       descriptions.skill(["Schleichen", "Verstecken", "Schmuggeln"])

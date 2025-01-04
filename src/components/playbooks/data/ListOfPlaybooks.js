@@ -20,14 +20,14 @@ const listOfPlaybooks = [
   Illusionist,
   Fighter,
   Cleric,
+  Rogue,
   Wizard,
 
-  Rogue,
-  Berserker,
-  doc,
-  Gunslinger,
-  Huckster,
-  Prediger,
-  Schamane,
+  // Berserker,
+  // doc,
+  // Gunslinger,
+  // Huckster,
+  // Prediger,
+  // Schamane,
 ];
 export default listOfPlaybooks;
