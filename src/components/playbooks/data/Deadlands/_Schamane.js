@@ -12,7 +12,7 @@ const Schamane = new Playbook(
       "Medizinmann",
       descriptions.skill(["Heilen", "Heilpflanzen", "Medizin"])
     ),
-    new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
+    new Talent("Dunkle Aura", descriptions.skill(["Einschüchtern", "Drohen"])),
   ],
   [
     new Talent("Heilung", descriptions.healing),

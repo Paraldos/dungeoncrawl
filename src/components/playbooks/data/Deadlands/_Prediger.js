@@ -4,7 +4,7 @@ import Playbook from "../Playbook.js";
 
 const Prediger = new Playbook(
   "Prediger",
-  "Charismatisch und erfüllt von göttlichem Feuer. Du bist ein Verkünder des Glaubens, ein Wächter der Moral und eine brennende Fackel in den dunk-len Weiten des Westens.",
+  "Charismatisch und erfüllt von göttlichem Feuer. Du bist ein Verkünder des Glaubens, ein Wächter der Moral und eine brennende Fackel in den dunklen Weiten des Westens.",
   [
     new Talent(
       "Courage",

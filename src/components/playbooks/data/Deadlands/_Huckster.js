@@ -4,7 +4,7 @@ import Playbook from "../Playbook.js";
 
 const Huckster = new Playbook(
   "Huckster",
-  "Charmante, manipulativ und gerissen. Ein Huckster ist ein Glücksspieler, der dunkle Kräfte durch seine Karten kanalisiert. Doch jedes Spiel hat sei-nen Preis, und der Einsatz könnte am Ende deine eigene Seele sein.",
+  "Charmante, manipulativ und gerissen. Ein Huckster ist ein Glücksspieler, der dunkle Kräfte durch seine Karten kanalisiert. Doch jedes Spiel hat seinen Preis, und der Einsatz könnte am Ende deine eigene Seele sein.",
   [
     new Talent("Charmeur", descriptions.skill(["Überreden", "Betören"])),
     new Talent("Focus", descriptions.extraMana),
