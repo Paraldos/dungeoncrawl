@@ -9,6 +9,9 @@ import Wizard from "./_Wizard.js";
 import Berserker from "./Deadlands/_Berserker.js";
 import doc from "./Deadlands/_doc.js";
 import Gunslinger from "./Deadlands/_Gunslinger.js";
+import Huckster from "./Deadlands/_Huckster.js";
+import Prediger from "./Deadlands/_Prediger.js";
+import Schamane from "./Deadlands/_Schamane.js";
 
 const listOfPlaybooks = [
   Barbarian,
@@ -22,5 +25,8 @@ const listOfPlaybooks = [
   Berserker,
   doc,
   Gunslinger,
+  Huckster,
+  Prediger,
+  Schamane,
 ];
 export default listOfPlaybooks;

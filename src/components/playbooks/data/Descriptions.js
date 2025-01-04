@@ -75,6 +75,7 @@ const descriptions = {
   explosion: "Zauberprobe als Attacke. Jeder in einem 6m Ø ist betroffen.",
   silence: "Du unterdrückst Geräusche in einem 6m Ø.",
   quickdraw: "Führ eine Attacke aus, bevor der eigentliche Kampf beginnt.",
+  all_in: "+2 auf beliebige Probe. Nimm 1 Schaden, wen die Probe misslingt.",
 
   inspiration(skills = []) {
     const string_of_skills =
