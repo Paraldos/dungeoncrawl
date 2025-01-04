@@ -6,21 +6,22 @@ const Schamane = new Playbook(
   "Schamane",
   "Weise und naturverbunden. Als Schamane bist du ein Vermittler zwischen den Welten – der Natur und den Geistern, der Lebenden und den Toten.",
   [
+    new Talent("Focus", descriptions.extraMana),
+    new Talent("Jäger", descriptions.skill(["Wildnisleben", "Tieren"])),
     new Talent(
-      "Athlet",
-      descriptions.skill(["Athletik", "Ausdauer", "Reiten"])
+      "Medizinmann",
+      descriptions.skill(["Heilen", "Heilpflanzen", "Medizin"])
     ),
-    new Talent("Eisern", descriptions.extraHealth),
-    new Talent("Taktiker", descriptions.skill(["Taktik", "Strategie"])),
-    new Talent("Trapper", descriptions.skill(["Wildnisleben", "Tieren"])),
     new Talent("Tyrann", descriptions.skill(["Einschüchtern", "Drohen"])),
-    new Talent("Wachsam", descriptions.skill(["Wahrnehmung"])),
   ],
   [
-    new Talent("Blattschuss", descriptions.heavyAttack),
-    new Talent("Fächern", descriptions.multiattack),
-    new Talent("Präzision", descriptions.maneuver),
-    new Talent("Schnellziehen", descriptions.quickdraw),
+    new Talent("Heilung", descriptions.healing),
+    new Talent("Himmelsgeister", descriptions.weatherControll),
+    new Talent("Kontrolle", descriptions.animalControll),
+    new Talent("Reinigung", descriptions.cleansing),
+    new Talent("Schrecken", descriptions.tendrils),
+    new Talent("Totemtier", descriptions.transformation),
+    new Talent("Weisheit der Ahnen", descriptions.telepathy),
   ]
 );
 
