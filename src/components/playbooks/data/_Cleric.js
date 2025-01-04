@@ -10,8 +10,8 @@ const Cleric = new Playbook(
       "Courage",
       descriptions.skill(["Entschlossenheit", "Willenskraft"])
     ),
-    new Talent("Extra Gesundheit", descriptions.extraHealth),
-    new Talent("Extra Mana", descriptions.extraMana),
+    new Talent("Eisern", descriptions.extraHealth),
+    new Talent("Focus", descriptions.extraMana),
     new Talent("Intuition", descriptions.intuition),
     new Talent("Prediger", descriptions.skill(["überreden", "Religion"])),
   ],

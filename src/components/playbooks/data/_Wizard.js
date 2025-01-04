@@ -7,7 +7,7 @@ const Wizard = new Playbook(
   "Geheimnisvoll, intelligent und willensstark. Zauberer meistern arkane Magie, mit der sie die Grundfesten der Realität formen und ihrem Willen unterwerfen können.",
   [
     new Talent("Arkanes Geschoss", descriptions.magicMissile),
-    new Talent("Extra Mana", descriptions.extraMana, [false, false]),
+    new Talent("Focus", descriptions.extraMana, [false, false]),
     new Talent("Gelehrter", descriptions.skill(["Bildung", "Wissen"])),
     new Talent("Genie", descriptions.genius, [true]),
     new Talent("Zaubertricks", descriptions.wizzard_tricks),

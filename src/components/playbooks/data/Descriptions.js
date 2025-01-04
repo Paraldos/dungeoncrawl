@@ -1,23 +1,23 @@
 const descriptions = {
   extraHealth: "Deine Gesundheit steigt permanent um 1 Punkt.",
-  extraMana: "Dein Mana steigt permanent um 1 Punkt.",
+  extraMana: "Deine Ausdauer steigt permanent um 2 Punkt.",
 
   multiattack: "Attackier bis zu drei Gegner in Reichweite.",
   heavyAttack: "Attacke verursacht 2 Schaden.",
-  anger: "Vorteil auf Zähigkeit Probe (kann auch Parade sein).",
-  rage: "Vorteil auf Stärke Probe (kann auch Angriff sein).",
+  anger: "+2 auf Zähigkeit Probe (kann auch Parade sein).",
+  rage: "+2 auf Stärke Probe (kann auch Angriff sein).",
 
   intuition: "Wen du dich konzentrierst, kannst du böses in der Nähe spüren.",
   banish: "Du beendest einen Zauber, den du sehen kannst.",
   sanctuary: "Solange du betest, können sich böse Kreaturen nicht nähern.",
   healing: "Eine Person, die du berührst, heilt eine Wunde.",
-  blessing: "Ein Verbündeter erhält einen Vorteil auf seine nächste Probe.",
+  blessing: "Ein Verbündeter erhält +2 auf seine nächste Probe.",
   oath: "Du akzeptierst den Schwur. Wir der Schwur gebrochen, erleidet der Schwörende einen Punkt Schaden und ein deutlich sichtbares Mal.",
 
   plantFriend:
-    "Du kannst kleine Pflanzen nach Belieben wachsen lassen und erhältst Vorteil beim Umgang mit Pflanzen.",
+    "Du kannst kleine Pflanzen nach Belieben wachsen lassen und erhältst +2 beim Umgang mit Pflanzen.",
   animalFriend:
-    "Du kannst mit Tieren sprechen und erhältst Vorteil beim Umgang mit ihnen.",
+    "Du kannst mit Tieren sprechen und erhältst +2 beim Umgang mit ihnen.",
   animalControll:
     "Ein Tier oder Schwarm Kleintiere muss deinen Befehlen folgen.",
   tendrils:
@@ -47,7 +47,7 @@ const descriptions = {
   resonanz: "Du zauberst mit CHA.",
 
   inner_fire:
-    "Du bist immun gegen Hitze und Kälte und erhältst Vorteil wen du dich gegen Feuerschaden verteidigst.",
+    "Du bist immun gegen Hitze und Kälte und erhältst +2 wen du dich gegen Feuerschaden verteidigst.",
   sorcerer_tricks:
     "Du kannst kleine Flammen und Hitze erzeugen und manipulieren (z.B. eine Pfeife anzünden).",
   asch: "Ein Objekt, dass du berührst, verbrennt oder schmilzt (eine Eisentür schmelzen dauert z.B. ca. 1 Minute).",
@@ -63,15 +63,14 @@ const descriptions = {
 
   counter:
     "Verteidige dich gegen einen Angriff. Gelingt die Probe, erleidet der Angreifer einen Punkt Schaden.",
-  maneuver: "Vorteil auf eine Attacke oder Parade.",
+  maneuver: "+2 auf eine Attacke oder Parade.",
   sneakAttack:
     "Bei Attacken aus dem Hinterhalt oder gegen überraschte Gegner verursachst du 2 Schaden.",
-  multitalent:
-    "Vorteil auf eine beliebige Probe die nichts mit Kampf zu tun hat.",
+  multitalent: "+2 auf eine beliebige Probe die nichts mit Kampf zu tun hat.",
   vanish: "Du wirst unsichtbar, bist du dich auffällig verhältst.",
   regeneration: "Du erholst dich von einer Wunde.",
   magicMissile: "Zauberprobe als Attacke.",
-  magicMissilePlus: "Zauberprobe mit Vorteil als Attacke.",
+  magicMissilePlus: "Zauberprobe mit +2 als Attacke.",
   explosion: "Zauberprobe als Attacke. Jeder in einem 6m Ø ist betroffen.",
   silence: "Du unterdrückst Geräusche in einem 6m Ø.",
   quickdraw: "Führ eine Attacke aus, bevor der eigentliche Kampf beginnt.",
@@ -83,7 +82,7 @@ const descriptions = {
       skills.length > 1
         ? skills.slice(0, -1).join(", ") + " oder " + skills[skills.length - 1]
         : skills.join("");
-    return `Verbündete erhalten eine Runde einen Vorteil auf ${string_of_skills}.`;
+    return `Verbündete erhalten eine Runde +2 auf ${string_of_skills}.`;
   },
 
   skill(skills = []) {
@@ -91,7 +90,7 @@ const descriptions = {
       skills.length > 1
         ? skills.slice(0, -1).join(", ") + " oder " + skills[skills.length - 1]
         : skills.join("");
-    return `Vorteil auf Probe mit ${string_of_skills}.`;
+    return `+2 auf Probe mit ${string_of_skills}.`;
   },
 };
 export default descriptions;

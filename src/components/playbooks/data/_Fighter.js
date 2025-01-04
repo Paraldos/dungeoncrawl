@@ -7,8 +7,8 @@ const Fighter = new Playbook(
   "Standhaft, diszipliniert und gefährlich. Als Kämpfer liegen dir Gewalt im Blut. Wird es brenzlig, zückst du deine Waffe und machst dich bereit für den Kampf.",
   [
     new Talent("Athlet", descriptions.skill(["Athletik", "Ausdauer"])),
-    new Talent("Extra Gesundheit", descriptions.extraHealth),
-    new Talent("Extra Mana", descriptions.extraMana),
+    new Talent("Eisern", descriptions.extraHealth),
+    new Talent("Focus", descriptions.extraMana),
     new Talent("Jäger", descriptions.skill(["Wildnisleben"])),
     new Talent("Taktiker", descriptions.skill(["Taktik", "Strategie"])),
   ],

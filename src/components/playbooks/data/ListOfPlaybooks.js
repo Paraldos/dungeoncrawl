@@ -20,8 +20,9 @@ const listOfPlaybooks = [
   Illusionist,
   Fighter,
   Cleric,
-  Rogue,
   Wizard,
+
+  Rogue,
   Berserker,
   doc,
   Gunslinger,
