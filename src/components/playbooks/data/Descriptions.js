@@ -78,6 +78,7 @@ const descriptions = {
   all_in:
     "Vorteil auf beliebige Probe. Nimm 1 Schaden, wen die Probe misslingt.",
   cleansing: "Du beendest einen Fluch oder Zauber (nicht im Kampf).",
+  teleportation: "Du teleportierst dich an einen Ort, den du kennst.",
 
   inspiration(skills = []) {
     const string_of_skills =
